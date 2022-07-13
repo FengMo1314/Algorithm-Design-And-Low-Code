@@ -11,6 +11,7 @@ import java.util.Scanner;
  */
 public class T7 {
 
+	private static Scanner sc;
 	/**
 	 * @param args
 	 */
@@ -53,8 +54,7 @@ public class T7 {
 	         }
 	    }
 	public static void main(String[] args) {
-		// TODO 自动生成的方法存根
-		  Scanner sc=new Scanner (System.in);
+		sc = new Scanner (System.in);
 	         int i;
 	         int n;//数据的个数
 	        System.out.println("请先输入要排序元素的个数");
