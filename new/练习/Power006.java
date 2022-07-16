@@ -15,16 +15,16 @@ public class Power006 {
     public static int[][] matrixSplit(int[][] parent, int rowStart, int rowEnd, int colStart, int colEnd) {
 
         // todo: 计算子矩阵的大小并初始化
-        int rows =rowEnd- rowStart;
-        int cols = colEnd-colStart;
+        int rows =rowEnd- rowStart+1;
+        int cols = colEnd-colStart+1;
         int[][] result = new int[rows][cols];
 
         for (int row = 0, parentRow = rowStart; row < rows; row++, parentRow++) {
-
+        	  for (int col = 0, parentCol = colStart; col < cols; col++, parentCol++) {
             // todo: 得到子矩阵对应位置的元素
-           
+           result[row][col]=parent[parentRow][parentCol ];
         }
-
+        }
         return result;
     }
 	public static void main(String[] args) {
