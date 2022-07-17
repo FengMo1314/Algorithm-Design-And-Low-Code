@@ -17,10 +17,10 @@ public class Closest007 {
 	 public static float stripClosest(Point[] strip, float delta) {
 	        float min = delta;
 	        int size = strip.length;
-
 	        // todo: 求中间地带最近对
-	        
-
+	        Point midPoint=Closest004.getMidXPoint(strip,0, size);//给定点的中间点
+	       Point[] midPoints=Closest006.getStrip(midPoint, strip, delta);//求出中间地带的所有点
+	       min=Closest005.smallestDistance(midPoints,0,midPoints.length/2 );
 	        return min;
 	    }
 	public static void main(String[] args) {
@@ -38,7 +38,6 @@ public class Closest007 {
 	        Arrays.sort(points, new PointYComparator());
 	        float delta = 2.236068f;
 	        Point[] strip = Closest006.getStrip(midPoint, points, delta);
-
 	        float dist = stripClosest(strip, delta);
 	        System.out.println(Float.compare(dist, 1.4142135f) == 0);
 	}
