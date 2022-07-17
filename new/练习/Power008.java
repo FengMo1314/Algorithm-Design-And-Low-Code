@@ -16,12 +16,13 @@ public class Power008 {
 		int rows = m1.length;
 		int cols = m1[0].length;
 		int[][] result = new int[rows][cols];
+		// todo: 两个矩阵对应位置的元素的和
 		for (int i = 0; i < result.length; i++) {
 			for (int j = 0; j < result.length; j++) {
 				result[i][j] = m1[i][j] + m2[i][j];
 			}
 		}
-		// todo: 两个矩阵对应位置的元素的和
+
 		return result;
 	}
 
