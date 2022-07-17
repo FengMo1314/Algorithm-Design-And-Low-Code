@@ -20,7 +20,10 @@ public class Closest006 {
 	        Point[] strip = new Point[pointsByY.length];
 	        int j = 0;
 	        for (int i = 0; i < pointsByY.length; i++) {
-	        	strip[i]=
+	        	if(pointsByY[i].y<delta) {
+	        	strip[j]=pointsByY[i];
+	        	j++;
+	        	}
 	        }
 
 	        Point[] copyied = new Point[j];
