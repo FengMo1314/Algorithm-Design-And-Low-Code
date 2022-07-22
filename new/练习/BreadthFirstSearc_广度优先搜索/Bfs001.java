@@ -1,7 +1,7 @@
 /**
  * 
  */
-package 练习;
+package 练习.BreadthFirstSearc_广度优先搜索;
 
 import java.util.LinkedList;
 import java.util.Queue;

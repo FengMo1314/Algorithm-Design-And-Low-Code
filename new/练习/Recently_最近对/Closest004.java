@@ -1,12 +1,13 @@
 /**
  * 
  */
-package 练习;
+package 练习.Recently_最近对;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
 import sort_排序方法.MaoPaoSort;
+import 练习.Point;
 
 /**
  * @author 柳和(本地)

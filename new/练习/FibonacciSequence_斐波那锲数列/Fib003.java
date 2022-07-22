@@ -1,7 +1,7 @@
 /**
  * 
  */
-package 练习;
+package 练习.FibonacciSequence_斐波那锲数列;
 
 /**
  * @author 柳和(本地)

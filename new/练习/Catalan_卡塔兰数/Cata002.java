@@ -1,7 +1,7 @@
 /**
  * 
  */
-package 练习;
+package 练习.Catalan_卡塔兰数;
 
 /**
  * @author 柳和(本地)
