@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Á·Ï°;
+package Á·Ï°.UglyNumber_³óÊı;
 
 import java.util.ArrayList;
 import java.util.List;

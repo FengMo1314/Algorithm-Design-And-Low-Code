@@ -16,7 +16,7 @@ public class Pairing001 {
     private static int countPairings(int n) {
     	if (n == 1 || n == 2) { // 特殊情况，分开讨论
 			return n;
-		}
+		
 		int i = 1, j = 2, sum = 0;
 		for (int m =3; m <=n; m++) {
 			/*

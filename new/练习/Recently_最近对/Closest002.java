@@ -3,8 +3,6 @@
  */
 package 练习.Recently_最近对;
 
-import 练习.Point;
-
 /**
  * @author 柳和(本地)
  *

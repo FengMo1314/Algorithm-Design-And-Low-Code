@@ -1,7 +1,7 @@
 /**
  * 
  */
-package 练习;
+package 练习.MCOP_矩阵链乘积;
 
 /**
  * @author 柳和(本地)

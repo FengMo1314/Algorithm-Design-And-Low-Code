@@ -1,7 +1,7 @@
 /**
  * 
  */
-package 练习;
+package 练习.BinomialCoefficient_二项式系数;
 
 /**
  * @author 柳和(本地)

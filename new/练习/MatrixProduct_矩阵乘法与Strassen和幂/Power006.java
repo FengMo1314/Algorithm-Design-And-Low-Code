@@ -1,7 +1,7 @@
 /**
  * 
  */
-package 练习;
+package 练习.MatrixProduct_矩阵乘法与Strassen和幂;
 
 /**
  * @author 柳和(本地)
