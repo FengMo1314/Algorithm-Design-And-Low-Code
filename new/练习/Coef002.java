@@ -67,7 +67,9 @@ public class Coef002 {
 	 */
 	private static int binomialCoefficient3(int n, int k) {
 		int[][] memo = new int[n+1][n+1];
-		if(k>n) return 0;
+		if(k>n) { //特殊情况单独处理
+			return 0;
+		}
         for (int i = 0; i <= n; i++) {  
             for (int j = 0; j < i + 1; j++) {  
                 if (i == j || j == 0) {  
