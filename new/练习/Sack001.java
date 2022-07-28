@@ -23,12 +23,18 @@ public class Sack001 {
 	 */
 	// todo: 用递归计算背包内可容纳物品的最大价值
 	public static int knapsack(int b, int[] w, int[] v, int idx) {
-		if (idx <0||b<=0) {//背包容量低于0与所取得的物品不够停止
-			return 0;
-		}
-		int maxW=knapsack(b,w,v,idx-1);//
-		return  maxW;
-
+		//索引无效或者背包容量不足
+				if(idx<=0||b<=0) {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+					return 0;
+				}
+				//如果不放置第index个物品的价值
+				int res=knapsack(b,w,v,idx-1);
+				//放置了第index个物品的价值
+				if(w[idx]<=b) {
+					//放了，则一定有第index个物品的价值v[index],同时背包容量损失w[index]
+					res=Math.max(res,knapsack(b-w[idx],w,v,idx-1)+v[idx]);
+				}
+				return res;
 	}
 
 	public static void main(String[] args) {
