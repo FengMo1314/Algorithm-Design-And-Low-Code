@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习;
 
@@ -14,7 +14,7 @@ public class Maze003a {
 	 */
 	/**
 	 * 检查约束条件
-	 * 
+	 *
 	 * @param maze 迷宫
 	 * @param x    当前 x 坐标
 	 * @param y    当前 y 坐标
@@ -34,7 +34,7 @@ public class Maze003a {
 
 	/**
 	 * 检查迷宫是否存在可行路线
-	 * 
+	 *
 	 * @param maze 迷宫
 	 * @param x    当前 x 坐标
 	 * @param y    当前 y 坐标
@@ -54,8 +54,8 @@ public class Maze003a {
 	// ❏ ❏ · · · · → -
 
 	public static boolean solveMaze(int[][] maze, int x, int y, int n, int m) {
-		int[] xMove = { -1, 1, 0,0 };
-		int[] yMove = { 0, 0,-1, 1 };
+		int[] xMove = { -1, 1, 0, 0 };
+		int[] yMove = { 0, 0, -1, 1 };
 		if (x == n - 1 && y == m - 1) {
 			maze[n - 1][m - 1] = 2;
 			return true;

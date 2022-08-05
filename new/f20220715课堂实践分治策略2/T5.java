@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package f20220715课堂实践分治策略2;
 
@@ -49,18 +49,19 @@ class Graph {
 		while (queue.size() != 0) {
 			// todo: 广度优先遍历，按遍历顺序打印出顶点序列
 			String s = queue.poll();
-			for(String child:adjList.get(s)) {
-				if(!visited.contains(child)) {
+			for (String child : adjList.get(s)) {
+				if (!visited.contains(child)) {
 					visited.add(child);
 					queue.add(child);
 				}
 			}
-			for (String res:visited) {
-				System.err.print(res+"——");
+			for (String res : visited) {
+				System.err.print(res + "——");
 			}
 		}
 	}
 }
+
 public class T5 {
 
 	/**

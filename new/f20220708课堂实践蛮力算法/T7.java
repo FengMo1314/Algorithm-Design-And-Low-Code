@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package f20220708¿ÎÌÃÊµ¼ùÂùÁ¦Ëã·¨;
 
@@ -14,20 +14,20 @@ public class T7 {
 	 */
 	public int zichuan(String s) {
 		int sum = 0;
-		
+
 		for (int i = 0; i < s.length(); i++) {
-			for (int j =i+1; j < s.length(); j++) {
-				char a=s.charAt(i);
-				char b=s.charAt(j);
-				if(a=='A'&&b=='F') {
+			for (int j = i + 1; j < s.length(); j++) {
+				char a = s.charAt(i);
+				char b = s.charAt(j);
+				if (a == 'A' && b == 'F') {
 					sum++;
-					
+
 				}
 			}
-			
+
 		}
-		
-	return sum;
+
+		return sum;
 	}
 
 	public static void main(String[] args) {

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习.BreadthFirstSearc_广度优先搜索;
 
@@ -53,8 +53,8 @@ class Graph {
 //					System.err.println(adjList.get(s));
 //				}
 //			}
-			for(String child:adjList.get(s)) {
-				if(!visited.contains(child)) {
+			for (String child : adjList.get(s)) {
+				if (!visited.contains(child)) {
 					visited.add(child);
 					queue.add(child);
 					System.out.println(child);

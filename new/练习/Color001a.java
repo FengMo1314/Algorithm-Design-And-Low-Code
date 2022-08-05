@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习;
 
@@ -14,7 +14,7 @@ public class Color001a {
 	 */
 	/**
 	 * 检查是否可以着色
-	 * 
+	 *
 	 * @param graph    图
 	 * @param n        顶点数
 	 * @param solution 着色方案
@@ -33,7 +33,7 @@ public class Color001a {
 
 	/**
 	 * 找到所有着色方案
-	 * 
+	 *
 	 * @param graph    图
 	 * @param n        顶点数
 	 * @param m        颜色种类
@@ -42,7 +42,7 @@ public class Color001a {
 	 */
 	public static void coloring(int[][] graph, int n, int m, int[] solution, int idx) {
 		if (n == idx) {
-			
+
 			return;
 		}
 		// 遍历颜色种类

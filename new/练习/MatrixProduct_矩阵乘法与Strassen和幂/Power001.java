@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package ¡∑œ∞.MatrixProduct_æÿ’Û≥À∑®”ÎStrassen∫Õ√›;
 

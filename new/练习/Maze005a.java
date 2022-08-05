@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习;
 
@@ -21,7 +21,7 @@ public class Maze005a {
 	 */
 	public static int[][] bestSolution;
 	/**
-	 * 
+	 *
 	 */
 	static int[] xMove = { -1, 1, 0, 0 };
 	static int[] yMove = { 0, 0, -1, 1 };
@@ -29,7 +29,7 @@ public class Maze005a {
 
 	/**
 	 * 检查约束条件
-	 * 
+	 *
 	 * @param maze 迷宫
 	 * @param x    当前 x 坐标
 	 * @param y    当前 y 坐标
@@ -50,7 +50,7 @@ public class Maze005a {
 
 	/**
 	 * 找到最短可行路线
-	 * 
+	 *
 	 * @param maze 迷宫
 	 * @param x    当前 x 坐标
 	 * @param y    当前 y 坐标
@@ -72,7 +72,7 @@ public class Maze005a {
 		if (x == n - 1 && y == m - 1) {
 			if (steps < best) {
 				best = steps;
-				bestSolution=maze.clone();
+				bestSolution = maze.clone();
 			}
 			return;
 		}
@@ -81,12 +81,12 @@ public class Maze005a {
 			int nextY = y + yMove[i];
 			if (isValid(maze, nextX, nextY, n, m)) {
 				steps++;
-                maze[nextX][nextY] = 2;
+				maze[nextX][nextY] = 2;
 
-                solveMaze(maze, nextX, nextY, n, m);
+				solveMaze(maze, nextX, nextY, n, m);
 
-                steps--;
-                maze[nextX][nextY] = 0;
+				steps--;
+				maze[nextX][nextY] = 0;
 			}
 		}
 //		return false;

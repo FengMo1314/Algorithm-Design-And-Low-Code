@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习.UglyNumber_丑数;
 
@@ -14,7 +14,7 @@ public class Num001 {
 	 */
 	// todo: 检测一个数是否符合丑数的规则
 	public static boolean isUglyNum(int num) {
-		if(num==2||num==3||num==5) {
+		if (num == 2 || num == 3 || num == 5) {
 			return true;
 		}
 		while (num % 2 == 0) {

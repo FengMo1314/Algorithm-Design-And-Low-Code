@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习.BinomialCoefficient_二项式系数;
 
@@ -15,7 +15,7 @@ public class Coef003 {
 	// todo: 用动态规划求 k 项的系数，优化空间复杂度
 	private static int binomialCoefficient(int n, int k) {
 		int[] memo = new int[k + 1];
-	
+
 		return memo[k];
 	}
 

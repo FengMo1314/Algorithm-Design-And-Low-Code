@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习.MatrixProduct_矩阵乘法与Strassen和幂;
 
@@ -20,7 +20,7 @@ public class Power007 {
 		for (int row = 0, parentRow = rowStart; row < rows; row++, parentRow++) {
 			for (int col = 0, parentCol = colStart; col < cols; col++, parentCol++) {
 				// todo: 得到双亲矩阵对应位置的元素
-					parent[parentRow][parentCol]=child[row][col];
+				parent[parentRow][parentCol] = child[row][col];
 			}
 		}
 	}

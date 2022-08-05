@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package Á·Ï°.Recently_×î½ü¶Ô;
 
@@ -12,12 +12,12 @@ public class Point {
 	/**
 	 * @param args
 	 */
-	  public int x;
-	    public int y;
+	public int x;
+	public int y;
 
-	    public Point(int x, int y) {
-	        this.x = x;
-	        this.y = y;
-	    }
+	public Point(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
 
 }

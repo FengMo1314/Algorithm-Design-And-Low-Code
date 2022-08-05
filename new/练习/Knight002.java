@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习;
 
@@ -37,7 +37,7 @@ public class Knight002 {
 
 	/**
 	 * 计算骑士是否可以不重复地走完棋盘，并返回行走线路
-	 * 
+	 *
 	 * @param curX  当前位置 x 坐标
 	 * @param curY  当前位置 y 坐标
 	 * @param steps 行走步数
@@ -50,13 +50,13 @@ public class Knight002 {
 		if (steps == n * n) {
 			return true;
 		}
-		for (int i = 0; i < board.length; i++) {			
+		for (int i = 0; i < board.length; i++) {
 			if (Knight001.isValid(curX + xMove[i], curY + yMove[i], board, n)) {
-				board[curX +xMove[i]][curY + yMove[i]] = steps;
-				knightTour(curX + xMove[i], curY + yMove[i], steps+1, board, n);
+				board[curX + xMove[i]][curY + yMove[i]] = steps;
+				knightTour(curX + xMove[i], curY + yMove[i], steps + 1, board, n);
 				board[curX + xMove[i]][curY + yMove[i]] = -8;
-				}
-			}	
+			}
+		}
 		return false;
 	}
 

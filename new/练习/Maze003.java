@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习;
 
@@ -14,7 +14,7 @@ public class Maze003 {
 	 */
 	/**
 	 * 检查约束条件
-	 * 
+	 *
 	 * @param maze 迷宫
 	 * @param x    当前 x 坐标
 	 * @param y    当前 y 坐标
@@ -34,7 +34,7 @@ public class Maze003 {
 
 	/**
 	 * 检查迷宫是否存在可行路线
-	 * 
+	 *
 	 * @param maze 迷宫
 	 * @param x    当前 x 坐标
 	 * @param y    当前 y 坐标

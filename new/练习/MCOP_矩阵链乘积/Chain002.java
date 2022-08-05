@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习.MCOP_矩阵链乘积;
 
@@ -14,7 +14,7 @@ public class Chain002 {
 	 */
 	/**
 	 * 求矩阵链最少的相乘次数
-	 * 
+	 *
 	 * @param p 矩阵链
 	 * @param n 链长
 	 * @return 最少相乘次数

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习.BinomialCoefficient_二项式系数;
 
@@ -13,20 +13,13 @@ public class Coef002 {
 	 * @param args
 	 */
 	/*
-	 * 杨辉三角 1 
-	 *                       1 1 
-	 *                       1 2 1
-	 *                       1 3 3 1
-	 *                       1 4 6 4 1 
-	 *                       1 5 10 10 5 1
-	 *                       0 1 2    3  4  5
-	 *                       j->
+	 * 杨辉三角 1 1 1 1 2 1 1 3 3 1 1 4 6 4 1 1 5 10 10 5 1 0 1 2 3 4 5 j->
 	 */
 	// todo: 用二维动态规划求 k 项的系数
 	private static int binomialCoefficient(int n, int k) {
 		int[][] memo = new int[n + 1][k + 1];
 		for (int i = 0; i <= n; i++) {// 组合数下
-			for (int j = 0; j <=Math.min(i,k); j++) {// 组合数 上
+			for (int j = 0; j <= Math.min(i, k); j++) {// 组合数 上
 				if (j == 0 || j == i) {// 杨辉三角第一列和斜边（对角线）处为1
 					memo[i][j] = 1;
 				} else {// 第i行的第j个==第i-1行第j个+第i-1行第j-1个
@@ -39,14 +32,9 @@ public class Coef002 {
 
 	private static int binomialCoefficient2(int n, int k) {
 		/*
-		 * C(n,k)=n!/[k!*(n-k)!] 
-		 * 杨辉三角 n=0 1 k=0 
-		 *                        n=1 1 1 k=1 
-		 *                        n=2 1 2 1 k=2
-		 *                        n=3 1 3 3 1k=3 
-		 *                        n=4 1 4 6 4 1 k=4 
-		 *                        n=5 1 5 10 10 5 1 k=5                                   
-		 * 
+		 * C(n,k)=n!/[k!*(n-k)!] 杨辉三角 n=0 1 k=0 n=1 1 1 k=1 n=2 1 2 1 k=2 n=3 1 3 3 1k=3
+		 * n=4 1 4 6 4 1 k=4 n=5 1 5 10 10 5 1 k=5
+		 *
 		 */
 		int[] memo = new int[k + 1];// 展开式的项数比其幂指数多1
 		memo[0] = 1;// 第一行(n==0)仅有一个1
@@ -57,30 +45,28 @@ public class Coef002 {
 		}
 		return memo[k];
 	}
+
 	/*
-	 * 杨辉三角 1 0 0 0 0 0 0
-	 *                       1 1 0 0 0 0 0
-	 *                       1 2 1 0 0 0 0
-	 *                       1 3 3 1 0 0 0
-	 *                       1 4 6 4 1 0 0
-	 *                       1 5 10 10 5 1
+	 * 杨辉三角 1 0 0 0 0 0 0 1 1 0 0 0 0 0 1 2 1 0 0 0 0 1 3 3 1 0 0 0 1 4 6 4 1 0 0 1
+	 * 5 10 10 5 1
 	 */
 	private static int binomialCoefficient3(int n, int k) {
-		int[][] memo = new int[n+1][n+1];
-		if(k>n) { //特殊情况单独处理
+		int[][] memo = new int[n + 1][n + 1];
+		if (k > n) { // 特殊情况单独处理
 			return 0;
 		}
-        for (int i = 0; i <= n; i++) {  
-            for (int j = 0; j < i + 1; j++) {  
-                if (i == j || j == 0) {  
-                	memo[i][j] = 1;  
-                } else {  
-                	memo[i][j] =memo[i - 1][j - 1] + memo[i - 1][j];  
-                }  
-            }  
-        }  
-		return memo[n][k];
+		for (int i = 0; i <= n; i++) {
+			for (int j = 0; j < i + 1; j++) {
+				if (i == j || j == 0) {
+					memo[i][j] = 1;
+				} else {
+					memo[i][j] = memo[i - 1][j - 1] + memo[i - 1][j];
+				}
+			}
 		}
+		return memo[n][k];
+	}
+
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
 		System.out.println(binomialCoefficient(2, 3) == 0);

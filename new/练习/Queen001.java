@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习;
 
@@ -14,14 +14,14 @@ public class Queen001 {
 	 */
 	/**
 	 * 是否可以在指定位置放皇后 假设放在现有列的右边
-	 * 
+	 *
 	 * @param board 棋盘
 	 * @param row   行
 	 * @param col   列
 	 * @return 是否可以放置
 	 */
 	// todo: 是否可以在指定位置放皇后
-	public static boolean isValid(int[][] board, int row, int col) {//该方法有问题
+	public static boolean isValid(int[][] board, int row, int col) {// 该方法有问题
 		if (row == 0) {
 			for (int i = 0; i <= col; i++) {
 				if (board[0][i] != 0) {
@@ -48,18 +48,21 @@ public class Queen001 {
 		}
 		return true;
 	}
-	 static boolean check(int res[][],int x,int y){
-	        for(int i=0;i<res.length;i++){
-	            if(res[x][i]!=0)return false; //纵：res[x][i] 有返回false
-	            if(res[i][y]!=0)return false; //横：res[i][y] 有返回false
-	            for(int j=0;j<res.length;j++){
-	                if(i+j==x+y&&res[i][j]!=0)return false;
-	                if(i-j==x-y&&res[i][j]!=0)return false;
-	            }
-	        }
-	        return true;
-	    }
-	
+
+	static boolean check(int res[][], int x, int y) {
+		for (int i = 0; i < res.length; i++) {
+			// 纵：res[x][i] 有返回false
+			if ((res[x][i] != 0) || (res[i][y] != 0))
+				return false; // 横：res[i][y] 有返回false
+			for (int j = 0; j < res.length; j++) {
+				if (i + j == x + y && res[i][j] != 0)
+					return false;
+				if (i - j == x - y && res[i][j] != 0)
+					return false;
+			}
+		}
+		return true;
+	}
 
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根

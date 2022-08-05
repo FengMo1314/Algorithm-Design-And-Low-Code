@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package f20220715课堂实践分治策略2;
 
@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class T3 {
 
 	private static Scanner sc;
+
 	/**
 	 * @param args
 	 */
@@ -69,31 +70,33 @@ public class T3 {
 			return result;
 		}
 	}
-    public static int[][] getM(int tr,int td){
-    	sc = new Scanner(System.in);
-    	int[][] array=new int[tr][td];
-        for (int i = 0; i < array.length; i++) {
+
+	public static int[][] getM(int tr, int td) {
+		sc = new Scanner(System.in);
+		int[][] array = new int[tr][td];
+		for (int i = 0; i < array.length; i++) {
 			for (int j = 0; j < array[i].length; j++) {
-				array[i][j]=sc.nextInt();
+				array[i][j] = sc.nextInt();
 			}
 		}
-       return array;
-    }
+		return array;
+	}
 
 	public static void print(int array[][]) {
 		System.out.println("所求矩阵：");
-    	   for (int i = 0; i < array.length; i++) {
-   			for (int j = 0; j < array[i].length; j++) {
-   				System.out.print(array[i][j]+" ");
-   			}
-   			System.out.println();
-   		}
-    }
+		for (int[] element : array) {
+			for (int j = 0; j < element.length; j++) {
+				System.out.print(element[j] + " ");
+			}
+			System.out.println();
+		}
+	}
+
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
-		int[][] a=getM(2,2);
-		int[][] result=MXX(a,16);
-        print(result);
+		int[][] a = getM(2, 2);
+		int[][] result = MXX(a, 16);
+		print(result);
 	}
 
 }

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习.MCOP_矩阵链乘积;
 
@@ -14,7 +14,7 @@ public class Chain001 {
 	 */
 	/**
 	 * 求矩阵链最少的相乘次数
-	 * 
+	 *
 	 * @param p 矩阵链
 	 * @param i 左边界
 	 * @param j 右边界
@@ -22,7 +22,7 @@ public class Chain001 {
 	 */
 	// todo: 用递归求解矩阵链最少的相乘次数
 	public static int matrixChain(int[] p, int i, int j) {
-		if (i == j) {//当i==j时是同一矩阵不需要相乘
+		if (i == j) {// 当i==j时是同一矩阵不需要相乘
 			return 0;
 		}
 		int min = 999999999;
@@ -40,7 +40,7 @@ public class Chain001 {
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
 		int[] matrices = new int[] { 40, 20 };
-		System.out.println(matrixChain(matrices,1, matrices.length - 1) == 0);
+		System.out.println(matrixChain(matrices, 1, matrices.length - 1) == 0);
 
 		matrices = new int[] { 35, 15, 5, 10, 20 };
 		System.out.println(matrixChain(matrices, 1, matrices.length - 1) == 7125);

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习;
 
@@ -25,10 +25,10 @@ public class Lcs002 {
 		if (m == 0 || n == 0) {
 			return 0;
 		}
-		int[][] c = new int[m+1][n+1];
+		int[][] c = new int[m + 1][n + 1];
 		// todo: 用动态规划计算最长子序列的长度
 		for (int i = 1; i <= m; i++) {
-			for (int j = 1; j <=n; j++) {
+			for (int j = 1; j <= n; j++) {
 				if (X[i - 1] == Y[j - 1]) {// 下标从零开始，如果当前的字符相同，则公共子序列的长度为该字符前的最长公共序列
 					c[i][j] = c[i - 1][j - 1] + 1;
 				} else {

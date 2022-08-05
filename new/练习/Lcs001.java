@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习;
 
@@ -27,29 +27,30 @@ public class Lcs001 {
 		}
 
 		// todo: 用简单递归计算最长子序列的长度
-		int a=0,b=0;
-		if(X[m-1] == Y[n-1]) 
-		    return lcs(X,Y,m-1, n-1)+1;
-		  if(X[m-1] != Y[n-1]) {
-			  a=lcs(X,Y,m-1,n);
-		     b=lcs(X,Y,m,n-1);
-		    return Math.max(a,b);
-		  }
-		  return 0;
+		int a = 0, b = 0;
+		if (X[m - 1] == Y[n - 1])
+			return lcs(X, Y, m - 1, n - 1) + 1;
+		if (X[m - 1] != Y[n - 1]) {
+			a = lcs(X, Y, m - 1, n);
+			b = lcs(X, Y, m, n - 1);
+			return Math.max(a, b);
+		}
+		return 0;
 	}
+
 	public static int lcs2(char[] X, char[] Y, int m, int n) {
 		if (m == 0 || n == 0) {
 			return 0;
 		}
 		// todo: 用简单递归计算最长子序列的长度
-		int a=0,b=0,c=0;
-		if(X[m-1] == Y[n-1]) {
-		    a= lcs(X,Y,m-1, n-1)+1;
-		}else {
-			  b=lcs(X,Y,m-1,n);
-		     c=lcs(X,Y,m,n-1);
-		  }
-		  return Math.max(a,Math.max(b, c));
+		int a = 0, b = 0, c = 0;
+		if (X[m - 1] == Y[n - 1]) {
+			a = lcs(X, Y, m - 1, n - 1) + 1;
+		} else {
+			b = lcs(X, Y, m - 1, n);
+			c = lcs(X, Y, m, n - 1);
+		}
+		return Math.max(a, Math.max(b, c));
 	}
 
 	public static void main(String[] args) {

@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package 练习;
 
@@ -14,7 +14,7 @@ public class Image002 {
 	 */
 	/**
 	 * 计算最优分段占用的位数
-	 * 
+	 *
 	 * @param p 灰度值序列
 	 * @param n 灰度值序列的长度
 	 * @return 最优分段占用的位数
@@ -27,10 +27,10 @@ public class Image002 {
 		// todo: 计算最优分段占用的位数
 		s[0] = 0;
 		for (int i = 1; i <= n; i++) {
-			b[i] = Image001.binaryLength(p[i-1]);
+			b[i] = Image001.binaryLength(p[i - 1]);
 			int bmax = b[i];
 			s[i] = s[i - 1] + bmax;
-			for (int j = 2; j <=Math.min(i,Lmax); j++) {
+			for (int j = 2; j <= Math.min(i, Lmax); j++) {
 				if (bmax < b[i - j + 1]) {
 					bmax = b[i - j + 1];
 				}
