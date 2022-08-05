@@ -63,9 +63,11 @@ public class Loading001 {
      */
     // todo: 搜索第一艘船最优可装的集装箱方案
     public static void loading(int c1Capacity, int idx, int[] x, int[] w, int n) {
+    	
+
 
         // todo: 装载方案
-        
+       
 
         // todo: 记录最优方案
         
@@ -74,7 +76,18 @@ public class Loading001 {
         
 
         // todo: 搜索剩余方案
-       
+       for(int i=1;i>=0;i++) {
+    	   if(i==1) {
+    		   
+    	   
+    	   if(is) {
+    		   c1Capacity-=w[idx];
+    		   x[idx]=1;
+    	   }
+    	   }else {
+    		   
+    	   }
+       }
 
     }
 	public static void main(String[] args) {
