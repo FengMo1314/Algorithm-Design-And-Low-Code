@@ -23,7 +23,7 @@ public class Cp002 {
     // todo: 计算代价函数下界
     public static double lowerBound(Circle[] circles, Stack<Circle> packed) {
        
-       return 0;
+       return "w".hashCode();
     }
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根
