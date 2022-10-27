@@ -14,7 +14,7 @@ public class Cut002 {
 	 */
 	// todo: 使用动态规划求解最大价格
 	private static int cutRod(int[] price, int n) {
-
+               return 0;
 	}
 
 	public static void main(String[] args) {

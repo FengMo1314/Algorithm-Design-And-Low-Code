@@ -49,7 +49,7 @@ public class Lcs003 {
 		}
 
 		// todo: 用动态规划计算最长子序列的长度，并保存标记
-
+           return 0;
 	}
 
 	public static void main(String[] args) {

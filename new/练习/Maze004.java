@@ -24,7 +24,7 @@ public class Maze004 {
 	 */
 	// todo: 检查约束条件
 	public static boolean isValid(int[][] maze, int x, int y, int n, int m) {
-
+           return true;
 	}
 
 	/**

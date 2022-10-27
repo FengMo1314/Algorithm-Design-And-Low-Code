@@ -16,7 +16,7 @@ public class Pairing001 {
     private static int countPairings(int n) {
     	if (n == 1 || n == 2) { // 特殊情况，分开讨论
 			return n;
-
+    	}
 		int i = 1, j = 2, sum = 0;
 		for (int m =3; m <=n; m++) {
 			/*
@@ -27,9 +27,11 @@ public class Pairing001 {
 			i = j;
 			j = sum;
 		}
+    	
 		return sum;
 
     }
+    	
 
 	public static void main(String[] args) {
 		// TODO 自动生成的方法存根

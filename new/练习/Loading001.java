@@ -75,7 +75,7 @@ public class Loading001 {
 		for (int i = 1; i >= 0; i++) {
 			if (i == 1) {
 
-				if (is) {
+				if (true) {
 					c1Capacity -= w[idx];
 					x[idx] = 1;
 				}
