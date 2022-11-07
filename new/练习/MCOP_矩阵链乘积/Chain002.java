@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MCOP_¾ØÕóÁ´³Ë»ı;
+package ç»ƒä¹ .MCOP_çŸ©é˜µé“¾ä¹˜ç§¯;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Chain002 {
@@ -13,17 +13,17 @@ public class Chain002 {
 	 * @param args
 	 */
 	/**
-	 * Çó¾ØÕóÁ´×îÉÙµÄÏà³Ë´ÎÊı
+	 * æ±‚çŸ©é˜µé“¾æœ€å°‘çš„ç›¸ä¹˜æ¬¡æ•°
 	 *
-	 * @param p ¾ØÕóÁ´
-	 * @param n Á´³¤
-	 * @return ×îÉÙÏà³Ë´ÎÊı
+	 * @param p çŸ©é˜µé“¾
+	 * @param n é“¾é•¿
+	 * @return æœ€å°‘ç›¸ä¹˜æ¬¡æ•°
 	 */
-	// todo: ÓÃ¶şÎ¬¶¯Ì¬¹æ»®Çó½â¾ØÕóÁ´×îÉÙµÄÏà³Ë´ÎÊı
+	// todo: ç”¨äºŒç»´åŠ¨æ€è§„åˆ’æ±‚è§£çŸ©é˜µé“¾æœ€å°‘çš„ç›¸ä¹˜æ¬¡æ•°
 	public static int matrixChain(int[] p, int n) {
 		int[][] m = new int[n][n];
 		n = p.length - 1;
-		for (int r = 2; r <= n; r++) {// ¾ØÕóÁ´³¤¶È
+		for (int r = 2; r <= n; r++) {// çŸ©é˜µé“¾é•¿åº¦
 			for (int i = 1; i <= n - r + 1; i++) {
 				int j = i + r - 1;
 				m[i][j] = m[i + 1][j] + p[i - 1] * p[i] * p[j];
@@ -39,7 +39,7 @@ public class Chain002 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[] matrices = new int[] { 40, 20 };
 		System.out.println(matrixChain(matrices, matrices.length) == 0);
 

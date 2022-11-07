@@ -1,10 +1,10 @@
 /**
  *
  */
-package f20220708¿ÎÌÃÊµ¼ùÂùÁ¦Ëã·¨;
+package f20220708è¯¾å ‚å®è·µè›®åŠ›ç®—æ³•;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T7 {
@@ -31,8 +31,8 @@ public class T7 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
-		System.out.println("·ûºÏÌâÒâµÄ½á¹ûÎª:" + new T7().zichuan("AFFBed09mfmFMD8FAFDDAF"));
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
+		System.out.println("ç¬¦åˆé¢˜æ„çš„ç»“æœä¸º:" + new T7().zichuan("AFFBed09mfmFMD8FAFDDAF"));
 	}
 
 }

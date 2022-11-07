@@ -5,10 +5,10 @@ package unit_2_2_Assignment_rj0509;
 
 import java.util.Scanner;
 
-import gather_¼¯ºÏ.linked_Á´±í.LinkedList;
+import gather_é›†åˆ.linked_é“¾è¡¨.LinkedList;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T31 {
@@ -18,14 +18,14 @@ public class T31 {
 	 */
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Scanner sc = new Scanner(System.in);
 		LinkedList<Integer> lklist = new LinkedList<>();
 		for (int i = 0; i < 10; i++) {
-			System.out.println("Çë¼üÈë10¸öÊı¾İÕâÊÇµÚ" + (i + 1) + "¸ö£º");
+			System.out.println("è¯·é”®å…¥10ä¸ªæ•°æ®è¿™æ˜¯ç¬¬" + (i + 1) + "ä¸ªï¼š");
 			lklist.insert(sc.nextInt());
 		}
-		System.out.println("¼üÈëĞèÒªÉ¾³ıµÄÊı¾İ");
+		System.out.println("é”®å…¥éœ€è¦åˆ é™¤çš„æ•°æ®");
 		int n = sc.nextInt();
 		sc.close();
 		int sum = 0;
@@ -36,7 +36,7 @@ public class T31 {
 				sum++;
 			}
 		}
-		System.out.println("±»É¾³ı½Úµã¸öÊı" + sum + "Ê£ÓàÊı¾İ:");
+		System.out.println("è¢«åˆ é™¤èŠ‚ç‚¹ä¸ªæ•°" + sum + "å‰©ä½™æ•°æ®:");
 		lklist.printList();
 	}
 }

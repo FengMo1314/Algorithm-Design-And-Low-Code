@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Color001a {
@@ -13,14 +13,14 @@ public class Color001a {
 	 * @param args
 	 */
 	/**
-	 * ¼ì²éÊÇ·ñ¿ÉÒÔ×ÅÉ«
+	 * æ£€æŸ¥æ˜¯å¦å¯ä»¥ç€è‰²
 	 *
-	 * @param graph    Í¼
-	 * @param n        ¶¥µãÊı
-	 * @param solution ×ÅÉ«·½°¸
-	 * @param idx      µ±Ç°¶¥µãÏÂ±ê
-	 * @param color    ÒªÍ¿µÄÑÕÉ«
-	 * @return ÊÇ·ñ¿ÉÒÔ×ÅÉ«
+	 * @param graph    å›¾
+	 * @param n        é¡¶ç‚¹æ•°
+	 * @param solution ç€è‰²æ–¹æ¡ˆ
+	 * @param idx      å½“å‰é¡¶ç‚¹ä¸‹æ ‡
+	 * @param color    è¦æ¶‚çš„é¢œè‰²
+	 * @return æ˜¯å¦å¯ä»¥ç€è‰²
 	 */
 	public static boolean isValid(int[][] graph, int n, int[] solution, int idx, int color) {
 		for (int i = 0; i < graph.length; i++) {
@@ -32,20 +32,20 @@ public class Color001a {
 	}
 
 	/**
-	 * ÕÒµ½ËùÓĞ×ÅÉ«·½°¸
+	 * æ‰¾åˆ°æ‰€æœ‰ç€è‰²æ–¹æ¡ˆ
 	 *
-	 * @param graph    Í¼
-	 * @param n        ¶¥µãÊı
-	 * @param m        ÑÕÉ«ÖÖÀà
-	 * @param solution ×ÅÉ«·½°¸
-	 * @param idx      µ±Ç°¶¥µãÏÂ±ê
+	 * @param graph    å›¾
+	 * @param n        é¡¶ç‚¹æ•°
+	 * @param m        é¢œè‰²ç§ç±»
+	 * @param solution ç€è‰²æ–¹æ¡ˆ
+	 * @param idx      å½“å‰é¡¶ç‚¹ä¸‹æ ‡
 	 */
 	public static void coloring(int[][] graph, int n, int m, int[] solution, int idx) {
 		if (n == idx) {
 
 			return;
 		}
-		// ±éÀúÑÕÉ«ÖÖÀà
+		// éå†é¢œè‰²ç§ç±»
 		for (int color = 1; color <= m; color++) {
 			if (isValid(graph, n, solution, idx, color)) {
 				solution[idx] = color;
@@ -58,7 +58,7 @@ public class Color001a {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] graph = { { 0, 1, 0, 0, 0, 1, 1 }, { 1, 0, 1, 0, 0, 0, 7 }, { 0, 1, 0, 1, 0, 0, 1 },
 				{ 0, 0, 1, 0, 1, 1, 0 }, { 0, 0, 0, 1, 0, 1, 0 }, { 1, 0, 0, 1, 1, 0, 1 }, { 1, 1, 1, 0, 0, 1, 0 }, };
 		int n = graph.length;

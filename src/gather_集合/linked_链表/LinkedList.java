@@ -1,9 +1,9 @@
-package gather_¼¯ºÏ.linked_Á´±í;
+package gather_é›†åˆ.linked_é“¾è¡¨;
 
-import gather_¼¯ºÏ.node_½Úµã.Node;
+import gather_é›†åˆ.node_èŠ‚ç‚¹.Node;
 
 public class LinkedList<T> {
-	public Node<T> head;// Í·Ö¸Õë
+	public Node<T> head;// å¤´æŒ‡é’ˆ
 
 	public LinkedList() {
 		super();
@@ -18,19 +18,19 @@ public class LinkedList<T> {
 	public T get(int index) {
 		Node<T> p = this.head.next;
 
-		// ±éÀúµ¥Á´±í£¬Ñ°ÕÒa(i)
+		// éå†å•é“¾è¡¨ï¼Œå¯»æ‰¾a(i)
 		for (int i = 0; p != null && i < index; i++) {
 			p = p.next;
 		}
 
-		// ÈôpÖ¸Ïòa(i)£¬·µ»ØÆädataÖµ
+		// è‹¥pæŒ‡å‘a(i)ï¼Œè¿”å›å…¶dataå€¼
 		return (index >= 0 && p != null) ? p.data : null;
 	}
 
 	public void set(int index, T element) {
 		Node<T> p = this.head.next;
 
-		// ±éÀúµ¥Á´±í£¬Ñ°ÕÒa(i)
+		// éå†å•é“¾è¡¨ï¼Œå¯»æ‰¾a(i)
 		for (int i = 0; p != null && i < index; i++) {
 			p = p.next;
 		}
@@ -40,7 +40,7 @@ public class LinkedList<T> {
 		}
 	}
 
-	public int size() {// ¼¯ºÏ³¤¶È
+	public int size() {// é›†åˆé•¿åº¦
 		Node<T> p = this.head.next;
 		int n = 0;
 		while (p != null) {
@@ -50,23 +50,23 @@ public class LinkedList<T> {
 		return n;
 	}
 
-	public int insert(int index, T element) {// Ö¸¶¨Î»ÖÃ²åÈëÊı¾İ
+	public int insert(int index, T element) {// æŒ‡å®šä½ç½®æ’å…¥æ•°æ®
 		if (element == null) {
-			throw new NullPointerException("²»ÄÜ²åÈë¿Õ¶ÔÏó£¡");
+			throw new NullPointerException("ä¸èƒ½æ’å…¥ç©ºå¯¹è±¡ï¼");
 		}
 
 		Node<T> p = this.head;
 		int i = 0;
-		// Ñ°ÕÒÏÂ±êÎªindex-1µÄ½áµã£¬¼´²åÈëÎ»ÖÃµÄÇ°Ò»¸ö½áµã
+		// å¯»æ‰¾ä¸‹æ ‡ä¸ºindex-1çš„ç»“ç‚¹ï¼Œå³æ’å…¥ä½ç½®çš„å‰ä¸€ä¸ªç»“ç‚¹
 		while (p.next != null && i < index) {
 			p = p.next;
 			i++;
 		}
 
 		if (i == index) {
-			// ½¨Á¢ĞÂ½áµã s£¬Êı¾İÓòÎªelement£¬µØÖ·ÓòÎªp.next
+			// å»ºç«‹æ–°ç»“ç‚¹ sï¼Œæ•°æ®åŸŸä¸ºelementï¼Œåœ°å€åŸŸä¸ºp.next
 			Node<T> s = new Node<>(element, p.next);
-			// ÔÚpÖ®ºó²åÈës
+			// åœ¨pä¹‹åæ’å…¥s
 			p.next = s;
 			return index;
 		} else {
@@ -74,11 +74,11 @@ public class LinkedList<T> {
 		}
 	}
 
-	public int insert(T element) {// ¼¯ºÏÎ²²¿²åÈë
+	public int insert(T element) {// é›†åˆå°¾éƒ¨æ’å…¥
 		return insert(this.size(), element);
 	}
 
-	public T remove(int index) {// É¾³ıÖ¸¶¨ÏÂ±êµÄÊı¾İ
+	public T remove(int index) {// åˆ é™¤æŒ‡å®šä¸‹æ ‡çš„æ•°æ®
 		  Node<T> p = this.head;
 	        int i = 0;
 	        while (p != null && i < index) {
@@ -100,11 +100,11 @@ public class LinkedList<T> {
 	        }
 	}
 
-	public boolean isEmpty() {// ÅĞ¶Ï±íÊÇ·ñÎª¿Õ
+	public boolean isEmpty() {// åˆ¤æ–­è¡¨æ˜¯å¦ä¸ºç©º
 		return this.head.next == null;
 	}
 
-	public void printList() {// ±éÀú´òÓ¡
+	public void printList() {// éå†æ‰“å°
 		Node<T> p = new Node<>();
 		p = head.next;
 		while (p != null) {

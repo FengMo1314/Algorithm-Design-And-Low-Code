@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class YingBi {
@@ -14,8 +14,8 @@ public class YingBi {
 	 */
 	public int money(int[] coins, int amount) {
 		int sum = 0;
-		for (int i = 0; i < amount; i++) {// ½ð¶îÐòÁÐ
-			for (int coin : coins) {// Ãæ¶îÐòÁÐ
+		for (int i = 0; i < amount; i++) {// é‡‘é¢åºåˆ—
+			for (int coin : coins) {// é¢é¢åºåˆ—
 				if (i == coin) {
 					sum++;
 					break;
@@ -27,7 +27,7 @@ public class YingBi {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 
 	}
 

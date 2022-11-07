@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Maze002 {
@@ -13,21 +13,21 @@ public class Maze002 {
 	 * @param args
 	 */
 	/**
-	 * ¿ÉĞĞÂ·Ïß×ÜÊı
+	 * å¯è¡Œè·¯çº¿æ€»æ•°
 	 */
 	public static int solutionCount;
 
 	/**
-	 * ¼ì²éÔ¼ÊøÌõ¼ş
+	 * æ£€æŸ¥çº¦æŸæ¡ä»¶
 	 *
-	 * @param maze ÃÔ¹¬
-	 * @param x    µ±Ç° x ×ø±ê
-	 * @param y    µ±Ç° y ×ø±ê
-	 * @param n    ×î´ó x ×ø±ê
-	 * @param m    ×î´ó y ×ø±ê
-	 * @return ÊÇ·ñÂú×ãÔ¼ÊøÌõ¼ş
+	 * @param maze è¿·å®«
+	 * @param x    å½“å‰ x åæ ‡
+	 * @param y    å½“å‰ y åæ ‡
+	 * @param n    æœ€å¤§ x åæ ‡
+	 * @param m    æœ€å¤§ y åæ ‡
+	 * @return æ˜¯å¦æ»¡è¶³çº¦æŸæ¡ä»¶
 	 */
-	// todo: ¼ì²éÔ¼ÊøÌõ¼ş
+	// todo: æ£€æŸ¥çº¦æŸæ¡ä»¶
 	public static boolean isValid(int[][] maze, int x, int y, int n, int m) {
 		if (x < n && y < m && x >= 0 && y >= 0) {
 			if (maze[x][y] == 0) {
@@ -38,16 +38,16 @@ public class Maze002 {
 	}
 
 	/**
-	 * ¼ÆËã¿ÉĞĞÂ·Ïß×ÜÊı
+	 * è®¡ç®—å¯è¡Œè·¯çº¿æ€»æ•°
 	 *
-	 * @param maze ÃÔ¹¬
-	 * @param x    µ±Ç° x ×ø±ê
-	 * @param y    µ±Ç° y ×ø±ê
-	 * @param n    ×î´ó x ×ø±ê
-	 * @param m    ×î´ó y ×ø±ê
-	 * @return ¿ÉĞĞÂ·Ïß×ÜÊı
+	 * @param maze è¿·å®«
+	 * @param x    å½“å‰ x åæ ‡
+	 * @param y    å½“å‰ y åæ ‡
+	 * @param n    æœ€å¤§ x åæ ‡
+	 * @param m    æœ€å¤§ y åæ ‡
+	 * @return å¯è¡Œè·¯çº¿æ€»æ•°
 	 */
-	// todo: ¼ÆËã¿ÉĞĞÂ·Ïß×ÜÊı
+	// todo: è®¡ç®—å¯è¡Œè·¯çº¿æ€»æ•°
 	public static void solveMaze(int[][] maze, int x, int y, int n, int m) {
 		if (x == n - 1 && y == m - 1) {
 			solutionCount++;
@@ -65,7 +65,7 @@ public class Maze002 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] maze = { { 0, 0, 1, 0, 0, 0, 1, 0 }, { 0, 0, 1, 0, 0, 0, 1, 0 }, { 0, 0, 1, 0, 1, 1, 0, 1 },
 				{ 0, 1, 1, 1, 0, 0, 1, 0 }, { 0, 0, 0, 1, 0, 0, 0, 0 }, { 0, 1, 0, 0, 0, 1, 0, 1 },
 				{ 0, 1, 1, 1, 1, 0, 0, 1 }, { 1, 1, 0, 0, 0, 1, 0, 1 }, { 1, 1, 0, 0, 0, 0, 0, 0 } };

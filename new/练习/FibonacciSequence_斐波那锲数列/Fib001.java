@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.FibonacciSequence_ì³²¨ÄÇïÆÊıÁĞ;
+package ç»ƒä¹ .FibonacciSequence_æ–æ³¢é‚£é”²æ•°åˆ—;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Fib001 {
@@ -16,18 +16,18 @@ public class Fib001 {
 		if (n < 0) {
 			throw new IllegalArgumentException("n cannot be negative");
 		}
-		// todo: Ê¹ÓÃ¼òµ¥·ÖÖÎ£¬ÇóµÚ n ¸öì³²¨ÄÇÆõÊı
-		if (n == 1 || n == 2) { // ÌØÊâÇé¿ö£¬·Ö¿ªÌÖÂÛ
+		// todo: ä½¿ç”¨ç®€å•åˆ†æ²»ï¼Œæ±‚ç¬¬ n ä¸ªæ–æ³¢é‚£å¥‘æ•°
+		if (n == 1 || n == 2) { // ç‰¹æ®Šæƒ…å†µï¼Œåˆ†å¼€è®¨è®º
 			return 1;
 		}
 		if (n > 2) {
-			return fib(n - 1) + fib(n - 2); // µİ¹éµ÷ÓÃ
+			return fib(n - 1) + fib(n - 2); // é€’å½’è°ƒç”¨
 		}
-		return -1; // Èç¹ûÊäÈë´íÎóµÄn£¬Ò»ÂÉ·µ»Ø-1
+		return -1; // å¦‚æœè¾“å…¥é”™è¯¯çš„nï¼Œä¸€å¾‹è¿”å›-1
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(fib(1) == 1);
 		System.out.println(fib(2) == 1);
 		System.out.println(fib(20) == 6765);

@@ -1,8 +1,8 @@
-package tree_Ê÷.BinaryTree_¶ş²æÊ÷;
+package tree_æ ‘.BinaryTree_äºŒå‰æ ‘;
 
 public class BinaryNode<T> {
 	public T data;//
-	public BinaryNode<T> lchild,rchild;//Á´Óò,·Ö±ğÖ¸×óÓÒº¢×Ó
+	public BinaryNode<T> lchild,rchild;//é“¾åŸŸ,åˆ†åˆ«æŒ‡å·¦å³å­©å­
 	public BinaryNode(T data, BinaryNode<T> lchild, BinaryNode<T> rchild) {
 		super();
 		this.data = data;

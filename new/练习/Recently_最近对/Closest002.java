@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.Recently_×î½ü¶Ô;
+package ç»ƒä¹ .Recently_æœ€è¿‘å¯¹;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Closest002 {
@@ -14,7 +14,7 @@ public class Closest002 {
 	 */
 	public static float bruteForceSmallestDistance(Point[] points, int start, int end) {
 		float smallest = Float.MAX_VALUE;
-		// todo: ¼ÆËãÖ¸¶¨·¶Î§ÄÚµÄÃ¿Ò»¶ÔµãµÄ¾àÀë²¢·µ»Ø×îĞ¡Öµ
+		// todo: è®¡ç®—æŒ‡å®šèŒƒå›´å†…çš„æ¯ä¸€å¯¹ç‚¹çš„è·ç¦»å¹¶è¿”å›æœ€å°å€¼
 		for (int i = start; i <= end; i++) {
 			for (int j = i + 1; j <= end; j++) {
 				float temp = Closest001.dist(points[i], points[j]);
@@ -27,7 +27,7 @@ public class Closest002 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Point[] points = new Point[] { new Point(2, 3), new Point(12, 30), new Point(40, 50), new Point(5, 1),
 				new Point(6, 2), new Point(3, 5) };
 		float dist = bruteForceSmallestDistance(points, 0, 5);

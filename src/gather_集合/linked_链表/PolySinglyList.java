@@ -1,6 +1,6 @@
-package gather_¼¯ºÏ.linked_Á´±í;
+package gather_é›†åˆ.linked_é“¾è¡¨;
 
-import gather_¼¯ºÏ.node_½Úµã.Node;
+import gather_é›†åˆ.node_èŠ‚ç‚¹.Node;
 import others.PolyTerm;
 
 public class PolySinglyList extends SortLinkedList<PolyTerm> {
@@ -14,13 +14,13 @@ public class PolySinglyList extends SortLinkedList<PolyTerm> {
     }
 
     /**
-     * É¾³ıÏµÊıÎª0µÄ½áµã
-     * @return ÒÆ³ıµÄ½áµã¸öÊı
+     * åˆ é™¤ç³»æ•°ä¸º0çš„ç»“ç‚¹
+     * @return ç§»é™¤çš„ç»“ç‚¹ä¸ªæ•°
      */
     public int removable() {
         int i = 0;
 
-        // prevÎªpµÄÇ°Çı½áµã
+        // prevä¸ºpçš„å‰é©±ç»“ç‚¹
         Node<PolyTerm> prev = this.head, p = prev.next;
 
         while (p != null) {
@@ -61,7 +61,7 @@ public class PolySinglyList extends SortLinkedList<PolyTerm> {
             } else {
                 double sum = a.coefficient + b.coefficient;
 
-                // Ïà¼ÓºóÏµÊı²»Îª0£¬Ôò²åÈë
+                // ç›¸åŠ åç³»æ•°ä¸ä¸º0ï¼Œåˆ™æ’å…¥
                 if (sum != 0.0) {
                     PolyTerm term = new PolyTerm(sum, a.exponent);
                     merged.insert(term);

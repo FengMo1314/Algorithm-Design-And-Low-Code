@@ -1,19 +1,19 @@
 /**
  *
  */
-package tree_Ê÷.BinaryTree_¶ş²æÊ÷;
+package tree_æ ‘.BinaryTree_äºŒå‰æ ‘;
 
 import java.util.LinkedList;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class BinaryTree<T> implements BinaryTreeI<T>{
 	private BinaryNode<Integer> root;
 	 /*
-     * ÏÈĞò´´½¨¶ş²æÊ÷
-     * ·µ»Ø£º¸ù½Úµã
+     * å…ˆåºåˆ›å»ºäºŒå‰æ ‘
+     * è¿”å›ï¼šæ ¹èŠ‚ç‚¹
      */
     public BinaryNode<T>  creatBinaryPre(LinkedList<T> treeData)
     {
@@ -30,77 +30,77 @@ public class BinaryTree<T> implements BinaryTreeI<T>{
 
 	@Override
 	public boolean idEmpty() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return root.data==null;
 	}
 
 	@Override
 	public int count() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return 0;
 	}
 
 	@Override
 	public int height() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return 0;
 	}
 
 	@Override
 	public int childCount(BinaryNode<T> t) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return 0;
 	}
 
 	@Override
 	public void preOrder() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 
 	}
 
 	@Override
 	public void postOrder() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 
 	}
 
 	@Override
 	public void levelOrder() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 
 	}
-	//²éÕÒ½Úµã
+	//æŸ¥æ‰¾èŠ‚ç‚¹
 	@Override
 	public BinaryNode<Integer> find(int key) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		BinaryNode<Integer> current = root;
 		while(current != null){
-			if(current.data > key){//µ±Ç°Öµ±È²éÕÒÖµ´ó£¬ËÑË÷×ó×ÓÊ÷
+			if(current.data > key){//å½“å‰å€¼æ¯”æŸ¥æ‰¾å€¼å¤§ï¼Œæœç´¢å·¦å­æ ‘
 				current = current.lchild;
-			}else if(current.data < key){//µ±Ç°Öµ±È²éÕÒÖµĞ¡£¬ËÑË÷ÓÒ×ÓÊ÷
+			}else if(current.data < key){//å½“å‰å€¼æ¯”æŸ¥æ‰¾å€¼å°ï¼Œæœç´¢å³å­æ ‘
 				current = current.rchild;
 			}else{
 				return current;
 			}
 		}
-		return null;//±éÀúÍêÕû¸öÊ÷Ã»ÕÒµ½£¬·µ»Ønull
+		return null;//éå†å®Œæ•´ä¸ªæ ‘æ²¡æ‰¾åˆ°ï¼Œè¿”å›null
 	}
 
 	@Override
 	public boolean insert(int data) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return false;
 	}
 
 	@Override
 	public BinaryNode<?> findMax() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return null;
 	}
 
 	@Override
 	public BinaryNode<?> findMin() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return null;
 	}
 

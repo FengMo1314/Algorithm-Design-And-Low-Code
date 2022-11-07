@@ -1,10 +1,10 @@
 /**
  *
  */
-package f20220708¿ÎÌÃÊµ¼ùÂùÁ¦Ëã·¨;
+package f20220708è¯¾å ‚å®è·µè›®åŠ›ç®—æ³•;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T8 {
@@ -12,26 +12,26 @@ public class T8 {
 	/**
 	 * @param args
 	 */
-	// ÂùÁ¦·¨½â¾öÍ¹°üÎÊÌâ£¬·µ»Øµã¼¯ºÏÖĞÍ¹¶à±ßĞÎµÄµã¼¯ºÏ
+	// è›®åŠ›æ³•è§£å†³å‡¸åŒ…é—®é¢˜ï¼Œè¿”å›ç‚¹é›†åˆä¸­å‡¸å¤šè¾¹å½¢çš„ç‚¹é›†åˆ
 	public static Point[] getConvexPoint(Point[] A) {
 		Point[] result = new Point[A.length];
-		int len = 0; // ÓÃÓÚ¼ÆËã×îÖÕ·µ»Ø½á¹ûÖĞÊÇÍ¹°üÖĞµãµÄ¸öÊı
+		int len = 0; // ç”¨äºè®¡ç®—æœ€ç»ˆè¿”å›ç»“æœä¸­æ˜¯å‡¸åŒ…ä¸­ç‚¹çš„ä¸ªæ•°
 		for (int i = 0; i < A.length; i++) {
 			for (int j = 0; j < A.length; j++) {
-				if (j == i) // ³ıÈ¥Ñ¡ÖĞ×÷ÎªÈ·¶¨Ö±ÏßµÄµÚÒ»¸öµã
+				if (j == i) // é™¤å»é€‰ä¸­ä½œä¸ºç¡®å®šç›´çº¿çš„ç¬¬ä¸€ä¸ªç‚¹
 					continue;
 
-				int[] judge = new int[A.length]; // ´æ·Åµãµ½Ö±Ïß¾àÀëËùÊ¹ÓÃÅĞ¶Ï¹«Ê½µÄ½á¹û
+				int[] judge = new int[A.length]; // å­˜æ”¾ç‚¹åˆ°ç›´çº¿è·ç¦»æ‰€ä½¿ç”¨åˆ¤æ–­å…¬å¼çš„ç»“æœ
 
 				for (int k = 0; k < A.length; k++) {
 					int a = A[j].getY() - A[i].getY();
 					int b = A[i].getX() - A[j].getX();
 					int c = (A[i].getX()) * (A[j].getY()) - (A[i].getY()) * (A[j].getX());
 
-					judge[k] = a * (A[k].getX()) + b * (A[k].getY()) - c; // ¸ù¾İ¹«Ê½¼ÆËã¾ßÌåÅĞ¶Ï½á¹û
+					judge[k] = a * (A[k].getX()) + b * (A[k].getY()) - c; // æ ¹æ®å…¬å¼è®¡ç®—å…·ä½“åˆ¤æ–­ç»“æœ
 				}
 
-				if (JudgeArray(judge)) { // Èç¹ûµã¾ùÔÚÖ±ÏßµÄÒ»±ß,ÔòÏàÓ¦µÄA[i]ÊÇÍ¹°üÖĞµÄµã
+				if (JudgeArray(judge)) { // å¦‚æœç‚¹å‡åœ¨ç›´çº¿çš„ä¸€è¾¹,åˆ™ç›¸åº”çš„A[i]æ˜¯å‡¸åŒ…ä¸­çš„ç‚¹
 					result[len++] = A[i];
 					break;
 				}
@@ -43,7 +43,7 @@ public class T8 {
 		return result1;
 	}
 
-	// ÅĞ¶ÏÊı×éÖĞÔªËØÊÇ·ñÈ«²¿´óÓÚµÈÓÚ0»òÕßĞ¡ÓÚµÈÓÚ0£¬Èç¹ûÊÇÔò·µ»Øtrue£¬·ñÔò·µ»Øfalse
+	// åˆ¤æ–­æ•°ç»„ä¸­å…ƒç´ æ˜¯å¦å…¨éƒ¨å¤§äºç­‰äº0æˆ–è€…å°äºç­‰äº0ï¼Œå¦‚æœæ˜¯åˆ™è¿”å›trueï¼Œå¦åˆ™è¿”å›false
 	public static boolean JudgeArray(int[] Array) {
 		boolean judge = false;
 		int len1 = 0, len2 = 0;
@@ -90,7 +90,7 @@ public class T8 {
 		A[7] = new Point(5, 5);
 		A[8] = new Point(6, 2);
 		Point[] result = getConvexPoint(A);
-		System.out.println("¼¯ºÏAÖĞÂú×ãÍ¹°üµÄµã¼¯Îª£º");
+		System.out.println("é›†åˆAä¸­æ»¡è¶³å‡¸åŒ…çš„ç‚¹é›†ä¸ºï¼š");
 		for (Point element : result)
 			System.out.println(element.toString());
 	}

@@ -5,10 +5,10 @@ package unit_2_2_Assignment_rj0509;
 
 import java.util.Scanner;
 
-import gather_¼¯ºÏ.linked_Á´±í.SortLinkedList;
+import gather_é›†åˆ.linked_é“¾è¡¨.SortLinkedList;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T32 {
@@ -17,14 +17,14 @@ public class T32 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Scanner sc = new Scanner(System.in);
 		SortLinkedList<Integer> sll = new SortLinkedList<>();
 		for (int i = 0; i < 10; i++) {
-			System.out.println("ÇëÊäÈë10¸öÖµ£¬ÕâÊÇµÚ"+(i+1)+"¸ö:");
+			System.out.println("è¯·è¾“å…¥10ä¸ªå€¼ï¼Œè¿™æ˜¯ç¬¬"+(i+1)+"ä¸ª:");
 			sll.insert(sc.nextInt());
 		}
-		System.out.println("×îÖÕÊı¾İ");
+		System.out.println("æœ€ç»ˆæ•°æ®");
 		sll.printList();
 		sc.close();
 	}

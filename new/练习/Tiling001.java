@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Tiling001 {
@@ -12,7 +12,7 @@ public class Tiling001 {
 	/**
 	 * @param args
 	 */
-	// todo: Ê¹ÓÃ¶¯Ì¬¹æ»®¼ÆËãµØ×©µÄÆÌ·¨
+	// todo: ä½¿ç”¨åŠ¨æ€è§„åˆ’è®¡ç®—åœ°ç –çš„é“ºæ³•
 	private static int ways(int n) {
 		if (n == 1 || n == 2)
 			return n;
@@ -20,7 +20,7 @@ public class Tiling001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(ways(4) == 5);
 		System.out.println(ways(3) == 3);
 	}

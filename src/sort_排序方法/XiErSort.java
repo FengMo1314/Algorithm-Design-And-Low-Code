@@ -1,21 +1,21 @@
 /**
  *
  */
-package sort_ÅÅĞò·½·¨;
+package sort_æ’åºæ–¹æ³•;
 
 /**
- * @author ÁøºÍ(±¾µØ)
- *  ²åÈëÀàÅÅĞò
+ * @author æŸ³å’Œ(æœ¬åœ°)
+ *  æ’å…¥ç±»æ’åº
  */
 public class XiErSort {
 	/*
-	 * Ï£¶ûÅÅĞò
+	 * å¸Œå°”æ’åº
 	 */
 	public static void shellSort(int[] a) {
-		int h = 1;// ¼ÆËã³ö×î´óµÄhÖµ
+		int h = 1;// è®¡ç®—å‡ºæœ€å¤§çš„hå€¼
 
 		while (h <= a.length / 3) {
-			// Ê¹ÓÃKnuthÔöÁ¿ĞòÁĞ
+			// ä½¿ç”¨Knuthå¢é‡åºåˆ—
 			h = h * 3 + 1;
 		}
 		while (h > 0) {
@@ -30,7 +30,7 @@ public class XiErSort {
 					a[j + h] = tmp;
 				}
 			}
-			// ¼ÆËã³öÏÂÒ»¸öhÖµ
+			// è®¡ç®—å‡ºä¸‹ä¸€ä¸ªhå€¼
 			h = (h - 1) / 3;
 		}
 	}

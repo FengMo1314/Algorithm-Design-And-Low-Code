@@ -1,12 +1,12 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 import java.util.Arrays;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Kp001 {
@@ -18,15 +18,15 @@ public class Kp001 {
 	public static int[] bestSolution;
 
 	/**
-	 * ËÑË÷´ò°ü·½°¸
+	 * æœç´¢æ‰“åŒ…æ–¹æ¡ˆ
 	 *
-	 * @param capacity µ±Ç°¿É×°ÎïÆ·×ÜÖØÁ¿ÏŞÖÆ
-	 * @param value    µ±Ç°ÎïÆ·×Ü¼ÛÖµ
-	 * @param idx      µ±Ç°×°µÄÎïÆ·
-	 * @param x        µ±Ç°µÄ×°ÔØ·½°¸
-	 * @param w        ÎïÆ·ÖØÁ¿
-	 * @param v        ÎïÆ·¼ÛÖµ
-	 * @param n        ÎïÆ·ÊıÁ¿
+	 * @param capacity å½“å‰å¯è£…ç‰©å“æ€»é‡é‡é™åˆ¶
+	 * @param value    å½“å‰ç‰©å“æ€»ä»·å€¼
+	 * @param idx      å½“å‰è£…çš„ç‰©å“
+	 * @param x        å½“å‰çš„è£…è½½æ–¹æ¡ˆ
+	 * @param w        ç‰©å“é‡é‡
+	 * @param v        ç‰©å“ä»·å€¼
+	 * @param n        ç‰©å“æ•°é‡
 	 */
 	public static void knapsack(int capacity, int value, int idx, int[] x, int[] w, int[] v, int n) {
 
@@ -40,16 +40,16 @@ public class Kp001 {
 			idx++;
 		}
 		for (int i = 0; i < idx; i++) {
-			if (capacity >= w[idx]) {// ÖØÁ¿ÏŞ¶î³¬¹ıËùÓĞÎïÆ·ÖØÁ¿
-				capacity = capacity - w[idx];// ¸üĞÂÖØÁ¿ÏŞ¶î
-				value = value + v[i];// µ±Ç°ÎïÆ·¼ÛÖµÔö¼Óµ¥¸öÎïÆ·¼ÛÖµ
-				x[idx] = 1;// ±ê¼Ç×°ÔØ·½°¸
+			if (capacity >= w[idx]) {// é‡é‡é™é¢è¶…è¿‡æ‰€æœ‰ç‰©å“é‡é‡
+				capacity = capacity - w[idx];// æ›´æ–°é‡é‡é™é¢
+				value = value + v[i];// å½“å‰ç‰©å“ä»·å€¼å¢åŠ å•ä¸ªç‰©å“ä»·å€¼
+				x[idx] = 1;// æ ‡è®°è£…è½½æ–¹æ¡ˆ
 			}
 		}
 		idx--;
-		if (best < value) {// ¸üĞÂ×î¼Ñ·½°¸µÄ¼ÛÖµ
+		if (best < value) {// æ›´æ–°æœ€ä½³æ–¹æ¡ˆçš„ä»·å€¼
 			best = value;
-			bestSolution = x.clone();// ¸üĞÂ×îÓÅ×°ÔØ·½°¸
+			bestSolution = x.clone();// æ›´æ–°æœ€ä¼˜è£…è½½æ–¹æ¡ˆ
 		}
 		if (idx == 0) {
 			return;
@@ -59,7 +59,7 @@ public class Kp001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int b = 10;
 		int[] v = { 1, 3, 5, 9 };
 		int[] w = { 2, 3, 4, 7 };

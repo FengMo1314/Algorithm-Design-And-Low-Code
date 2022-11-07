@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Lcs002 {
@@ -13,26 +13,26 @@ public class Lcs002 {
 	 * @param args
 	 */
 	/**
-	 * ÓÃ¶¯Ì¬¹æ»®¼ÆËã×î³¤×ÓĞòÁĞµÄ³¤¶È
+	 * ç”¨åŠ¨æ€è§„åˆ’è®¡ç®—æœ€é•¿å­åºåˆ—çš„é•¿åº¦
 	 *
-	 * @param X ×Ö·û´®X
-	 * @param Y ×Ö·û´®Y
-	 * @param m ×Ö·û´®XµÄ³¤¶È
-	 * @param n ×Ö·û´®YµÄ³¤¶È
-	 * @return ×î³¤×ÓĞòÁĞµÄ³¤¶È
+	 * @param X å­—ç¬¦ä¸²X
+	 * @param Y å­—ç¬¦ä¸²Y
+	 * @param m å­—ç¬¦ä¸²Xçš„é•¿åº¦
+	 * @param n å­—ç¬¦ä¸²Yçš„é•¿åº¦
+	 * @return æœ€é•¿å­åºåˆ—çš„é•¿åº¦
 	 */
 	public static int lcs(char[] X, char[] Y, int m, int n) {
 		if (m == 0 || n == 0) {
 			return 0;
 		}
 		int[][] c = new int[m + 1][n + 1];
-		// todo: ÓÃ¶¯Ì¬¹æ»®¼ÆËã×î³¤×ÓĞòÁĞµÄ³¤¶È
+		// todo: ç”¨åŠ¨æ€è§„åˆ’è®¡ç®—æœ€é•¿å­åºåˆ—çš„é•¿åº¦
 		for (int i = 1; i <= m; i++) {
 			for (int j = 1; j <= n; j++) {
-				if (X[i - 1] == Y[j - 1]) {// ÏÂ±ê´ÓÁã¿ªÊ¼£¬Èç¹ûµ±Ç°µÄ×Ö·ûÏàÍ¬£¬Ôò¹«¹²×ÓĞòÁĞµÄ³¤¶ÈÎª¸Ã×Ö·ûÇ°µÄ×î³¤¹«¹²ĞòÁĞ
+				if (X[i - 1] == Y[j - 1]) {// ä¸‹æ ‡ä»é›¶å¼€å§‹ï¼Œå¦‚æœå½“å‰çš„å­—ç¬¦ç›¸åŒï¼Œåˆ™å…¬å…±å­åºåˆ—çš„é•¿åº¦ä¸ºè¯¥å­—ç¬¦å‰çš„æœ€é•¿å…¬å…±åºåˆ—
 					c[i][j] = c[i - 1][j - 1] + 1;
 				} else {
-					if (c[i][j - 1] >= c[i - 1][j]) {// Á½ÕßÕÒ×î´óÖµ
+					if (c[i][j - 1] >= c[i - 1][j]) {// ä¸¤è€…æ‰¾æœ€å¤§å€¼
 						c[i][j] = c[i][j - 1];
 					} else {
 						c[i][j] = c[i - 1][j];
@@ -44,7 +44,7 @@ public class Lcs002 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(lcs("".toCharArray(), "GXTXAYB".toCharArray(), "".length(), "GXTXAYB".length()) == 0);
 		System.out.println(lcs("AGGTAB".toCharArray(), "".toCharArray(), "AGGTAB".length(), "".length()) == 0);
 		System.out.println(

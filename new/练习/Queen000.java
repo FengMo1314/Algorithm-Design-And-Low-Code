@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Queen000 {
@@ -13,10 +13,10 @@ public class Queen000 {
 	 * @param args
 	 */
 	/**
-	 * ´òÓ¡ÆåÅÌ
+	 * æ‰“å°æ£‹ç›˜
 	 *
-	 * @param board ÆåÅÌ
-	 * @param n     ÆåÅÌ´óĞ¡
+	 * @param board æ£‹ç›˜
+	 * @param n     æ£‹ç›˜å¤§å°
 	 */
 	public static void printBoard(int[][] board, int n) {
 		for (int i = 0; i < n; i++) {
@@ -28,7 +28,7 @@ public class Queen000 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int queen = 4;
 		int[][] board = new int[queen][queen];
 		board[0][0] = 1;

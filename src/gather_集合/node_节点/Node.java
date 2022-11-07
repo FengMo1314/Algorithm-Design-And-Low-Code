@@ -1,20 +1,20 @@
-package gather_¼¯ºÏ.node_½Úµã;
+package gather_é›†åˆ.node_èŠ‚ç‚¹;
 
 
 
 public class Node<T> {
-	/* µ¥Á´±í½ÚµãÀà */
-	/** Êı¾İÓò£¬´æ´¢Êı¾İÔªËØ */
+	/* å•é“¾è¡¨èŠ‚ç‚¹ç±» */
+	/** æ•°æ®åŸŸï¼Œå­˜å‚¨æ•°æ®å…ƒç´  */
 	public T data;
 
-	/** µØÖ·Óò£¬ÒıÓÃºóĞø½áµã */
+	/** åœ°å€åŸŸï¼Œå¼•ç”¨åç»­ç»“ç‚¹ */
 	public Node<T> next;
 
 	/**
-	 * ÓÉÖ¸¶¨µÄÁ½¸öÓòÀ´¹¹Ôì½áµã
+	 * ç”±æŒ‡å®šçš„ä¸¤ä¸ªåŸŸæ¥æ„é€ ç»“ç‚¹
 	 *
-	 * @param data Êı¾İÓò
-	 * @param next µØÖ·Óò
+	 * @param data æ•°æ®åŸŸ
+	 * @param next åœ°å€åŸŸ
 	 */
 	public Node(T data, Node<T> next) {
 		this.data = data;
@@ -22,16 +22,16 @@ public class Node<T> {
 	}
 
 	/**
-	 * ¿Õ¹¹Ôì
+	 * ç©ºæ„é€ 
 	 */
 	public Node() {
 		this(null, null);
 	}
 
 	/**
-	 * ·µ»Ø½áµãÊı¾İÓòµÄÃèÊö×Ö·û´®
+	 * è¿”å›ç»“ç‚¹æ•°æ®åŸŸçš„æè¿°å­—ç¬¦ä¸²
 	 *
-	 * @return Êı¾İÓòÃèÊö×Ö·û´®
+	 * @return æ•°æ®åŸŸæè¿°å­—ç¬¦ä¸²
 	 */
 	@Override
 	public String toString() {

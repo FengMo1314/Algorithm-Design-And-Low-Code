@@ -1,13 +1,13 @@
 /**
  *
  */
-package ¿ÎÌÃÁ·Ï°;
+package è¯¾å ‚ç»ƒä¹ ;
 
-import random_Ëæ»úÊıÉú³ÉÆ÷.RandomGenerator;
-import stopWatch_¼ÆÊ±Æ÷.StopWatch;
+import random_éšæœºæ•°ç”Ÿæˆå™¨.RandomGenerator;
+import stopWatch_è®¡æ—¶å™¨.StopWatch;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Test4 {
@@ -16,14 +16,14 @@ public class Test4 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		StopWatch s = new StopWatch();
 		s.start();
 		int a[] = RandomGenerator.uniformInts(100000000);
-		int h = 1;// ¼ÆËã³ö×î´óµÄhÖµ
+		int h = 1;// è®¡ç®—å‡ºæœ€å¤§çš„hå€¼
 
 		while (h <= a.length / 3) {
-			// Ê¹ÓÃKnuthÔöÁ¿ĞòÁĞ
+			// ä½¿ç”¨Knuthå¢é‡åºåˆ—
 			h = h * 3 + 1;
 		}
 		while (h > 0) {
@@ -38,7 +38,7 @@ public class Test4 {
 					a[j + h] = tmp;
 				}
 			}
-			// ¼ÆËã³öÏÂÒ»¸öhÖµ(h - 1)/ 3;h =100%
+			// è®¡ç®—å‡ºä¸‹ä¸€ä¸ªhå€¼(h - 1)/ 3;h =100%
 			h = (h - 1) / 3;
 		}
 		s.stop();

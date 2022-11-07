@@ -1,12 +1,12 @@
 /**
  * 
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 import java.util.Arrays;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Kp002 {
@@ -22,13 +22,13 @@ public class Kp002 {
     }
 
     /**
-     * ¼ì²éÊÇ·ñÂú×ãÉÏ±ß½ç
-     * @param capacity Ê£ÓàÈİÁ¿
-     * @param value µ±Ç°ÎïÆ·×Ü¼ÛÖµ
-     * @param idx µ±Ç°×°µÄÎïÆ·
-     * @param items ÎïÆ·
-     * @param n ÎïÆ·¸öÊı
-     * @return ÊÇ·ñÂú×ãÉÏ±ß½ç
+     * æ£€æŸ¥æ˜¯å¦æ»¡è¶³ä¸Šè¾¹ç•Œ
+     * @param capacity å‰©ä½™å®¹é‡
+     * @param value å½“å‰ç‰©å“æ€»ä»·å€¼
+     * @param idx å½“å‰è£…çš„ç‰©å“
+     * @param items ç‰©å“
+     * @param n ç‰©å“ä¸ªæ•°
+     * @return æ˜¯å¦æ»¡è¶³ä¸Šè¾¹ç•Œ
      */
     public static boolean checkBranch(int capacity, int value, int idx, Item[] items, int n) {
         if (capacity <= 0 || idx + 1 >= n) {
@@ -40,13 +40,13 @@ public class Kp002 {
     }
 
     /**
-     * ËÑË÷´ò°ü·½°¸
-     * @param capacity Ê£ÓàÈİÁ¿
-     * @param value µ±Ç°ÎïÆ·×Ü¼ÛÖµ
-     * @param idx µ±Ç°×°µÄÎïÆ·
-     * @param x µ±Ç°µÄ×°ÔØ·½°¸
-     * @param items ÎïÆ·
-     * @param n ÎïÆ·¸öÊı
+     * æœç´¢æ‰“åŒ…æ–¹æ¡ˆ
+     * @param capacity å‰©ä½™å®¹é‡
+     * @param value å½“å‰ç‰©å“æ€»ä»·å€¼
+     * @param idx å½“å‰è£…çš„ç‰©å“
+     * @param x å½“å‰çš„è£…è½½æ–¹æ¡ˆ
+     * @param items ç‰©å“
+     * @param n ç‰©å“ä¸ªæ•°
      */
     public static void knapsack(int capacity, int value, int idx, int[] x, Item[] items, int n) {
 
@@ -63,7 +63,7 @@ public class Kp002 {
         }
     }
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		  int b = 10;
 	        Item[] items = new Item[] {
 	          new Item(1, 2), new Item(3, 3), new Item(5, 4), new Item(9, 7)

@@ -1,21 +1,21 @@
-package gather_¼¯ºÏ.node_½Úµã;
+package gather_é›†åˆ.node_èŠ‚ç‚¹;
 
 public class DoubleNode<T> extends Node<T>{
-	/*Ë«Á´±í½ÚµãÀà*/
-	  /** Êı¾İÓò£¬´æ´¢Êı¾İÔªËØ */
+	/*åŒé“¾è¡¨èŠ‚ç‚¹ç±»*/
+	  /** æ•°æ®åŸŸï¼Œå­˜å‚¨æ•°æ®å…ƒç´  */
     public T data;
 
-    /** µØÖ·Óò£¬ÒıÓÃºóĞø½áµã */
+    /** åœ°å€åŸŸï¼Œå¼•ç”¨åç»­ç»“ç‚¹ */
     public DoubleNode<T> next;
 
-    /** µØÖ·Óò£¬ÒıÓÃÇ°Çı½áµã */
+    /** åœ°å€åŸŸï¼Œå¼•ç”¨å‰é©±ç»“ç‚¹ */
     public DoubleNode<T> prev;
 
     /**
-     * ÓÉÖ¸¶¨ÓòÀ´¹¹Ôì½áµã
-     * @param data Êı¾İÓò
-     * @param next µØÖ·Óò£¬ÒıÓÃºóĞø½áµã
-     * @param prev µØÖ·Óò£¬ÒıÓÃÇ°Çı½áµã
+     * ç”±æŒ‡å®šåŸŸæ¥æ„é€ ç»“ç‚¹
+     * @param data æ•°æ®åŸŸ
+     * @param next åœ°å€åŸŸï¼Œå¼•ç”¨åç»­ç»“ç‚¹
+     * @param prev åœ°å€åŸŸï¼Œå¼•ç”¨å‰é©±ç»“ç‚¹
      */
     public DoubleNode(T data, DoubleNode<T> next, DoubleNode<T> prev) {
         this.data = data;
@@ -24,15 +24,15 @@ public class DoubleNode<T> extends Node<T>{
     }
 
     /**
-     * ¿Õ¹¹Ôì
+     * ç©ºæ„é€ 
      */
     public DoubleNode() {
         this(null, null, null);
     }
 
     /**
-     * ·µ»Ø½áµãÊı¾İÓòµÄÃèÊö×Ö·û´®
-     * @return Êı¾İÓòÃèÊö×Ö·û´®
+     * è¿”å›ç»“ç‚¹æ•°æ®åŸŸçš„æè¿°å­—ç¬¦ä¸²
+     * @return æ•°æ®åŸŸæè¿°å­—ç¬¦ä¸²
      */
     @Override
     public String toString() {

@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Image001 {
@@ -13,13 +13,13 @@ public class Image001 {
 	 * @param args
 	 */
 	/**
-	 * Çó¸ø¶¨ÕûÊıµÄ¶ş½øÖÆÎ»Êı
+	 * æ±‚ç»™å®šæ•´æ•°çš„äºŒè¿›åˆ¶ä½æ•°
 	 *
-	 * @param i ÕıÕûÊı
-	 * @return ¶ş½øÖÆÎ»Êı
+	 * @param i æ­£æ•´æ•°
+	 * @return äºŒè¿›åˆ¶ä½æ•°
 	 */
 	public static int binaryLength(int i) {
-		// todo: ¼ÆËã¸ø¶¨ÕûÊıµÄ¶ş½øÖÆÎ»Êı
+		// todo: è®¡ç®—ç»™å®šæ•´æ•°çš„äºŒè¿›åˆ¶ä½æ•°
 		int sum = 1;
 		i = i / 2;
 		while (i > 0) {
@@ -30,7 +30,7 @@ public class Image001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(binaryLength(1) == 1);
 		System.out.println(binaryLength(6) == 3);
 		System.out.println(binaryLength(255) == 8);

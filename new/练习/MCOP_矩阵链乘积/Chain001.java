@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MCOP_¾ØÕóÁ´³Ë»ı;
+package ç»ƒä¹ .MCOP_çŸ©é˜µé“¾ä¹˜ç§¯;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Chain001 {
@@ -13,16 +13,16 @@ public class Chain001 {
 	 * @param args
 	 */
 	/**
-	 * Çó¾ØÕóÁ´×îÉÙµÄÏà³Ë´ÎÊı
+	 * æ±‚çŸ©é˜µé“¾æœ€å°‘çš„ç›¸ä¹˜æ¬¡æ•°
 	 *
-	 * @param p ¾ØÕóÁ´
-	 * @param i ×ó±ß½ç
-	 * @param j ÓÒ±ß½ç
-	 * @return ×îÉÙµÄÏà³Ë´ÎÊı
+	 * @param p çŸ©é˜µé“¾
+	 * @param i å·¦è¾¹ç•Œ
+	 * @param j å³è¾¹ç•Œ
+	 * @return æœ€å°‘çš„ç›¸ä¹˜æ¬¡æ•°
 	 */
-	// todo: ÓÃµİ¹éÇó½â¾ØÕóÁ´×îÉÙµÄÏà³Ë´ÎÊı
+	// todo: ç”¨é€’å½’æ±‚è§£çŸ©é˜µé“¾æœ€å°‘çš„ç›¸ä¹˜æ¬¡æ•°
 	public static int matrixChain(int[] p, int i, int j) {
-		if (i == j) {// µ±i==jÊ±ÊÇÍ¬Ò»¾ØÕó²»ĞèÒªÏà³Ë
+		if (i == j) {// å½“i==jæ—¶æ˜¯åŒä¸€çŸ©é˜µä¸éœ€è¦ç›¸ä¹˜
 			return 0;
 		}
 		int min = 999999999;
@@ -38,7 +38,7 @@ public class Chain001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[] matrices = new int[] { 40, 20 };
 		System.out.println(matrixChain(matrices, 1, matrices.length - 1) == 0);
 

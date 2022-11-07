@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Queen001 {
@@ -13,15 +13,15 @@ public class Queen001 {
 	 * @param args
 	 */
 	/**
-	 * ÊÇ·ñ¿ÉÒÔÔÚÖ¸¶¨Î»ÖÃ·Å»Êºó ¼ÙÉè·ÅÔÚÏÖÓĞÁĞµÄÓÒ±ß
+	 * æ˜¯å¦å¯ä»¥åœ¨æŒ‡å®šä½ç½®æ”¾çš‡å å‡è®¾æ”¾åœ¨ç°æœ‰åˆ—çš„å³è¾¹
 	 *
-	 * @param board ÆåÅÌ
-	 * @param row   ĞĞ
-	 * @param col   ÁĞ
-	 * @return ÊÇ·ñ¿ÉÒÔ·ÅÖÃ
+	 * @param board æ£‹ç›˜
+	 * @param row   è¡Œ
+	 * @param col   åˆ—
+	 * @return æ˜¯å¦å¯ä»¥æ”¾ç½®
 	 */
-	// todo: ÊÇ·ñ¿ÉÒÔÔÚÖ¸¶¨Î»ÖÃ·Å»Êºó
-	public static boolean isValid(int[][] board, int row, int col) {// ¸Ã·½·¨ÓĞÎÊÌâ
+	// todo: æ˜¯å¦å¯ä»¥åœ¨æŒ‡å®šä½ç½®æ”¾çš‡å
+	public static boolean isValid(int[][] board, int row, int col) {// è¯¥æ–¹æ³•æœ‰é—®é¢˜
 		if (row == 0) {
 			for (int i = 0; i <= col; i++) {
 				if (board[0][i] != 0) {
@@ -51,9 +51,9 @@ public class Queen001 {
 
 	static boolean check(int res[][], int x, int y) {
 		for (int i = 0; i < res.length; i++) {
-			// ×İ£ºres[x][i] ÓĞ·µ»Øfalse
+			// çºµï¼šres[x][i] æœ‰è¿”å›false
 			if ((res[x][i] != 0) || (res[i][y] != 0))
-				return false; // ºá£ºres[i][y] ÓĞ·µ»Øfalse
+				return false; // æ¨ªï¼šres[i][y] æœ‰è¿”å›false
 			for (int j = 0; j < res.length; j++) {
 				if (i + j == x + y && res[i][j] != 0)
 					return false;
@@ -65,11 +65,11 @@ public class Queen001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int queen = 4;
 		int[][] board = new int[queen][queen];
 		board[0][0] = 1;
-		// Ä¬ÈÏ²»·ÅÔÚÍ¬Ò»ÁĞ£¬·ÅÔÚÏÖÓĞÁĞµÄÓÒ±ß
+		// é»˜è®¤ä¸æ”¾åœ¨åŒä¸€åˆ—ï¼Œæ”¾åœ¨ç°æœ‰åˆ—çš„å³è¾¹
 //		System.out.println(!isValid(board, 0, 1));
 //		System.out.println(!isValid(board, 1, 1));
 //		System.out.println(!isValid(board, 2, 2));

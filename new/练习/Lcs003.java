@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Lcs003 {
@@ -13,47 +13,47 @@ public class Lcs003 {
 	 * @param args
 	 */
 	/**
-	 * ×î´ó×ÓĞòÁĞ
+	 * æœ€å¤§å­åºåˆ—
 	 */
 	public static String subString = "";
 
 	/**
-	 * ¸ù¾İ±ê¼Çº¯Êı×·×Ù½âµÃµ½×î´ó×ÓĞòÁĞ
+	 * æ ¹æ®æ ‡è®°å‡½æ•°è¿½è¸ªè§£å¾—åˆ°æœ€å¤§å­åºåˆ—
 	 *
-	 * @param track ±ê¼Ç¾ØÕó
-	 * @param X     ×Ö·û´®X
-	 * @param i     ±ê¼Ç¾ØÕóĞĞ×ø±ê
-	 * @param j     ±ê¼Ç¾ØÕóÁĞ×ø±ê
+	 * @param track æ ‡è®°çŸ©é˜µ
+	 * @param X     å­—ç¬¦ä¸²X
+	 * @param i     æ ‡è®°çŸ©é˜µè¡Œåæ ‡
+	 * @param j     æ ‡è®°çŸ©é˜µåˆ—åæ ‡
 	 */
 	public static void getLCS(int[][] track, char[] X, int i, int j) {
 		if (i == 0 || j == 0) {
 			return;
 		}
 
-		// todo: ×·×Ù½âµÃµ½×î´ó×ÓĞòÁĞ
+		// todo: è¿½è¸ªè§£å¾—åˆ°æœ€å¤§å­åºåˆ—
 
 	}
 
 	/**
-	 * ÓÃ¶¯Ì¬¹æ»®¼ÆËã×î³¤×ÓĞòÁĞµÄ³¤¶È
+	 * ç”¨åŠ¨æ€è§„åˆ’è®¡ç®—æœ€é•¿å­åºåˆ—çš„é•¿åº¦
 	 *
-	 * @param X ×Ö·û´®X
-	 * @param Y ×Ö·û´®Y
-	 * @param m ×Ö·û´®XµÄ³¤¶È
-	 * @param n ×Ö·û´®YµÄ³¤¶È
-	 * @return ×î³¤×ÓĞòÁĞµÄ³¤¶È
+	 * @param X å­—ç¬¦ä¸²X
+	 * @param Y å­—ç¬¦ä¸²Y
+	 * @param m å­—ç¬¦ä¸²Xçš„é•¿åº¦
+	 * @param n å­—ç¬¦ä¸²Yçš„é•¿åº¦
+	 * @return æœ€é•¿å­åºåˆ—çš„é•¿åº¦
 	 */
 	public static int lcs(char[] X, char[] Y, int m, int n) {
 		if (m == 0 || n == 0) {
 			return 0;
 		}
 
-		// todo: ÓÃ¶¯Ì¬¹æ»®¼ÆËã×î³¤×ÓĞòÁĞµÄ³¤¶È£¬²¢±£´æ±ê¼Ç
+		// todo: ç”¨åŠ¨æ€è§„åˆ’è®¡ç®—æœ€é•¿å­åºåˆ—çš„é•¿åº¦ï¼Œå¹¶ä¿å­˜æ ‡è®°
            return 0;
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		subString = "";
 		System.out.println(lcs("".toCharArray(), "GXTXAYB".toCharArray(), "".length(), "GXTXAYB".length()) == 0);
 		System.out.println(subString.length() == 0);

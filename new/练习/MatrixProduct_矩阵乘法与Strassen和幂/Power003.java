@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MatrixProduct_¾ØÕó³Ë·¨ÓëStrassenºÍÃİ;
+package ç»ƒä¹ .MatrixProduct_çŸ©é˜µä¹˜æ³•ä¸Strassenå’Œå¹‚;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Power003 {
@@ -15,7 +15,7 @@ public class Power003 {
 	public static int[][] createMatrix() {
 		int[][] matrix = new int[5][5];
 
-		// todo: ÉèµÚ 1 ĞĞ£¬µÚ 1 ÁĞÎª 25; Ö®ºóÃ¿Ò»¸öÊı¶¼±ÈÇ°Ò»¸öÊıĞ¡ 1£¨·ÃÎÊË³Ğò¼ÙÉèÎª´Ó×óµ½ÓÒ£¬´ÓÉÏµ½ÏÂ£©
+		// todo: è®¾ç¬¬ 1 è¡Œï¼Œç¬¬ 1 åˆ—ä¸º 25; ä¹‹åæ¯ä¸€ä¸ªæ•°éƒ½æ¯”å‰ä¸€ä¸ªæ•°å° 1ï¼ˆè®¿é—®é¡ºåºå‡è®¾ä¸ºä»å·¦åˆ°å³ï¼Œä»ä¸Šåˆ°ä¸‹ï¼‰
 		int f = 25;
 		for (int i = 0; i < matrix.length; i++) {
 			for (int j = 0; j < matrix[i].length; j++) {
@@ -28,7 +28,7 @@ public class Power003 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] matrix = createMatrix();
 		System.out.println(matrix[0][4] == 21);
 		System.out.println(matrix[1][2] == 18);

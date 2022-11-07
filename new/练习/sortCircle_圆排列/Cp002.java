@@ -1,12 +1,12 @@
 /**
  * 
  */
-package Á·Ï°.sortCircle_Ô²ÅÅÁĞ;
+package ç»ƒä¹ .sortCircle_åœ†æ’åˆ—;
 
 import java.util.Stack;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Cp002 {
@@ -15,18 +15,18 @@ public class Cp002 {
 	 * @param args
 	 */
 	/**
-     * ¼ÆËã´ú¼Ûº¯ÊıÏÂ½ç
-     * @param circles Ô²µÄ¼¯ºÏ
-     * @param packed ÒÑ¾­ÅÅºÃµÄÔ²
-     * @return ´ú¼Ûº¯ÊıÏÂ½ç
+     * è®¡ç®—ä»£ä»·å‡½æ•°ä¸‹ç•Œ
+     * @param circles åœ†çš„é›†åˆ
+     * @param packed å·²ç»æ’å¥½çš„åœ†
+     * @return ä»£ä»·å‡½æ•°ä¸‹ç•Œ
      */
-    // todo: ¼ÆËã´ú¼Ûº¯ÊıÏÂ½ç
+    // todo: è®¡ç®—ä»£ä»·å‡½æ•°ä¸‹ç•Œ
     public static double lowerBound(Circle[] circles, Stack<Circle> packed) {
        
        return "w".hashCode();
     }
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Circle c1 = new Circle(1, 1);
         Circle c2 = new Circle(4, 2);
         Circle c3 = new Circle(9, 3);

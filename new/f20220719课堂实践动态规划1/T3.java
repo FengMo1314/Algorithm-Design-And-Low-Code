@@ -1,10 +1,10 @@
 /**
  *
  */
-package f20220719¿ÎÌÃÊµ¼ù¶¯Ì¬¹æ»®1;
+package f20220719è¯¾å ‚å®è·µåŠ¨æ€è§„åˆ’1;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T3 {
@@ -19,7 +19,7 @@ public class T3 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		ways(3);
 	}
 

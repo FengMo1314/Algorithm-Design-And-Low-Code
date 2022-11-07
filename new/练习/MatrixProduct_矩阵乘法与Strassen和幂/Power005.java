@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MatrixProduct_¾ØÕó³Ë·¨ÓëStrassenºÍÃİ;
+package ç»ƒä¹ .MatrixProduct_çŸ©é˜µä¹˜æ³•ä¸Strassenå’Œå¹‚;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Power005 {
@@ -31,7 +31,7 @@ public class Power005 {
 		if (exp == 1) {
 			return matrix;
 		}
-		// todo: ÀûÓÃ·ÖÖÎ²ßÂÔ¼ÆËã¾ØÕóµÄÃİ³Ë
+		// todo: åˆ©ç”¨åˆ†æ²»ç­–ç•¥è®¡ç®—çŸ©é˜µçš„å¹‚ä¹˜
 		if (exp % 2 == 0) {
 			int[][] temp = matrixPower(matrix, exp / 2);
 			return Power004.matrixMultiply(temp, temp);
@@ -43,7 +43,7 @@ public class Power005 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] matrix = new int[][] { { 1, -1 }, { 1, 0 } };
 		int[][] result = matrixPower(matrix, 4);
 		System.out.println(result[0][0] == -1);

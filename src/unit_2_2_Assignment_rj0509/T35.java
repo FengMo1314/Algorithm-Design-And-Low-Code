@@ -5,10 +5,10 @@ package unit_2_2_Assignment_rj0509;
 
 import java.util.Scanner;
 
-import gather_¼¯ºÏ.linked_Á´±í.LinkedList;
+import gather_é›†åˆ.linked_é“¾è¡¨.LinkedList;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T35 {
@@ -24,15 +24,15 @@ public class T35 {
 
 	private Scanner sc;
 	public void must(int start, int distance) {
-		// TODO ×Ô¶¯Éú³ÉµÄ¹¹Ôìº¯Êı´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ„é€ å‡½æ•°å­˜æ ¹
 		int i = start;
 		list.printList();
 		while (list.size() > 1) {
 			i = (i + distance - 1) % list.size();
-			System.out.println("É¾³ıµÄÔªËØ£º" + list.remove(i).toString() + "Ê£Óà£º");
+			System.out.println("åˆ é™¤çš„å…ƒç´ ï¼š" + list.remove(i).toString() + "å‰©ä½™ï¼š");
 			list.printList();
 		}
-		System.out.println("±»ÉâÃâµÄ×ï·¸ÊÇ£º" + list.get(0));
+		System.out.println("è¢«èµ¦å…çš„ç½ªçŠ¯æ˜¯ï¼š" + list.get(0));
 	}
 	public void getList() {
 		sc = new Scanner(System.in);
@@ -43,7 +43,7 @@ public class T35 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		T35 t=new T35();
 		t.getList();
 		t.must(0,2);

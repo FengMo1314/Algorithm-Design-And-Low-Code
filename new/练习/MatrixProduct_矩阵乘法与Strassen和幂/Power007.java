@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MatrixProduct_¾ØÕó³Ë·¨ÓëStrassenºÍÃİ;
+package ç»ƒä¹ .MatrixProduct_çŸ©é˜µä¹˜æ³•ä¸Strassenå’Œå¹‚;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Power007 {
@@ -19,14 +19,14 @@ public class Power007 {
 
 		for (int row = 0, parentRow = rowStart; row < rows; row++, parentRow++) {
 			for (int col = 0, parentCol = colStart; col < cols; col++, parentCol++) {
-				// todo: µÃµ½Ë«Ç×¾ØÕó¶ÔÓ¦Î»ÖÃµÄÔªËØ
+				// todo: å¾—åˆ°åŒäº²çŸ©é˜µå¯¹åº”ä½ç½®çš„å…ƒç´ 
 				parent[parentRow][parentCol] = child[row][col];
 			}
 		}
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] child = new int[][] { { 1, -2 }, { 5, 0 } };
 		int[][] parentExpect = new int[][] { { 0, 0, 0 }, { 0, 1, -2 }, { 0, 5, 0 } };
 		int[][] result = new int[3][3];

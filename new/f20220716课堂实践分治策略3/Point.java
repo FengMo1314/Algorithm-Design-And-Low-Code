@@ -1,10 +1,10 @@
 /**
  *
  */
-package f20220716课堂实践分治策略3;
+package f20220716璇惧爞瀹炶返鍒嗘不绛栫暐3;
 
 /**
- * @author 柳和(本地)
+ * @author 鏌冲拰(鏈湴)
  *
  */
 public class Point {

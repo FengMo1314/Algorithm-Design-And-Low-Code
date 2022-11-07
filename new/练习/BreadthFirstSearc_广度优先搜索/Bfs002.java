@@ -1,7 +1,7 @@
 /**
  *
  */
-package Á·Ï°.BreadthFirstSearc_¹ã¶ÈÓÅÏÈËÑË÷;
+package ç»ƒä¹ .BreadthFirstSearc_å¹¿åº¦ä¼˜å…ˆæœç´¢;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 class Graph {
@@ -44,7 +44,7 @@ class Graph {
 		queue.add(vertex);
 
 		while (queue.size() != 0) {
-			// todo: ¹ã¶ÈÓÅÏÈ±éÀú£¬°´±éÀúË³Ğò´òÓ¡³ö¶¥µãĞòÁĞ
+			// todo: å¹¿åº¦ä¼˜å…ˆéå†ï¼ŒæŒ‰éå†é¡ºåºæ‰“å°å‡ºé¡¶ç‚¹åºåˆ—
 			String s = queue.poll();
 //			for (int i = 0; i < adjList.get(s).size(); i++) {
 //				if (!visited.contains(adjList.get(s).poll())) {
@@ -70,7 +70,7 @@ public class Bfs002 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Graph g = new Graph();
 		g.BFS("A");
 	}

@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.Catalan_¿¨ËşÀ¼Êı;
+package ç»ƒä¹ .Catalan_å¡å¡”å…°æ•°;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Cata002 {
@@ -19,9 +19,9 @@ public class Cata002 {
 
 		int[] catalan = new int[n + 1];
 		catalan[0] = 1;
-		catalan[1] = 1;// µÚÒ»¸ö¿¨ËşÀ¼ÊıÎª1
+		catalan[1] = 1;// ç¬¬ä¸€ä¸ªå¡å¡”å…°æ•°ä¸º1
 
-		// todo: Ê¹ÓÃ¶¯Ì¬¹æ»®£¬²»ÓÃµİ¹é£¬ÇóµÚ n ¸ö¿¨ËşÀ¼Êı
+		// todo: ä½¿ç”¨åŠ¨æ€è§„åˆ’ï¼Œä¸ç”¨é€’å½’ï¼Œæ±‚ç¬¬ n ä¸ªå¡å¡”å…°æ•°
 		int y = 0;
 		int z = 0;
 		for (int counter = 2; counter <= n; ++counter) {
@@ -34,7 +34,7 @@ public class Cata002 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(catalan(0) == 1);
 		System.out.println(catalan(1) == 1);
 		System.out.println(catalan(6) == 132);

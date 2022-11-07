@@ -1,12 +1,12 @@
 /**
  *
  */
-package Á·Ï°.Recently_×î½ü¶Ô;
+package ç»ƒä¹ .Recently_æœ€è¿‘å¯¹;
 
 import java.util.Arrays;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Closest006 {
@@ -16,7 +16,7 @@ public class Closest006 {
 	 */
 	public static Point[] getStrip(Point midPoint, Point[] pointsByY, float delta) {
 
-		// todo: ÇóÖĞ¼äµØ´øµÄµã¼¯
+		// todo: æ±‚ä¸­é—´åœ°å¸¦çš„ç‚¹é›†
 		Point[] strip = new Point[pointsByY.length];
 		int j = 0;
 		for (Point element : pointsByY) {
@@ -32,7 +32,7 @@ public class Closest006 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Point[] points = new Point[] { new Point(2, 3), new Point(12, 30), new Point(40, 50), new Point(5, 1),
 				new Point(6, 2), new Point(3, 5) };
 

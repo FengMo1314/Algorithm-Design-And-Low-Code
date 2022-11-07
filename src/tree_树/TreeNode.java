@@ -1,16 +1,16 @@
 /**
  *
  */
-package tree_Ê÷;
+package tree_æ ‘;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class TreeNode<T> {
-public T data;//Êı¾İÓò
-public TreeNode<T> child;//º¢×Ó½Úµã
-public TreeNode<T> sibling;//ĞÖµÜ½Úµã
+public T data;//æ•°æ®åŸŸ
+public TreeNode<T> child;//å­©å­èŠ‚ç‚¹
+public TreeNode<T> sibling;//å…„å¼ŸèŠ‚ç‚¹
 public TreeNode(T data, TreeNode<T> child, TreeNode<T> sibling) {
 	super();
 	this.data = data;

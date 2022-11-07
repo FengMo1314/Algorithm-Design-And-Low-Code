@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Cut002 {
@@ -12,13 +12,13 @@ public class Cut002 {
 	/**
 	 * @param args
 	 */
-	// todo: Ê¹ÓÃ¶¯Ì¬¹æ»®Çó½â×î´ó¼Û¸ñ
+	// todo: ä½¿ç”¨åŠ¨æ€è§„åˆ’æ±‚è§£æœ€å¤§ä»·æ ¼
 	private static int cutRod(int[] price, int n) {
                return 0;
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[] arr = { 1, 3, 7, 11, 15, 16, 17, 22 };
 		int size = arr.length;
 		System.out.println(cutRod(arr, size) == 22);

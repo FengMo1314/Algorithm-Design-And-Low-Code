@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Maze001 {
@@ -13,16 +13,16 @@ public class Maze001 {
 	 * @param args
 	 */
 	/**
-	 * ¼ì²éÔ¼ÊøÌõ¼ş
+	 * æ£€æŸ¥çº¦æŸæ¡ä»¶
 	 *
-	 * @param maze ÃÔ¹¬
-	 * @param x    µ±Ç° x ×ø±ê
-	 * @param y    µ±Ç° y ×ø±ê
-	 * @param n    ×î´ó x ×ø±ê
-	 * @param m    ×î´ó y ×ø±ê
-	 * @return ÊÇ·ñÂú×ãÔ¼ÊøÌõ¼ş
+	 * @param maze è¿·å®«
+	 * @param x    å½“å‰ x åæ ‡
+	 * @param y    å½“å‰ y åæ ‡
+	 * @param n    æœ€å¤§ x åæ ‡
+	 * @param m    æœ€å¤§ y åæ ‡
+	 * @return æ˜¯å¦æ»¡è¶³çº¦æŸæ¡ä»¶
 	 */
-	// todo: ¼ì²éÔ¼ÊøÌõ¼ş
+	// todo: æ£€æŸ¥çº¦æŸæ¡ä»¶
 	public static boolean isValid(int[][] maze, int x, int y, int n, int m) {
 
 		if (x < n && y < m && x >= 0 && y >= 0) {
@@ -34,16 +34,16 @@ public class Maze001 {
 	}
 
 	/**
-	 * ¼ì²éÃÔ¹¬ÊÇ·ñ´æÔÚ¿ÉĞĞÂ·Ïß
+	 * æ£€æŸ¥è¿·å®«æ˜¯å¦å­˜åœ¨å¯è¡Œè·¯çº¿
 	 *
-	 * @param maze ÃÔ¹¬
-	 * @param x    µ±Ç° x ×ø±ê
-	 * @param y    µ±Ç° y ×ø±ê
-	 * @param n    ×î´ó x ×ø±ê
-	 * @param m    ×î´ó y ×ø±ê
-	 * @return ÊÇ·ñ´æÔÚ¿ÉĞĞÂ·Ïß
+	 * @param maze è¿·å®«
+	 * @param x    å½“å‰ x åæ ‡
+	 * @param y    å½“å‰ y åæ ‡
+	 * @param n    æœ€å¤§ x åæ ‡
+	 * @param m    æœ€å¤§ y åæ ‡
+	 * @return æ˜¯å¦å­˜åœ¨å¯è¡Œè·¯çº¿
 	 */
-	// todo: ¼ì²éÃÔ¹¬ÊÇ·ñ´æÔÚ¿ÉĞĞÂ·Ïß
+	// todo: æ£€æŸ¥è¿·å®«æ˜¯å¦å­˜åœ¨å¯è¡Œè·¯çº¿
 	public static boolean solveMaze(int[][] maze, int x, int y, int n, int m) {
 //    	int[] xMove= {0,0,1,-1};
 //    	int[] yMove= {1,-1,0,0};
@@ -57,7 +57,7 @@ public class Maze001 {
 //				maze[nextX][nextY]=1;
 //			}
 //		}
-//    	if(x==n-1&&y==m-1) {//³ö¿Ú´¦
+//    	if(x==n-1&&y==m-1) {//å‡ºå£å¤„
 //    		return true;
 //    	}
 
@@ -74,7 +74,7 @@ public class Maze001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] maze = { { 0, 0, 1, 0, 0, 0, 1, 0 }, { 0, 0, 1, 0, 0, 0, 1, 0 }, { 0, 0, 1, 0, 1, 1, 0, 1 },
 				{ 0, 1, 1, 1, 0, 0, 1, 0 }, { 0, 0, 0, 1, 0, 0, 0, 0 }, { 0, 1, 0, 0, 0, 1, 0, 1 },
 				{ 0, 1, 1, 1, 1, 0, 0, 1 }, { 1, 0, 0, 0, 0, 1, 0, 1 }, { 1, 1, 0, 0, 0, 0, 0, 0 } };

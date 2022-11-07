@@ -1,44 +1,44 @@
 /**
  *
  */
-package sort_ÅÅÐò·½·¨;
+package sort_æŽ’åºæ–¹æ³•;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 /*
- * ¹é²¢ÅÅÐò·½·¨
+ * å½’å¹¶æŽ’åºæ–¹æ³•
  */
 public class GuiBingSort {
 	/*
-	 * ×Ô¶¥ÏòÏÂ¹é²¢ÅÅÐò
+	 * è‡ªé¡¶å‘ä¸‹å½’å¹¶æŽ’åº
 	 */
 	public static void upToDownMergeSort(int a[]){
 	mergeSort(0,a.length-1,a);
 	}
 
-	// ×Ô¶¥ÏòÏÂ¹é²¢ÅÅÐòºËÐÄËã·¨
+	// è‡ªé¡¶å‘ä¸‹å½’å¹¶æŽ’åºæ ¸å¿ƒç®—æ³•
 		public static void mergeSort(int low, int high, int a[]) {
 			if (low < high) {
-				// ·Ö½â
+				// åˆ†è§£
 				int mid = (low + high) / 2;
-				// µÝ¹éµØ¶Ô×ó±ßÅÅÐò
+				// é€’å½’åœ°å¯¹å·¦è¾¹æŽ’åº
 				mergeSort(low, mid, a);
-				// µÝ¹éµØ¶ÔÓÒ±ßÅÅÐò
+				// é€’å½’åœ°å¯¹å³è¾¹æŽ’åº
 				mergeSort(mid + 1, high, a);
-				merge(low, mid, high, a);// ½«Á½¸öÓÐÐòÐòÁÐºÏ²¢ÎªÒ»¸öÓÐÐòÐòÁÐÒ»
+				merge(low, mid, high, a);// å°†ä¸¤ä¸ªæœ‰åºåºåˆ—åˆå¹¶ä¸ºä¸€ä¸ªæœ‰åºåºåˆ—ä¸€
 			}
 		}
 
-		// ºÏ²¢Á½¸öÐòÁÐ
+		// åˆå¹¶ä¸¤ä¸ªåºåˆ—
 		public static void merge(int low, int mid, int high, int a[]) {
-			// ½¨Á¢×ª´æÊý×é
+			// å»ºç«‹è½¬å­˜æ•°ç»„
 			int b[] = new int[a.length];
 			int f = low, s = mid + 1, p = low;
-			// fÎªµÚÒ»¸öÊý×éË÷Òý£¬sÎªµÚ¶þ¸öÊý×éË÷Òý£¬pÎªbÊý×éË÷Òý
+			// fä¸ºç¬¬ä¸€ä¸ªæ•°ç»„ç´¢å¼•ï¼Œsä¸ºç¬¬äºŒä¸ªæ•°ç»„ç´¢å¼•ï¼Œpä¸ºbæ•°ç»„ç´¢å¼•
 			while (f <= mid && s <= high) {
-				// ÔÚÁ½¸öÊý×éÔªËØÖÐÖµÐ¡µÄÒ»·½·ÅÈëbÊý×é
+				// åœ¨ä¸¤ä¸ªæ•°ç»„å…ƒç´ ä¸­å€¼å°çš„ä¸€æ–¹æ”¾å…¥bæ•°ç»„
 				if (a[f] <= a[s]) {
 					b[p] = a[f];
 					f++;
@@ -50,12 +50,12 @@ public class GuiBingSort {
 			}
 
 			if (f == mid + 1) {
-				/* ÈôµÚÒ»¸öÊý×éÖÐµÄÔªËØÈ«²¿´æ´¢½øÈ¥ÁË£¬ÄÇÃ´½«µÚ¶þ¸öÊý×éÖÐµÄÊ£ÓàÔªËØÈ«²¿·ÅÈëbÊý×é */
+				/* è‹¥ç¬¬ä¸€ä¸ªæ•°ç»„ä¸­çš„å…ƒç´ å…¨éƒ¨å­˜å‚¨è¿›åŽ»äº†ï¼Œé‚£ä¹ˆå°†ç¬¬äºŒä¸ªæ•°ç»„ä¸­çš„å‰©ä½™å…ƒç´ å…¨éƒ¨æ”¾å…¥bæ•°ç»„ */
 				for (; s <= high && p <= high; p++, s++) {
 					b[p] = a[s];
 				}
 			} else {
-				// ·ñÔò½«µÚÒ»¸öÊý×éÖÐµÄÔªËØÈ«²¿·ÅÈëbÊý×é
+				// å¦åˆ™å°†ç¬¬ä¸€ä¸ªæ•°ç»„ä¸­çš„å…ƒç´ å…¨éƒ¨æ”¾å…¥bæ•°ç»„
 				for (; f <= mid && p <= high; p++, f++) {
 					b[p] = a[f];
 				}
@@ -65,7 +65,7 @@ public class GuiBingSort {
 				a[i] = b[i];
 		}
 		/*
-		 * ×Ôµ×ÏòÉÏ¹é²¢ÅÅÐò
+		 * è‡ªåº•å‘ä¸Šå½’å¹¶æŽ’åº
 		 */
 		public static void bottomToUpMergeSort(int a[]){
 			int i,s,t=1;
@@ -81,14 +81,14 @@ public class GuiBingSort {
 				}
 			}
 		}
-		//ºÏ²¢Á½¸öÐòÁÐ·½·¨
+		//åˆå¹¶ä¸¤ä¸ªåºåˆ—æ–¹æ³•
 		public static void merge2(int low, int mid, int high, int a[]) {
-			// ½¨Á¢×ª´æÊý×é
+			// å»ºç«‹è½¬å­˜æ•°ç»„
 			int b[] = new int[a.length];
 			int f = low, s = mid + 1, p = low;
-			// fÎªµÚÒ»¸öÊý×éË÷Òý£¬sÎªµÚ¶þ¸öÊý×éË÷Òý£¬pÎªbÊý×éË÷Òý
+			// fä¸ºç¬¬ä¸€ä¸ªæ•°ç»„ç´¢å¼•ï¼Œsä¸ºç¬¬äºŒä¸ªæ•°ç»„ç´¢å¼•ï¼Œpä¸ºbæ•°ç»„ç´¢å¼•
 			while (f <= mid && s <= high) {
-				// ÔÚÁ½¸öÊý×éÔªËØÖÐÖµÐ¡µÄÒ»·½·ÅÈëbÊý×é
+				// åœ¨ä¸¤ä¸ªæ•°ç»„å…ƒç´ ä¸­å€¼å°çš„ä¸€æ–¹æ”¾å…¥bæ•°ç»„
 				if (a[f] <= a[s]) {
 					b[p] = a[f];
 					f++;
@@ -100,12 +100,12 @@ public class GuiBingSort {
 			}
 
 			if (f == mid + 1) {
-				/* ÈôµÚÒ»¸öÊý×éÖÐµÄÔªËØÈ«²¿´æ´¢½øÈ¥ÁË£¬ÄÇÃ´½«µÚ¶þ¸öÊý×éÖÐµÄÊ£ÓàÔªËØÈ«²¿·ÅÈëbÊý×é */
+				/* è‹¥ç¬¬ä¸€ä¸ªæ•°ç»„ä¸­çš„å…ƒç´ å…¨éƒ¨å­˜å‚¨è¿›åŽ»äº†ï¼Œé‚£ä¹ˆå°†ç¬¬äºŒä¸ªæ•°ç»„ä¸­çš„å‰©ä½™å…ƒç´ å…¨éƒ¨æ”¾å…¥bæ•°ç»„ */
 				for (; s <= high && p <= high; p++, s++) {
 					b[p] = a[s];
 				}
 			} else {
-				// ·ñÔò½«µÚÒ»¸öÊý×éÖÐµÄÔªËØÈ«²¿·ÅÈëbÊý×é
+				// å¦åˆ™å°†ç¬¬ä¸€ä¸ªæ•°ç»„ä¸­çš„å…ƒç´ å…¨éƒ¨æ”¾å…¥bæ•°ç»„
 				for (; f <= mid && p <= high; p++, f++) {
 					b[p] = a[f];
 				}

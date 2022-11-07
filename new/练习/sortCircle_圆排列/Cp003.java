@@ -1,12 +1,12 @@
 /**
  * 
  */
-package Á·Ï°.sortCircle_Ô²ÅÅÁĞ;
+package ç»ƒä¹ .sortCircle_åœ†æ’åˆ—;
 
 import java.util.Stack;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Cp003 {
@@ -18,9 +18,9 @@ public class Cp003 {
 	    public static Circle[] bestSolution;
 
 	    /**
-	     * Çóµ±Ç°ÅÅÁĞ·½°¸µÄ³¤¶È
-	     * @param packed ÒÑÅÅÁĞµÄÔ²µÄ¼¯ºÏ
-	     * @return µ±Ç°ÅÅÁĞ·½°¸µÄ³¤¶È
+	     * æ±‚å½“å‰æ’åˆ—æ–¹æ¡ˆçš„é•¿åº¦
+	     * @param packed å·²æ’åˆ—çš„åœ†çš„é›†åˆ
+	     * @return å½“å‰æ’åˆ—æ–¹æ¡ˆçš„é•¿åº¦
 	     */
 	    public static double getPackLength(Stack<Circle> packed) {
 	        Circle k = packed.peek();
@@ -29,29 +29,29 @@ public class Cp003 {
 	    }
 
 	    /**
-	     * ÉèÖÃĞÂÅÅÁĞµÄÔ²µÄÔ²ĞÄ
-	     * @param k ÒÑÅÅÁĞµÄ×îºóÒ»¸öÔ²
-	     * @param newCircle ĞÂÅÅÁĞµÄÔ²
+	     * è®¾ç½®æ–°æ’åˆ—çš„åœ†çš„åœ†å¿ƒ
+	     * @param k å·²æ’åˆ—çš„æœ€åä¸€ä¸ªåœ†
+	     * @param newCircle æ–°æ’åˆ—çš„åœ†
 	     */
 	    public static void setX(Circle k, Circle newCircle) {
 	        newCircle.x = k.x + Cp001.dist(k, newCircle);
 	    }
 
 	    /**
-	     * Çó×îÓÅÅÅÁĞ·½°¸£¬Ê¹³¤¶È×îĞ¡
-	     * @param circles Ô²µÄ¼¯ºÏ
-	     * @param packed ÒÑÅÅÁĞµÄÔ²µÄ¼¯ºÏ
-	     * @param idx µ±Ç°ÕıÔÚÅÅÁĞµÄÔ²
-	     * @param n Ô²µÄ¸öÊı
+	     * æ±‚æœ€ä¼˜æ’åˆ—æ–¹æ¡ˆï¼Œä½¿é•¿åº¦æœ€å°
+	     * @param circles åœ†çš„é›†åˆ
+	     * @param packed å·²æ’åˆ—çš„åœ†çš„é›†åˆ
+	     * @param idx å½“å‰æ­£åœ¨æ’åˆ—çš„åœ†
+	     * @param n åœ†çš„ä¸ªæ•°
 	     */
-	    // todo: Çó×îÓÅÅÅÁĞ·½°¸£¬Ê¹³¤¶È×îĞ¡
+	    // todo: æ±‚æœ€ä¼˜æ’åˆ—æ–¹æ¡ˆï¼Œä½¿é•¿åº¦æœ€å°
 	    public static void packing(Circle[] circles, Stack<Circle> packed, int idx, int n) {
 
 
 	    }
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		 Circle c1 = new Circle(1, 1);
 	        Circle c2 = new Circle(1, 2);
 	        Circle c3 = new Circle(2, 3);

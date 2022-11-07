@@ -1,13 +1,13 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 import java.util.Arrays;
 import java.util.Collections;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Loading001 {
@@ -16,15 +16,15 @@ public class Loading001 {
 	 * @param args
 	 */
 	/**
-	 * ×îÓÅ×°ÔÚ·½°¸
+	 * æœ€ä¼˜è£…åœ¨æ–¹æ¡ˆ
 	 */
 	public static int[] bestSolution;
 	/**
-	 * ×îÓÅ×°ÔÚ·½°¸ÖĞµÚÒ»ËÒ´¬µÄ×îĞ¡µÄÊ£Óà¿É×°ÔØÖØÁ¿
+	 * æœ€ä¼˜è£…åœ¨æ–¹æ¡ˆä¸­ç¬¬ä¸€è‰˜èˆ¹çš„æœ€å°çš„å‰©ä½™å¯è£…è½½é‡é‡
 	 */
 	public static int best;
 
-	public static void loading(int[] x, int[] w, int n, int c1, int c2) {// ÔöÇ¿´úÂë½¡×³ĞÔ
+	public static void loading(int[] x, int[] w, int n, int c1, int c2) {// å¢å¼ºä»£ç å¥å£®æ€§
 		int total = 0;
 		for (int i = 0; i < n; i++) {
 			total += w[i];
@@ -54,24 +54,24 @@ public class Loading001 {
 	}
 
 	/**
-	 * ËÑË÷µÚÒ»ËÒ´¬×îÓÅ¿É×°µÄ¼¯×°Ïä·½°¸
+	 * æœç´¢ç¬¬ä¸€è‰˜èˆ¹æœ€ä¼˜å¯è£…çš„é›†è£…ç®±æ–¹æ¡ˆ
 	 *
-	 * @param c1Capacity µÚÒ»ËÒ´¬µÄµ±Ç°¿ÉÔØÖØÁ¿
-	 * @param idx        µ±Ç°×°ÔØµÄ¼¯×°Ïä
-	 * @param w          ¸÷¼¯×°ÏäÖØÁ¿
-	 * @param x          µ±Ç°µÄ×°ÔØ·½°¸
-	 * @param n          ¼¯×°ÏäÊıÁ¿
+	 * @param c1Capacity ç¬¬ä¸€è‰˜èˆ¹çš„å½“å‰å¯è½½é‡é‡
+	 * @param idx        å½“å‰è£…è½½çš„é›†è£…ç®±
+	 * @param w          å„é›†è£…ç®±é‡é‡
+	 * @param x          å½“å‰çš„è£…è½½æ–¹æ¡ˆ
+	 * @param n          é›†è£…ç®±æ•°é‡
 	 */
-	// todo: ËÑË÷µÚÒ»ËÒ´¬×îÓÅ¿É×°µÄ¼¯×°Ïä·½°¸
+	// todo: æœç´¢ç¬¬ä¸€è‰˜èˆ¹æœ€ä¼˜å¯è£…çš„é›†è£…ç®±æ–¹æ¡ˆ
 	public static void loading(int c1Capacity, int idx, int[] x, int[] w, int n) {
 
-		// todo: ×°ÔØ·½°¸
+		// todo: è£…è½½æ–¹æ¡ˆ
 
-		// todo: ¼ÇÂ¼×îÓÅ·½°¸
+		// todo: è®°å½•æœ€ä¼˜æ–¹æ¡ˆ
 
-		// todo: »ØËİ
+		// todo: å›æº¯
 
-		// todo: ËÑË÷Ê£Óà·½°¸
+		// todo: æœç´¢å‰©ä½™æ–¹æ¡ˆ
 		for (int i = 1; i >= 0; i++) {
 			if (i == 1) {
 
@@ -87,7 +87,7 @@ public class Loading001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[] w = { 90, 80, 40, 30, 20, 12, 10 };
 		w = Arrays.stream(w).boxed().sorted(Collections.reverseOrder()).mapToInt(Integer::intValue).toArray();
 		int n = w.length;

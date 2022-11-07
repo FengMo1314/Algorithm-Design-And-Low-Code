@@ -1,12 +1,12 @@
 /**
  *
  */
-package f20220716¿ÎÌÃÊµ¼ù·ÖÖÎ²ßÂÔ3;
+package f20220716è¯¾å ‚å®è·µåˆ†æ²»ç­–ç•¥3;
 
 import java.util.Scanner;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T3 {
@@ -16,14 +16,14 @@ public class T3 {
 	 */
 	public static int[][] matrixSplit(int[][] parent, int rowStart, int rowEnd, int colStart, int colEnd) {
 
-		// todo: ¼ÆËã×Ó¾ØÕóµÄ´óĞ¡²¢³õÊ¼»¯
+		// todo: è®¡ç®—å­çŸ©é˜µçš„å¤§å°å¹¶åˆå§‹åŒ–
 		int rows = rowEnd - rowStart + 1;
 		int cols = colEnd - colStart + 1;
 		int[][] result = new int[rows][cols];
 
 		for (int row = 0, parentRow = rowStart; row < rows; row++, parentRow++) {
 			for (int col = 0, parentCol = colStart; col < cols; col++, parentCol++) {
-				// todo: µÃµ½×Ó¾ØÕó¶ÔÓ¦Î»ÖÃµÄÔªËØ
+				// todo: å¾—åˆ°å­çŸ©é˜µå¯¹åº”ä½ç½®çš„å…ƒç´ 
 				result[row][col] = parent[parentRow][parentCol];
 			}
 		}
@@ -37,7 +37,7 @@ public class T3 {
 
 		for (int row = 0, parentRow = rowStart; row < rows; row++, parentRow++) {
 			for (int col = 0, parentCol = colStart; col < cols; col++, parentCol++) {
-				// todo: µÃµ½Ë«Ç×¾ØÕó¶ÔÓ¦Î»ÖÃµÄÔªËØ
+				// todo: å¾—åˆ°åŒäº²çŸ©é˜µå¯¹åº”ä½ç½®çš„å…ƒç´ 
 				parent[parentRow][parentCol] = child[row][col];
 			}
 		}
@@ -47,7 +47,7 @@ public class T3 {
 		int rows = m1.length;
 		int cols = m1[0].length;
 		int[][] result = new int[rows][cols];
-		// todo: Á½¸ö¾ØÕó¶ÔÓ¦Î»ÖÃµÄÔªËØµÄºÍ
+		// todo: ä¸¤ä¸ªçŸ©é˜µå¯¹åº”ä½ç½®çš„å…ƒç´ çš„å’Œ
 		for (int i = 0; i < result.length; i++) {
 			for (int j = 0; j < result.length; j++) {
 				result[i][j] = m1[i][j] + m2[i][j];
@@ -61,7 +61,7 @@ public class T3 {
 		int rows = m1.length;
 		int cols = m1[0].length;
 		int[][] result = new int[rows][cols];
-		// todo: Á½¸ö¾ØÕó¶ÔÓ¦Î»ÖÃµÄÔªËØµÄ²î
+		// todo: ä¸¤ä¸ªçŸ©é˜µå¯¹åº”ä½ç½®çš„å…ƒç´ çš„å·®
 		for (int i = 0; i < result.length; i++) {
 			for (int j = 0; j < result.length; j++) {
 				result[i][j] = m1[i][j] - m2[i][j];
@@ -77,7 +77,7 @@ public class T3 {
 		if (n == 1) {
 			result[0][0] = m1[0][0] * m2[0][0];
 		} else {
-			// todo: ·Ö¸î¾ØÕó A11~A22, B11~B22
+			// todo: åˆ†å‰²çŸ©é˜µ A11~A22, B11~B22
 			int[][] A11 = matrixSplit(m1, 0, n / 2 - 1, 0, n / 2 - 1);
 			int[][] A12 = matrixSplit(m1, 0, n / 2 - 1, n / 2, n - 1);
 			int[][] A21 = matrixSplit(m1, n / 2, n - 1, 0, n / 2 - 1);
@@ -86,7 +86,7 @@ public class T3 {
 			int[][] B12 = matrixSplit(m2, 0, n / 2 - 1, n / 2, n - 1);
 			int[][] B21 = matrixSplit(m2, n / 2, n - 1, 0, n / 2 - 1);
 			int[][] B22 = matrixSplit(m2, n / 2, n - 1, n / 2, n - 1);
-			// todo: Éú³É×ÓÎÊÌâ
+			// todo: ç”Ÿæˆå­é—®é¢˜
 			int[][] M1 = strassen(A11, matrixSub(B12, B22));
 			int[][] M2 = strassen(matrixAdd(A11, A12), B22);
 			int[][] M3 = strassen(matrixAdd(A21, A22), B11);
@@ -94,12 +94,12 @@ public class T3 {
 			int[][] M5 = strassen(matrixAdd(A11, A22), matrixAdd(B11, B22));
 			int[][] M6 = strassen(matrixSub(A12, A22), matrixAdd(B21, B22));
 			int[][] M7 = strassen(matrixSub(A11, A21), matrixAdd(B11, B12));
-			// todo: Éú³ÉÖĞ¼ä¾ØÕó
+			// todo: ç”Ÿæˆä¸­é—´çŸ©é˜µ
 			int[][] C11 = matrixAdd(matrixSub(matrixAdd(M5, M4), M2), M6);
 			int[][] C12 = matrixAdd(M1, M2);
 			int[][] C21 = matrixAdd(M3, M4);
 			int[][] C22 = matrixSub(matrixSub(matrixAdd(M5, M1), M3), M7);
-			// todo: ºÏ³É¾ØÕó
+			// todo: åˆæˆçŸ©é˜µ
 			matrixJoin(C11, result, 0, 0);
 			matrixJoin(C12, result, 0, n / 2);
 			matrixJoin(C21, result, n / 2, 0);
@@ -109,20 +109,20 @@ public class T3 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë¾ØÕó½×Êı");
+		System.out.println("è¯·è¾“å…¥çŸ©é˜µé˜¶æ•°");
 		int n = sc.nextInt();
 		int[][] a = new int[n][n];
 		int[][] b = new int[n][n];
 		for (int i = 0; i < a.length; i++) {
-			System.out.println("ÇëÒÀ´ÎÊäÈëµÚÒ»¸ö¾ØÕóµÚ" + i + 1 + "ĞĞ");
+			System.out.println("è¯·ä¾æ¬¡è¾“å…¥ç¬¬ä¸€ä¸ªçŸ©é˜µç¬¬" + i + 1 + "è¡Œ");
 			for (int j = 0; j < a[i].length; j++) {
 				a[i][j] = sc.nextInt();
 			}
 		}
 		for (int i = 0; i < b.length; i++) {
-			System.out.println("ÇëÒÀ´ÎÊäÈëµÚ¶ş¸ö¾ØÕóµÚ" + i + "ĞĞ");
+			System.out.println("è¯·ä¾æ¬¡è¾“å…¥ç¬¬äºŒä¸ªçŸ©é˜µç¬¬" + i + "è¡Œ");
 			for (int j = 0; j < b[i].length; j++) {
 				b[i][j] = sc.nextInt();
 			}

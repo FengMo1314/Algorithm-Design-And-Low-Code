@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.BinomialCoefficient_¶şÏîÊ½ÏµÊı;
+package ç»ƒä¹ .BinomialCoefficient_äºŒé¡¹å¼ç³»æ•°;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Coef002 {
@@ -13,16 +13,16 @@ public class Coef002 {
 	 * @param args
 	 */
 	/*
-	 * Ñî»ÔÈı½Ç 1 1 1 1 2 1 1 3 3 1 1 4 6 4 1 1 5 10 10 5 1 0 1 2 3 4 5 j->
+	 * æ¨è¾‰ä¸‰è§’ 1 1 1 1 2 1 1 3 3 1 1 4 6 4 1 1 5 10 10 5 1 0 1 2 3 4 5 j->
 	 */
-	// todo: ÓÃ¶şÎ¬¶¯Ì¬¹æ»®Çó k ÏîµÄÏµÊı
+	// todo: ç”¨äºŒç»´åŠ¨æ€è§„åˆ’æ±‚ k é¡¹çš„ç³»æ•°
 	private static int binomialCoefficient(int n, int k) {
 		int[][] memo = new int[n + 1][k + 1];
-		for (int i = 0; i <= n; i++) {// ×éºÏÊıÏÂ
-			for (int j = 0; j <= Math.min(i, k); j++) {// ×éºÏÊı ÉÏ
-				if (j == 0 || j == i) {// Ñî»ÔÈı½ÇµÚÒ»ÁĞºÍĞ±±ß£¨¶Ô½ÇÏß£©´¦Îª1
+		for (int i = 0; i <= n; i++) {// ç»„åˆæ•°ä¸‹
+			for (int j = 0; j <= Math.min(i, k); j++) {// ç»„åˆæ•° ä¸Š
+				if (j == 0 || j == i) {// æ¨è¾‰ä¸‰è§’ç¬¬ä¸€åˆ—å’Œæ–œè¾¹ï¼ˆå¯¹è§’çº¿ï¼‰å¤„ä¸º1
 					memo[i][j] = 1;
-				} else {// µÚiĞĞµÄµÚj¸ö==µÚi-1ĞĞµÚj¸ö+µÚi-1ĞĞµÚj-1¸ö
+				} else {// ç¬¬iè¡Œçš„ç¬¬jä¸ª==ç¬¬i-1è¡Œç¬¬jä¸ª+ç¬¬i-1è¡Œç¬¬j-1ä¸ª
 					memo[i][j] = memo[i - 1][j - 1] + memo[i - 1][j];
 				}
 			}
@@ -32,14 +32,14 @@ public class Coef002 {
 
 	private static int binomialCoefficient2(int n, int k) {
 		/*
-		 * C(n,k)=n!/[k!*(n-k)!] Ñî»ÔÈı½Ç n=0 1 k=0 n=1 1 1 k=1 n=2 1 2 1 k=2 n=3 1 3 3 1k=3
+		 * C(n,k)=n!/[k!*(n-k)!] æ¨è¾‰ä¸‰è§’ n=0 1 k=0 n=1 1 1 k=1 n=2 1 2 1 k=2 n=3 1 3 3 1k=3
 		 * n=4 1 4 6 4 1 k=4 n=5 1 5 10 10 5 1 k=5
 		 *
 		 */
-		int[] memo = new int[k + 1];// Õ¹¿ªÊ½µÄÏîÊı±ÈÆäÃİÖ¸Êı¶à1
-		memo[0] = 1;// µÚÒ»ĞĞ(n==0)½öÓĞÒ»¸ö1
-		for (int i = 1; i <= n; i++) {// Ê×ĞĞÒÑ¶¨£¬´ÓµÚ¶şĞĞ¿ªÊ¼iÎªnµÄÖ¸Õë
-			for (int j = k; j >= 1; j--) {// jÎªÁĞ(k)µÄÖ¸Õë£¬k×î´ó±ÈĞĞÖ¸Õë(i)¶à1
+		int[] memo = new int[k + 1];// å±•å¼€å¼çš„é¡¹æ•°æ¯”å…¶å¹‚æŒ‡æ•°å¤š1
+		memo[0] = 1;// ç¬¬ä¸€è¡Œ(n==0)ä»…æœ‰ä¸€ä¸ª1
+		for (int i = 1; i <= n; i++) {// é¦–è¡Œå·²å®šï¼Œä»ç¬¬äºŒè¡Œå¼€å§‹iä¸ºnçš„æŒ‡é’ˆ
+			for (int j = k; j >= 1; j--) {// jä¸ºåˆ—(k)çš„æŒ‡é’ˆï¼Œkæœ€å¤§æ¯”è¡ŒæŒ‡é’ˆ(i)å¤š1
 				memo[j] = memo[j] + memo[j - 1];
 			}
 		}
@@ -47,12 +47,12 @@ public class Coef002 {
 	}
 
 	/*
-	 * Ñî»ÔÈı½Ç 1 0 0 0 0 0 0 1 1 0 0 0 0 0 1 2 1 0 0 0 0 1 3 3 1 0 0 0 1 4 6 4 1 0 0 1
+	 * æ¨è¾‰ä¸‰è§’ 1 0 0 0 0 0 0 1 1 0 0 0 0 0 1 2 1 0 0 0 0 1 3 3 1 0 0 0 1 4 6 4 1 0 0 1
 	 * 5 10 10 5 1
 	 */
 	private static int binomialCoefficient3(int n, int k) {
 		int[][] memo = new int[n + 1][n + 1];
-		if (k > n) { // ÌØÊâÇé¿öµ¥¶À´¦Àí
+		if (k > n) { // ç‰¹æ®Šæƒ…å†µå•ç‹¬å¤„ç†
 			return 0;
 		}
 		for (int i = 0; i <= n; i++) {
@@ -68,7 +68,7 @@ public class Coef002 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(binomialCoefficient(2, 3) == 0);
 		System.out.println(binomialCoefficient(2, 0) == 1);
 		System.out.println(binomialCoefficient(2, 2) == 1);

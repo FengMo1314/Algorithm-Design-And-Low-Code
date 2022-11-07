@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.UglyNumber_³óÊı;
+package ç»ƒä¹ .UglyNumber_ä¸‘æ•°;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Num004 {
@@ -12,14 +12,14 @@ public class Num004 {
 	/**
 	 * @param args
 	 */
-	// todo: Ê¹ÓÃ·ÖÖÎ²ßÂÔ£¬µÃµ½µÚ n ¸ö³óÊı
+	// todo: ä½¿ç”¨åˆ†æ²»ç­–ç•¥ï¼Œå¾—åˆ°ç¬¬ n ä¸ªä¸‘æ•°
 	public static int getUglyNum(int nth) {
 
 		return -1;
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(getUglyNum(1) == 1);
 		System.out.println(getUglyNum(2) == 2);
 		System.out.println(getUglyNum(8) == 9);

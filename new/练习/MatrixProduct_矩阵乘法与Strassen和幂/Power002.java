@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MatrixProduct_¾ØÕó³Ë·¨ÓëStrassenºÍÃİ;
+package ç»ƒä¹ .MatrixProduct_çŸ©é˜µä¹˜æ³•ä¸Strassenå’Œå¹‚;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Power002 {
@@ -20,18 +20,18 @@ public class Power002 {
 			return a;
 		}
 		if (exp % 2 == 0) {
-			// todo: Èç¹ûÖ¸ÊıÊÇÅ¼Êı
+			// todo: å¦‚æœæŒ‡æ•°æ˜¯å¶æ•°
 			int count = power(a, exp / 2);
 			return count * count;
 		} else {
-			// todo: Èç¹ûÖ¸ÊıÊÇÆæÊı
+			// todo: å¦‚æœæŒ‡æ•°æ˜¯å¥‡æ•°
 			int count = power(a, (exp - 1) / 2);
 			return count * count * a;
 		}
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(power(2, 0) == 1);
 		System.out.println(power(2, 4) == 16);
 		System.out.println(power(2, 5) == 32);

@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Lcs001 {
@@ -13,20 +13,20 @@ public class Lcs001 {
 	 * @param args
 	 */
 	/**
-	 * ÓÃ¼òµ¥µİ¹é¼ÆËã×î³¤×ÓĞòÁĞµÄ³¤¶È
+	 * ç”¨ç®€å•é€’å½’è®¡ç®—æœ€é•¿å­åºåˆ—çš„é•¿åº¦
 	 *
-	 * @param X ×Ö·û´®X
-	 * @param Y ×Ö·û´®Y
-	 * @param m ×Ö·û´®XµÄ³¤¶È
-	 * @param n ×Ö·û´®YµÄ³¤¶È
-	 * @return ×î³¤×ÓĞòÁĞµÄ³¤¶È
+	 * @param X å­—ç¬¦ä¸²X
+	 * @param Y å­—ç¬¦ä¸²Y
+	 * @param m å­—ç¬¦ä¸²Xçš„é•¿åº¦
+	 * @param n å­—ç¬¦ä¸²Yçš„é•¿åº¦
+	 * @return æœ€é•¿å­åºåˆ—çš„é•¿åº¦
 	 */
 	public static int lcs(char[] X, char[] Y, int m, int n) {
 		if (m == 0 || n == 0) {
 			return 0;
 		}
 
-		// todo: ÓÃ¼òµ¥µİ¹é¼ÆËã×î³¤×ÓĞòÁĞµÄ³¤¶È
+		// todo: ç”¨ç®€å•é€’å½’è®¡ç®—æœ€é•¿å­åºåˆ—çš„é•¿åº¦
 		int a = 0, b = 0;
 		if (X[m - 1] == Y[n - 1])
 			return lcs(X, Y, m - 1, n - 1) + 1;
@@ -42,7 +42,7 @@ public class Lcs001 {
 		if (m == 0 || n == 0) {
 			return 0;
 		}
-		// todo: ÓÃ¼òµ¥µİ¹é¼ÆËã×î³¤×ÓĞòÁĞµÄ³¤¶È
+		// todo: ç”¨ç®€å•é€’å½’è®¡ç®—æœ€é•¿å­åºåˆ—çš„é•¿åº¦
 		int a = 0, b = 0, c = 0;
 		if (X[m - 1] == Y[n - 1]) {
 			a = lcs(X, Y, m - 1, n - 1) + 1;
@@ -54,7 +54,7 @@ public class Lcs001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(lcs("".toCharArray(), "GXTXAYB".toCharArray(), "".length(), "GXTXAYB".length()) == 0);
 		System.out.println(lcs("AGGTAB".toCharArray(), "".toCharArray(), "AGGTAB".length(), "".length()) == 0);
 		System.out.println(

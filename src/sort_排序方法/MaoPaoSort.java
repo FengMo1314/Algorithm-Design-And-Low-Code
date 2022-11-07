@@ -1,15 +1,15 @@
 /**
  *
  */
-package sort_ÅÅĞò·½·¨;
+package sort_æ’åºæ–¹æ³•;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class MaoPaoSort {
 	/*
-	 * Ã°ÅİÅÅĞò¸Ä½ø
+	 * å†’æ³¡æ’åºæ”¹è¿›
 	 */
 	public static void sort(int[] a) {
 		int max=a.length-1;
@@ -26,7 +26,7 @@ public class MaoPaoSort {
 			if(flag) {
 				break;
 			}
-			System.out.println("µÚ"+(i+1)+"ÌË");
+			System.out.println("ç¬¬"+(i+1)+"è¶Ÿ");
 			for (int element : a) {
 				System.out.println(element);
 			}

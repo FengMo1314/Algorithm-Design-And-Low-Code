@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MatrixProduct_¾ØÕó³Ë·¨ÓëStrassenºÍÃİ;
+package ç»ƒä¹ .MatrixProduct_çŸ©é˜µä¹˜æ³•ä¸Strassenå’Œå¹‚;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Power006 {
@@ -14,14 +14,14 @@ public class Power006 {
 	 */
 	public static int[][] matrixSplit(int[][] parent, int rowStart, int rowEnd, int colStart, int colEnd) {
 
-		// todo: ¼ÆËã×Ó¾ØÕóµÄ´óĞ¡²¢³õÊ¼»¯
+		// todo: è®¡ç®—å­çŸ©é˜µçš„å¤§å°å¹¶åˆå§‹åŒ–
 		int rows = rowEnd - rowStart + 1;
 		int cols = colEnd - colStart + 1;
 		int[][] result = new int[rows][cols];
 
 		for (int row = 0, parentRow = rowStart; row < rows; row++, parentRow++) {
 			for (int col = 0, parentCol = colStart; col < cols; col++, parentCol++) {
-				// todo: µÃµ½×Ó¾ØÕó¶ÔÓ¦Î»ÖÃµÄÔªËØ
+				// todo: å¾—åˆ°å­çŸ©é˜µå¯¹åº”ä½ç½®çš„å…ƒç´ 
 				result[row][col] = parent[parentRow][parentCol];
 			}
 		}
@@ -29,7 +29,7 @@ public class Power006 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] parent = new int[][] { { 2, 3, -1 }, { 6, 1, -2 }, { 7, 5, 0 } };
 		int[][] childExpect = new int[][] { { 1, -2 }, { 5, 0 } };
 

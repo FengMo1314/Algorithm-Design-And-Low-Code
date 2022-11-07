@@ -1,12 +1,12 @@
 /**
  *
  */
-package Á·Ï°.Recently_×î½ü¶Ô;
+package ç»ƒä¹ .Recently_æœ€è¿‘å¯¹;
 
 import java.util.Arrays;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Closest007 {
@@ -17,15 +17,15 @@ public class Closest007 {
 	public static float stripClosest(Point[] strip, float delta) {
 		float min = delta;
 		int size = strip.length;
-		// todo: ÇóÖĞ¼äµØ´ø×î½ü¶Ô
-		Point midPoint = Closest004.getMidXPoint(strip, 0, size);// ¸ø¶¨µãµÄÖĞ¼äµã
-		Point[] midPoints = Closest006.getStrip(midPoint, strip, delta);// Çó³öÖĞ¼äµØ´øµÄËùÓĞµã
+		// todo: æ±‚ä¸­é—´åœ°å¸¦æœ€è¿‘å¯¹
+		Point midPoint = Closest004.getMidXPoint(strip, 0, size);// ç»™å®šç‚¹çš„ä¸­é—´ç‚¹
+		Point[] midPoints = Closest006.getStrip(midPoint, strip, delta);// æ±‚å‡ºä¸­é—´åœ°å¸¦çš„æ‰€æœ‰ç‚¹
 		min = Closest005.smallestDistance(midPoints, 0, midPoints.length / 2);
 		return min;
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Point[] points = new Point[] { new Point(2, 3), new Point(12, 30), new Point(40, 50), new Point(5, 1),
 				new Point(6, 2), new Point(3, 5) };
 

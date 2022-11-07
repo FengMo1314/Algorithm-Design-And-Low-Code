@@ -1,12 +1,12 @@
 /**
  *
  */
-package f20220715课堂实践分治策略2;
+package f20220715璇惧爞瀹炶返鍒嗘不绛栫暐2;
 
 import java.util.Scanner;
 
 /**
- * @author 柳和(本地)
+ * @author 鏌冲拰(鏈湴)
  *
  */
 public class T4 {
@@ -32,13 +32,13 @@ public class T4 {
 
 	public static void main(String[] args) {
 		sc = new Scanner(System.in);
-		System.err.println("请输入所求的项数");
+		System.err.println("璇疯緭鍏ユ墍姹傜殑椤规暟");
 		int n = sc.nextInt();
 		int[][] fib = base();
 		int[][] temp = new int[matrix.length][matrix.length];
 		temp = T3.MXX(fib, n);
 		T3.print(temp);
-		System.out.println("斐波那契数列的f(" + n + ")=" + temp[0][1]);
+		System.out.println("鏂愭尝閭ｅ鏁板垪鐨刦(" + n + ")=" + temp[0][1]);
 	}
 
 }

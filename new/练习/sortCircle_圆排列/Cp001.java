@@ -1,10 +1,10 @@
 /**
  * 
  */
-package Á·Ï°.sortCircle_Ô²ÅÅÁĞ;
+package ç»ƒä¹ .sortCircle_åœ†æ’åˆ—;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Cp001 {
@@ -13,19 +13,19 @@ public class Cp001 {
 	 * @param args
 	 */
 	/**
-     * ¼ÆËãÁ½¸öÔ²ĞÄÖ®¼äµÄ¾àÀë
-     * @param c1 µÚÒ»¸öÔ²
-     * @param c2 µÚ¶ş¸öÔ²
-     * @return Á½¸öÔ²ĞÄÖ®¼äµÄ¾àÀë
+     * è®¡ç®—ä¸¤ä¸ªåœ†å¿ƒä¹‹é—´çš„è·ç¦»
+     * @param c1 ç¬¬ä¸€ä¸ªåœ†
+     * @param c2 ç¬¬äºŒä¸ªåœ†
+     * @return ä¸¤ä¸ªåœ†å¿ƒä¹‹é—´çš„è·ç¦»
      */
-    // todo: ¼ÆËãÁ½¸öÔ²ĞÄÖ®¼äµÄ¾àÀë
+    // todo: è®¡ç®—ä¸¤ä¸ªåœ†å¿ƒä¹‹é—´çš„è·ç¦»
     public static double dist(Circle c1, Circle c2) {
-        double a=(c1.radius+c2.radius)*(c1.radius+c2.radius);//radius±íÊ¾°ë¾¶
+        double a=(c1.radius+c2.radius)*(c1.radius+c2.radius);//radiusè¡¨ç¤ºåŠå¾„
         double b=(c1.radius-c2.radius)*(c1.radius-c2.radius);
         return Math.sqrt(a-b);
     }
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Circle c1 = new Circle(1, 1);
         Circle c2 = new Circle(4, 2);
         System.out.println(Double.compare(Cp001.dist(c1, c2), 4) == 0);

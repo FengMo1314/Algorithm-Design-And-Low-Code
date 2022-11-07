@@ -1,12 +1,12 @@
 /**
  *
  */
-package Á·Ï°.Recently_×î½ü¶Ô;
+package ç»ƒä¹ .Recently_æœ€è¿‘å¯¹;
 
 import java.util.Arrays;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Closest005 {
@@ -20,7 +20,7 @@ public class Closest005 {
 			return Closest002.bruteForceSmallestDistance(points, start, end);
 		}
 
-		// todo: Çó×óÓÒÁ½°ëÆ½ÃæÄÚµÄ×î½ü¶Ô¾àÀë
+		// todo: æ±‚å·¦å³ä¸¤åŠå¹³é¢å†…çš„æœ€è¿‘å¯¹è·ç¦»
 		int mild = (end - start) / 2;
 		float left = smallestDistance(points, start, mild);
 		float right = smallestDistance(points, mild + 1, end);
@@ -28,7 +28,7 @@ public class Closest005 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Point[] points = new Point[] { new Point(2, 3), new Point(12, 30), new Point(40, 50), new Point(5, 1),
 				new Point(6, 2), new Point(3, 5) };
 

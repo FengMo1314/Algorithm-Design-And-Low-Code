@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MatrixProduct_¾ØÕó³Ë·¨ÓëStrassenºÍÃİ;
+package ç»ƒä¹ .MatrixProduct_çŸ©é˜µä¹˜æ³•ä¸Strassenå’Œå¹‚;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Power004 {
@@ -16,9 +16,9 @@ public class Power004 {
 		int rows = matrix1.length;
 		int cols = matrix2[0].length;
 		int[][] result = new int[rows][cols];
-		for (int row = 0; row < rows; row++) {// µÚÒ»¾ØÕóµÄĞĞ
-			for (int col = 0; col < cols; col++) {// µÚ¶ş¾ØÕóµÄÁĞ
-				// todo: ¾ØÕó³Ë»ıÔËËã
+		for (int row = 0; row < rows; row++) {// ç¬¬ä¸€çŸ©é˜µçš„è¡Œ
+			for (int col = 0; col < cols; col++) {// ç¬¬äºŒçŸ©é˜µçš„åˆ—
+				// todo: çŸ©é˜µä¹˜ç§¯è¿ç®—
 				for (int i = 0; i < matrix2.length; i++)
 					result[row][col] += matrix1[row][i] * matrix2[i][col];
 			}
@@ -27,7 +27,7 @@ public class Power004 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] matrix1 = new int[][] { { 2, 3, -1 }, { 6, 1, -2 } };
 		int[][] matrix2 = new int[][] { { 4, -5 }, { -3, 0 }, { 1, 2 } };
 

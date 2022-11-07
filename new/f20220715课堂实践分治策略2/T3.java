@@ -1,12 +1,12 @@
 /**
  *
  */
-package f20220715¿ÎÌÃÊµ¼ù·ÖÖÎ²ßÂÔ2;
+package f20220715è¯¾å ‚å®è·µåˆ†æ²»ç­–ç•¥2;
 
 import java.util.Scanner;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T3 {
@@ -17,7 +17,7 @@ public class T3 {
 	 * @param args
 	 */
 	/*
-	 * µ¥Î»¾ØÕó
+	 * å•ä½çŸ©é˜µ
 	 */
 	public static int[][] identity(int rows, int cols) {
 		int[][] id = new int[rows][cols];
@@ -32,7 +32,7 @@ public class T3 {
 	}
 
 	/*
-	 * ¾ØÕó³Ë·¨¹æÔò£º ×ó±ß¾ØÕóµÄÃ¿Ò»ĞĞµÄÔªËØÒÀ´Î*ÓÒ±ß¾ØÕóµÄÃ¿Ò»ÁĞµÄÏàÓ¦ÔªËØ£¬ºÍÎªËùÇó¾ØÕóÄ³¸öÎ»ÖÃµÄÔªËØÖµ
+	 * çŸ©é˜µä¹˜æ³•è§„åˆ™ï¼š å·¦è¾¹çŸ©é˜µçš„æ¯ä¸€è¡Œçš„å…ƒç´ ä¾æ¬¡*å³è¾¹çŸ©é˜µçš„æ¯ä¸€åˆ—çš„ç›¸åº”å…ƒç´ ï¼Œå’Œä¸ºæ‰€æ±‚çŸ©é˜µæŸä¸ªä½ç½®çš„å…ƒç´ å€¼
 	 */
 	public static int[][] MX(int[][] a, int[][] b) {
 		int tr = a.length;
@@ -49,7 +49,7 @@ public class T3 {
 	}
 
 	/*
-	 * ¾ØÕóµÄÃİ
+	 * çŸ©é˜µçš„å¹‚
 	 */
 	public static int[][] MXX(int[][] a, int n) {
 		if (n == 0) {
@@ -83,7 +83,7 @@ public class T3 {
 	}
 
 	public static void print(int array[][]) {
-		System.out.println("ËùÇó¾ØÕó£º");
+		System.out.println("æ‰€æ±‚çŸ©é˜µï¼š");
 		for (int[] element : array) {
 			for (int j = 0; j < element.length; j++) {
 				System.out.print(element[j] + " ");
@@ -93,7 +93,7 @@ public class T3 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] a = getM(2, 2);
 		int[][] result = MXX(a, 16);
 		print(result);

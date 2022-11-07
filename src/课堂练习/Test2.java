@@ -1,13 +1,13 @@
 /**
  *
  */
-package ¿ÎÌÃÁ·Ï°;
+package è¯¾å ‚ç»ƒä¹ ;
 
-import random_Ëæ»úÊıÉú³ÉÆ÷.RandomGenerator;
-import stopWatch_¼ÆÊ±Æ÷.StopWatch;
+import random_éšæœºæ•°ç”Ÿæˆå™¨.RandomGenerator;
+import stopWatch_è®¡æ—¶å™¨.StopWatch;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Test2 {
@@ -16,20 +16,20 @@ public class Test2 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		StopWatch s = new StopWatch();
 		s.start();
 		int zu[] =RandomGenerator.uniformInts(100);
 		int i, j;
-		for (i = 0; i < zu.length - 1; i++) {// ×îÍâ²ãÑ­»·±íÊ¾ÌËÊı¡£
-			int first = i;// Ä¬ÈÏÎŞĞòÇøµÚÒ»¸öÎªi¡£
-			for (j = first + 1; j < zu.length; j++) {// j³õÖµÎªÎŞĞòÇøµÄµÚ¶ş¸öÔªËØ£¨×¢ÒâÏÂ±ê£©¡£
-				if (zu[first] > zu[j]) {// ÕÒ³ö×îĞ¡µÄ
+		for (i = 0; i < zu.length - 1; i++) {// æœ€å¤–å±‚å¾ªç¯è¡¨ç¤ºè¶Ÿæ•°ã€‚
+			int first = i;// é»˜è®¤æ— åºåŒºç¬¬ä¸€ä¸ªä¸ºiã€‚
+			for (j = first + 1; j < zu.length; j++) {// jåˆå€¼ä¸ºæ— åºåŒºçš„ç¬¬äºŒä¸ªå…ƒç´ ï¼ˆæ³¨æ„ä¸‹æ ‡ï¼‰ã€‚
+				if (zu[first] > zu[j]) {// æ‰¾å‡ºæœ€å°çš„
 					first = j;
 				}
-			} // firstÎª×îĞ¡ÖµµÄÏÂ±ê
+			} // firstä¸ºæœ€å°å€¼çš„ä¸‹æ ‡
 			int temp = 0;
-			if (first != i) {// ½«zu[first]½»»»µ½ÓĞĞòÇøµÚÒ»¸ö£¬´Ó¶øÊ¹ÓĞĞòÇø³¤¶ÈÔö¼Ó1£¬ÎŞĞòÇø³¤¶È¼õÉÙÒ»
+			if (first != i) {// å°†zu[first]äº¤æ¢åˆ°æœ‰åºåŒºç¬¬ä¸€ä¸ªï¼Œä»è€Œä½¿æœ‰åºåŒºé•¿åº¦å¢åŠ 1ï¼Œæ— åºåŒºé•¿åº¦å‡å°‘ä¸€
 				temp = zu[i];
 				zu[i] = zu[first];
 				zu[first] = temp;

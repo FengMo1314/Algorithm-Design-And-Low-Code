@@ -1,12 +1,12 @@
 /**
  *
  */
-package ¿ÎÌÃÁ·Ï°;
+package è¯¾å ‚ç»ƒä¹ ;
 
-import stopWatch_¼ÆÊ±Æ÷.StopWatch;
+import stopWatch_è®¡æ—¶å™¨.StopWatch;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Test6 {
@@ -15,33 +15,33 @@ public class Test6 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		StopWatch s = new StopWatch();
 		s.start();
 //		int a[] = RandomGenerator.uniformInts(100000000);
 	}
 
-	// ×Ô¶¥ÏòÏÂ¹é²¢ÅÅĞòºËĞÄËã·¨
+	// è‡ªé¡¶å‘ä¸‹å½’å¹¶æ’åºæ ¸å¿ƒç®—æ³•
 	public static void mergeSort(int low, int high, int a[]) {
 		if (low < high) {
-			// ·Ö½â
+			// åˆ†è§£
 			int mid = (low + high) / 2;
-			// µİ¹éµØ¶Ô×ó±ßÅÅĞò
+			// é€’å½’åœ°å¯¹å·¦è¾¹æ’åº
 			mergeSort(low, mid, a);
-			// µİ¹éµØ¶ÔÓÒ±ßÅÅĞò
+			// é€’å½’åœ°å¯¹å³è¾¹æ’åº
 			mergeSort(mid + 1, high, a);
-			merge(low, mid, high, a);// ½«Á½¸öÓĞĞòĞòÁĞºÏ²¢ÎªÒ»¸öÓĞĞòĞòÁĞÒ»
+			merge(low, mid, high, a);// å°†ä¸¤ä¸ªæœ‰åºåºåˆ—åˆå¹¶ä¸ºä¸€ä¸ªæœ‰åºåºåˆ—ä¸€
 		}
 	}
 
-	// ºÏ²¢Á½¸öĞòÁĞ
+	// åˆå¹¶ä¸¤ä¸ªåºåˆ—
 	public static void merge(int low, int mid, int high, int a[]) {
-		// ½¨Á¢×ª´æÊı×é
+		// å»ºç«‹è½¬å­˜æ•°ç»„
 		int b[] = new int[a.length];
 		int f = low, s = mid + 1, p = low;
-		// fÎªµÚÒ»¸öÊı×éË÷Òı£¬sÎªµÚ¶ş¸öÊı×éË÷Òı£¬pÎªbÊı×éË÷Òı
+		// fä¸ºç¬¬ä¸€ä¸ªæ•°ç»„ç´¢å¼•ï¼Œsä¸ºç¬¬äºŒä¸ªæ•°ç»„ç´¢å¼•ï¼Œpä¸ºbæ•°ç»„ç´¢å¼•
 		while (f <= mid && s <= high) {
-			// ÔÚÁ½¸öÊı×éÔªËØÖĞÖµĞ¡µÄÒ»·½·ÅÈëbÊı×é
+			// åœ¨ä¸¤ä¸ªæ•°ç»„å…ƒç´ ä¸­å€¼å°çš„ä¸€æ–¹æ”¾å…¥bæ•°ç»„
 			if (a[f] <= a[s]) {
 				b[p] = a[f];
 				f++;
@@ -53,12 +53,12 @@ public class Test6 {
 		}
 
 		if (f == mid + 1) {
-			/* ÈôµÚÒ»¸öÊı×éÖĞµÄÔªËØÈ«²¿´æ´¢½øÈ¥ÁË£¬ÄÇÃ´½«µÚ¶ş¸öÊı×éÖĞµÄÊ£ÓàÔªËØÈ«²¿·ÅÈëbÊı×é */
+			/* è‹¥ç¬¬ä¸€ä¸ªæ•°ç»„ä¸­çš„å…ƒç´ å…¨éƒ¨å­˜å‚¨è¿›å»äº†ï¼Œé‚£ä¹ˆå°†ç¬¬äºŒä¸ªæ•°ç»„ä¸­çš„å‰©ä½™å…ƒç´ å…¨éƒ¨æ”¾å…¥bæ•°ç»„ */
 			for (; s <= high && p <= high; p++, s++) {
 				b[p] = a[s];
 			}
 		} else {
-			// ·ñÔò½«µÚÒ»¸öÊı×éÖĞµÄÔªËØÈ«²¿·ÅÈëbÊı×é
+			// å¦åˆ™å°†ç¬¬ä¸€ä¸ªæ•°ç»„ä¸­çš„å…ƒç´ å…¨éƒ¨æ”¾å…¥bæ•°ç»„
 			for (; f <= mid && p <= high; p++, f++) {
 				b[p] = a[f];
 			}

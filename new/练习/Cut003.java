@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Cut003 {
@@ -12,7 +12,7 @@ public class Cut003 {
 	/**
 	 * @param args
 	 */
-	// todo: Ê¹ÓÃ±³°üÎÊÌâµÄ½â·¨
+	// todo: ä½¿ç”¨èƒŒåŒ…é—®é¢˜çš„è§£æ³•
 	public static int knapsack(int b, int[] w, int[] v, int n) {
 		if (n <= 0 || b <= 0) {
 			return 0;
@@ -25,7 +25,7 @@ public class Cut003 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int b = 8;
 		int[] v = { 1, 3, 7, 11, 15, 16, 17, 21 };
 		int[] w = { 1, 2, 3, 4, 5, 6, 7, 10 };

@@ -1,12 +1,12 @@
 /**
  *
  */
-package f20220712¿ÎÌÃÊµ¼ù·ÖÖÎ²ßÂÔ;
+package f20220712è¯¾å ‚å®è·µåˆ†æ²»ç­–ç•¥;
 
 import java.util.Scanner;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T7 {
@@ -16,7 +16,7 @@ public class T7 {
 	/**
 	 * @param args
 	 */
-	public static void swap(int array[], int a, int b) {// ½»»»º¯Êı
+	public static void swap(int array[], int a, int b) {// äº¤æ¢å‡½æ•°
 		int temp;
 		temp = array[a];
 		array[a] = array[b];
@@ -26,15 +26,15 @@ public class T7 {
 	public static int Partition(int r[], int low, int high) {
 		int i = low;
 		int j = high;
-		int pivot = r[low];// »ù×¼ÔªËØ
+		int pivot = r[low];// åŸºå‡†å…ƒç´ 
 		while (i < j) {
-			while (i < j && r[j] > pivot) // Ïò×óÉ¨Ãè
+			while (i < j && r[j] > pivot) // å‘å·¦æ‰«æ
 				j--;
 
 			if (i < j) {
 				swap(r, i++, j);
 			}
-			while (i < j && r[i] <= pivot) {// ÏòÓÒÉ¨Ãè
+			while (i < j && r[i] <= pivot) {// å‘å³æ‰«æ
 				i++;
 			}
 			if (i < j) {
@@ -44,12 +44,12 @@ public class T7 {
 		return i;
 	}
 
-	public static void QuickSort(int R[], int low, int high) {// ¿ìËÙÅÅĞòµİ¹éËã·¨
+	public static void QuickSort(int R[], int low, int high) {// å¿«é€Ÿæ’åºé€’å½’ç®—æ³•
 		int mid;
 		if (low < high) {
-			mid = Partition(R, low, high);// »ù×¼Î»ÖÃ
-			QuickSort(R, low, mid - 1);// ×óÇø¼äµİ¹é¿ìËÙÅÅĞò
-			QuickSort(R, mid + 1, high);// ÓÒÇø¼äµİ¹é¿ìËÙÅÅĞò
+			mid = Partition(R, low, high);// åŸºå‡†ä½ç½®
+			QuickSort(R, low, mid - 1);// å·¦åŒºé—´é€’å½’å¿«é€Ÿæ’åº
+			QuickSort(R, mid + 1, high);// å³åŒºé—´é€’å½’å¿«é€Ÿæ’åº
 			for (int i = 0; i < R.length - 1; i++) {
 				System.out.print(R[i] + "-");
 			}
@@ -60,16 +60,16 @@ public class T7 {
 	public static void main(String[] args) {
 		sc = new Scanner(System.in);
 		int i;
-		int n;// Êı¾İµÄ¸öÊı
-		System.out.println("ÇëÏÈÊäÈëÒªÅÅĞòÔªËØµÄ¸öÊı");
+		int n;// æ•°æ®çš„ä¸ªæ•°
+		System.out.println("è¯·å…ˆè¾“å…¥è¦æ’åºå…ƒç´ çš„ä¸ªæ•°");
 		n = sc.nextInt();
-		System.out.println("ÇëÊäÈëÒªÅÅĞòµÄÊı¾İ");
+		System.out.println("è¯·è¾“å…¥è¦æ’åºçš„æ•°æ®");
 		int[] a = new int[n];
 		for (i = 0; i < n; i++) {
 			a[i] = sc.nextInt();
 		}
 		QuickSort(a, 0, n - 1);
-		System.out.println("ÅÅĞòºóµÄÊı¾İ");
+		System.out.println("æ’åºåçš„æ•°æ®");
 		for (i = 0; i < n; i++) {
 			System.out.print(a[i] + " ");
 		}

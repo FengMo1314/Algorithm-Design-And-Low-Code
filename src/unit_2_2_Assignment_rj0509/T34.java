@@ -1,6 +1,6 @@
 package unit_2_2_Assignment_rj0509;
 
-import gather_¼¯ºÏ.linked_Á´±í.PolySinglyList;
+import gather_é›†åˆ.linked_é“¾è¡¨.PolySinglyList;
 import others.PolyTerm;
 
 public class T34 {
@@ -10,7 +10,7 @@ public class T34 {
 		PolySinglyList listA = new PolySinglyList(pa);
 		PolySinglyList listB = new PolySinglyList(pb);
 
-		// É¾³ıÏµÊıÎª0µÄÏî
+		// åˆ é™¤ç³»æ•°ä¸º0çš„é¡¹
 		listA.removable();
 		listB.removable();
 

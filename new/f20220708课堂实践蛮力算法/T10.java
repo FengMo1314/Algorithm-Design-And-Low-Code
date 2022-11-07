@@ -1,10 +1,10 @@
 /**
  *
  */
-package f20220708¿ÎÌÃÊµ¼ùÂùÁ¦Ëã·¨;
+package f20220708è¯¾å ‚å®è·µè›®åŠ›ç®—æ³•;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T10 {
@@ -12,20 +12,20 @@ public class T10 {
 	/**
 	 * @param args
 	 */
-	// »Êºó/ÆåÅÌµÄ¸öÊı
+	// çš‡å/æ£‹ç›˜çš„ä¸ªæ•°
 	private static final int QUEEN_NUM = 8;
 
-	// Ê×ÏÈ¶¨ÒåÒ»¸ö8 * 8 µÄÆåÅÌ
+	// é¦–å…ˆå®šä¹‰ä¸€ä¸ª8 * 8 çš„æ£‹ç›˜
 	private static final int[][] Checkerboard = new int[QUEEN_NUM][QUEEN_NUM];
 
-	// ¶¨ÒåÒ»¹²ÓĞ¶àÉÙÖÖ·ÅÖÃ»ÊºóµÄËã·¨
+	// å®šä¹‰ä¸€å…±æœ‰å¤šå°‘ç§æ”¾ç½®çš‡åçš„ç®—æ³•
 	private static int COUNT = 0;
 
 	/**
-	 * ´òÓ¡ÆåÅÌ
+	 * æ‰“å°æ£‹ç›˜
 	 */
 	public static final void show() {
-		System.out.println("µÚ" + (++COUNT) + "´Î°Ú·¨");
+		System.out.println("ç¬¬" + (++COUNT) + "æ¬¡æ‘†æ³•");
 		for (int i = 0; i < QUEEN_NUM; i++) {
 			for (int j = 0; j < QUEEN_NUM; j++) {
 				System.out.print(Checkerboard[i][j] + " ");
@@ -35,28 +35,28 @@ public class T10 {
 	}
 
 	/**
-	 * ÅĞ¶Ïµ±Ç°Î»ÖÃÊÇ·ñÄÜ·ÅÖÃ»Êºó
+	 * åˆ¤æ–­å½“å‰ä½ç½®æ˜¯å¦èƒ½æ”¾ç½®çš‡å
 	 *
 	 * @param Checkerboard
-	 * @param row          ĞĞÊı
-	 * @param col          ÁĞÊı
+	 * @param row          è¡Œæ•°
+	 * @param col          åˆ—æ•°
 	 * @return
 	 */
 	public static final boolean check(int row, int col) {
 
-		// ÅĞ¶Ïµ±Ç°Î»ÖÃµÄÉÏÃæÊÇ·ñÓĞ»Êºó
+		// åˆ¤æ–­å½“å‰ä½ç½®çš„ä¸Šé¢æ˜¯å¦æœ‰çš‡å
 		for (int i = row - 1; i >= 0; i--) {
 			if (Checkerboard[i][col] == 1)
 				return false;
 		}
 
-		// ÅĞ¶Ï×óÉÏÊÇ·ñÓĞ»Êºó
+		// åˆ¤æ–­å·¦ä¸Šæ˜¯å¦æœ‰çš‡å
 		for (int i = row - 1, j = col - 1; i >= 0 && j >= 0; i--, j--) {
 			if (Checkerboard[i][j] == 1)
 				return false;
 		}
 
-		// ÅĞ¶ÏÓÒÉÏÊÇ·ñÓĞ»Êºó
+		// åˆ¤æ–­å³ä¸Šæ˜¯å¦æœ‰çš‡å
 		for (int i = row - 1, j = col + 1; i >= 0 && j < QUEEN_NUM; i--, j++) {
 			if (Checkerboard[i][j] == 1)
 				return false;
@@ -66,26 +66,26 @@ public class T10 {
 	}
 
 	/**
-	 * ´ÓµÚnĞĞ·ÅÖÃ»Êºó
+	 * ä»ç¬¬nè¡Œæ”¾ç½®çš‡å
 	 *
 	 * @param row
 	 */
 	public static final void play(int row) {
-		// ±éÀúµ±Ç°ĞĞµÄËùÓĞµ¥Ôª¸ñ ÒÔÁĞÎªµ¥Ôª
+		// éå†å½“å‰è¡Œçš„æ‰€æœ‰å•å…ƒæ ¼ ä»¥åˆ—ä¸ºå•å…ƒ
 		for (int i = 0; i < QUEEN_NUM; i++) {
-			// ÊÇ·ñÄÜ¹»·ÅÖÃ»Êºó
+			// æ˜¯å¦èƒ½å¤Ÿæ”¾ç½®çš‡å
 			if (check(row, i)) {
 				Checkerboard[row][i] = 1;
 
 				if (row == QUEEN_NUM - 1) {
-					// ×îºóĞĞ ·ÅÖÃÍê±Ï ´òÓ¡»Êºó
+					// æœ€åè¡Œ æ”¾ç½®å®Œæ¯• æ‰“å°çš‡å
 					show();
 				} else {
-					// ·ÅÖÃÏÂÒ»ĞĞ
+					// æ”¾ç½®ä¸‹ä¸€è¡Œ
 					play(row + 1);
 				}
 
-				// »ØÍËµ½µ±Ç°²½Öè£¬°Ñ»ÊºóÉèÖÃÎª0
+				// å›é€€åˆ°å½“å‰æ­¥éª¤ï¼ŒæŠŠçš‡åè®¾ç½®ä¸º0
 				Checkerboard[row][i] = 0;
 			}
 
@@ -93,7 +93,7 @@ public class T10 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		play(0);
 	}
 

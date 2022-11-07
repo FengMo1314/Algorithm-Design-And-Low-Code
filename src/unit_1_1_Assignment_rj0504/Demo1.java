@@ -76,7 +76,7 @@ public class Demo1 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
-     System.out.println("£¡HTML»ñÈ¡³É¹¦£¡");
+     System.out.println("ï¼HTMLè·å–æˆåŠŸï¼");
 		}
 	}
 
@@ -97,10 +97,10 @@ public class Demo1 {
 			}
 		};
 		Collections.sort(covidList, c);
-		System.out.println("×Ü¸ĞÈ¾ÈËÊıÅÅÃû°ñ£¨½µĞò£©");
+		System.out.println("æ€»æ„ŸæŸ“äººæ•°æ’åæ¦œï¼ˆé™åºï¼‰");
 		int id=1;
 		for (COVID_19 c1 : covidList) {
-			System.out.println("µÚ"+id+":"+c1.getCountry());
+			System.out.println("ç¬¬"+id+":"+c1.getCountry());
 			id++;
 		}
 	}
@@ -116,7 +116,7 @@ public class Demo1 {
 		String maxs=String.valueOf(max);
 		for (COVID_19 c : covidList) {
 			if(c.getTotalDeaths().equals(maxs)) {
-				System.out.println("ËÀÍöÊı×î¶àµÄ¹ú¼Ò:\t"+c.getCountry()+";\tËÀÍöÈËÊı:\t"+max+"¡£");
+				System.out.println("æ­»äº¡æ•°æœ€å¤šçš„å›½å®¶:\t"+c.getCountry()+";\tæ­»äº¡äººæ•°:\t"+max+"ã€‚");
 				break;
 			}
 		}
@@ -133,7 +133,7 @@ public class Demo1 {
 		String maxs=String.valueOf(max);
 		for (COVID_19 c : covidList) {
 			if(c.getTotalTests().equals(maxs)) {
-				System.out.println("×Ü²âÊÔÊı×î¶àµÄ¹ú¼Ò:\t"+c.getCountry()+";\t×Ü²âÊÔÈËÊıÈËÊı:\t"+max+"¡£");
+				System.out.println("æ€»æµ‹è¯•æ•°æœ€å¤šçš„å›½å®¶:\t"+c.getCountry()+";\tæ€»æµ‹è¯•äººæ•°äººæ•°:\t"+max+"ã€‚");
 				break;
 			}
 		}

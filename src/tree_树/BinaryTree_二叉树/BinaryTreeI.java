@@ -1,25 +1,25 @@
-package tree_Ê÷.BinaryTree_¶ş²æÊ÷;
+package tree_æ ‘.BinaryTree_äºŒå‰æ ‘;
 
 public interface BinaryTreeI<T> {
-	public boolean idEmpty();// ÅĞ¶ÏÊ÷ÊÇ·ñÎª¿Õ
+	public boolean idEmpty();// åˆ¤æ–­æ ‘æ˜¯å¦ä¸ºç©º
 
-	public int count();// ·µ»ØÊ÷µÄ½Úµã¸öÊı
+	public int count();// è¿”å›æ ‘çš„èŠ‚ç‚¹ä¸ªæ•°
 
-	public int height();// ·µ»ØÊ÷µÄ¸ß¶È
+	public int height();// è¿”å›æ ‘çš„é«˜åº¦
 
-	public int childCount(BinaryNode<T> t);// ·µ»ØT½ÚµãµÄº¢×Ó¸öÊı
+	public int childCount(BinaryNode<T> t);// è¿”å›TèŠ‚ç‚¹çš„å­©å­ä¸ªæ•°
 
-	public void preOrder();// ÏÈĞò±éÀú
+	public void preOrder();// å…ˆåºéå†
 
-	public void postOrder();// ºóĞò±éÀú
+	public void postOrder();// ååºéå†
 
-	public void levelOrder();// ²ã´Î±éÀú
-	//²éÕÒ½Úµã
+	public void levelOrder();// å±‚æ¬¡éå†
+	//æŸ¥æ‰¾èŠ‚ç‚¹
 		public BinaryNode<?> find(int key);
-		//²åÈëĞÂ½Úµã
+		//æ’å…¥æ–°èŠ‚ç‚¹
 		public boolean insert(int data);
-		//²éÕÒ×î´óÖµ
+		//æŸ¥æ‰¾æœ€å¤§å€¼
 		public BinaryNode<?> findMax();
-		//²éÕÒ×îĞ¡Öµ
+		//æŸ¥æ‰¾æœ€å°å€¼
 		public BinaryNode<?> findMin();
 }

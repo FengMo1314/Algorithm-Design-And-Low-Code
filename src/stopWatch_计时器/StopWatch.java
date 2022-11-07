@@ -1,9 +1,9 @@
-package stopWatch_¼ÆÊ±Æ÷;
+package stopWatch_è®¡æ—¶å™¨;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 /*
- * ¼ÆÊ±Æ÷
+ * è®¡æ—¶å™¨
  */
 public class StopWatch {
 	  private long time;
@@ -37,10 +37,10 @@ public class StopWatch {
 	        if (secs.compareTo(BigDecimal.valueOf(60)) > 0) {
 	            BigDecimal mins = secs.divide(BigDecimal.valueOf(60), 0, RoundingMode.FLOOR);
 	            secs = secs.subtract(mins.multiply(BigDecimal.valueOf(60)));
-	            return "±¾´ÎÔËËã»¨·ÑÊ±¼ä: " + mins + " ·Ö" + secs + " Ãë";
+	            return "æœ¬æ¬¡è¿ç®—èŠ±è´¹æ—¶é—´: " + mins + " åˆ†" + secs + " ç§’";
 
 	        } else {
-	            return "±¾´ÎÔËËã»¨·ÑÊ±¼ä: " + secs + " Ãë";
+	            return "æœ¬æ¬¡è¿ç®—èŠ±è´¹æ—¶é—´: " + secs + " ç§’";
 
 	        }
 	    }

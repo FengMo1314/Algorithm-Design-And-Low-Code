@@ -1,16 +1,16 @@
-package tree_Ê÷;
+package tree_æ ‘;
 
 public interface TreeI<T> {
-  public boolean idEmpty();//ÅĞ¶ÏÊ÷ÊÇ·ñÎª¿Õ
-  public int count();//·µ»ØÊ÷µÄ½Úµã¸öÊı
-  public int height();//·µ»ØÊ÷µÄ¸ß¶È
-  public int childCount(TreeNode<T> t);//·µ»ØT½ÚµãµÄº¢×Ó¸öÊı
-  public void preOrder();//ÏÈĞò±éÀú
-  public void postOrder();//ºóĞò±éÀú
-  public void levelOrder();//²ã´Î±éÀú
-  public TreeNode<T> getChild(TreeNode<T> t,int i);//·µ»Øt½ÚµãµÄ×îºóÒ»¸öº¢×Ó½Úµã
-  public TreeNode<T> getLastSibling(TreeNode<T> t);//·µ»ØT½Úµã×îºóÒ»¸öĞÖµÜ½Úµã
-  public TreeNode<T> getParent(TreeNode<T> node);//·µ»ØnodeµÄ¸¸½Úµã
-  public TreeNode<T> search(T x);//²éÕÒ²¢·µ»ØÔªËØxµÄ½Úµã
+  public boolean idEmpty();//åˆ¤æ–­æ ‘æ˜¯å¦ä¸ºç©º
+  public int count();//è¿”å›æ ‘çš„èŠ‚ç‚¹ä¸ªæ•°
+  public int height();//è¿”å›æ ‘çš„é«˜åº¦
+  public int childCount(TreeNode<T> t);//è¿”å›TèŠ‚ç‚¹çš„å­©å­ä¸ªæ•°
+  public void preOrder();//å…ˆåºéå†
+  public void postOrder();//ååºéå†
+  public void levelOrder();//å±‚æ¬¡éå†
+  public TreeNode<T> getChild(TreeNode<T> t,int i);//è¿”å›tèŠ‚ç‚¹çš„æœ€åä¸€ä¸ªå­©å­èŠ‚ç‚¹
+  public TreeNode<T> getLastSibling(TreeNode<T> t);//è¿”å›TèŠ‚ç‚¹æœ€åä¸€ä¸ªå…„å¼ŸèŠ‚ç‚¹
+  public TreeNode<T> getParent(TreeNode<T> node);//è¿”å›nodeçš„çˆ¶èŠ‚ç‚¹
+  public TreeNode<T> search(T x);//æŸ¥æ‰¾å¹¶è¿”å›å…ƒç´ xçš„èŠ‚ç‚¹
 
 }

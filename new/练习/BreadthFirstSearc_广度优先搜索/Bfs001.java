@@ -1,13 +1,13 @@
 /**
  *
  */
-package Á·Ï°.BreadthFirstSearc_¹ã¶ÈÓÅÏÈËÑË÷;
+package ç»ƒä¹ .BreadthFirstSearc_å¹¿åº¦ä¼˜å…ˆæœç´¢;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Bfs001 {
@@ -16,7 +16,7 @@ public class Bfs001 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Queue<String> queue = new LinkedList<>();
 		queue.add("A");
 		queue.add("B");
@@ -25,8 +25,8 @@ public class Bfs001 {
 		queue.add("E");
 
 		while (queue.size() > 0) {
-			// todo: »ñÈ¡¶ÓÁĞÖĞµÄÔªËØ£¬²¢´òÓ¡ÆäÖµ
-			System.out.println("ÒÀ´ÎÎª£º" + queue.poll());
+			// todo: è·å–é˜Ÿåˆ—ä¸­çš„å…ƒç´ ï¼Œå¹¶æ‰“å°å…¶å€¼
+			System.out.println("ä¾æ¬¡ä¸ºï¼š" + queue.poll());
 		}
 	}
 

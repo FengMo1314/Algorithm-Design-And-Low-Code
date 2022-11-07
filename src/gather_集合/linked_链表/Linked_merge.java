@@ -1,9 +1,9 @@
-package gather_¼¯ºÏ.linked_Á´±í;
+package gather_é›†åˆ.linked_é“¾è¡¨;
 
-import gather_¼¯ºÏ.node_½Úµã.Node;
+import gather_é›†åˆ.node_èŠ‚ç‚¹.Node;
 
 public class Linked_merge<T extends Comparable<T>> {
-	public Node<T> head;// Í·Ö¸Õë
+	public Node<T> head;// å¤´æŒ‡é’ˆ
 
 	public Linked_merge() {
 		super();
@@ -13,19 +13,19 @@ public class Linked_merge<T extends Comparable<T>> {
 	public T get(int index) {
 		Node<T> p = this.head.next;
 
-		// ±éÀúµ¥Á´±í£¬Ñ°ÕÒa(i)
+		// éå†å•é“¾è¡¨ï¼Œå¯»æ‰¾a(i)
 		for (int i = 0; p != null && i < index; i++) {
 			p = p.next;
 		}
 
-		// ÈôpÖ¸Ïòa(i)£¬·µ»ØÆädataÖµ
+		// è‹¥pæŒ‡å‘a(i)ï¼Œè¿”å›å…¶dataå€¼
 		return (index >= 0 && p != null) ? p.data : null;
 	}
 
 	public void set(int index, T element) {
 		Node<T> p = this.head.next;
 
-		// ±éÀúµ¥Á´±í£¬Ñ°ÕÒa(i)
+		// éå†å•é“¾è¡¨ï¼Œå¯»æ‰¾a(i)
 		for (int i = 0; p != null && i < index; i++) {
 			p = p.next;
 		}
@@ -35,7 +35,7 @@ public class Linked_merge<T extends Comparable<T>> {
 		}
 	}
 
-	public int size() {// ¼¯ºÏ³¤¶È
+	public int size() {// é›†åˆé•¿åº¦
 		Node<T> p = this.head.next;
 		int n = 0;
 		while (p != null) {
@@ -50,19 +50,19 @@ public class Linked_merge<T extends Comparable<T>> {
 		if (element == null) {
 			return -1;
 		}
-		// prev Ö¸ÏòpµÄÇ°Çı½áµã
+		// prev æŒ‡å‘pçš„å‰é©±ç»“ç‚¹
 		Node<T> prev = head, p = prev.next;
 		while (p != null && element.compareTo(p.data) >0) {
 			prev = p;
 			p = p.next;
 			i++;
 		}
-		// ÔÚprevÖ®ºópÖ®Ç°£¬²åÈëÖµÎªelementµÄ½áµã
+		// åœ¨prevä¹‹åpä¹‹å‰ï¼Œæ’å…¥å€¼ä¸ºelementçš„ç»“ç‚¹
 		prev.next = new Node<>(element, p);
 		return i;
 	}
 
-	public void printList() {// ±éÀú´òÓ¡
+	public void printList() {// éå†æ‰“å°
 		Node<T> p = new Node<>();
 		p = head.next;
 		while (p != null) {
@@ -70,29 +70,29 @@ public class Linked_merge<T extends Comparable<T>> {
 			p = p.next;
 		}
 	}
-	public int insertJ(T element) {//½µĞòÅÅÁĞ
+	public int insertJ(T element) {//é™åºæ’åˆ—
 		int i = 0;
 		if (element == null) {
 			return -1;
 		}
-		// prev Ö¸ÏòpµÄÇ°Çı½áµã
+		// prev æŒ‡å‘pçš„å‰é©±ç»“ç‚¹
 		Node<T> prev = head, p = prev.next;
 		while (p != null && element.compareTo(p.data) <0) {
 			prev = p;
 			p = p.next;
 			i++;
 		}
-		// ÔÚprevÖ®ºópÖ®Ç°£¬²åÈëÖµÎªelementµÄ½áµã
+		// åœ¨prevä¹‹åpä¹‹å‰ï¼Œæ’å…¥å€¼ä¸ºelementçš„ç»“ç‚¹
 		prev.next = new Node<>(element, p);
 		return i;
 	}
 
 
-	public Linked_merge<T> merge(Linked_merge<T> other) {//Á´±íºÏ²¢&&ÉıĞòÅÅÁĞ
+	public Linked_merge<T> merge(Linked_merge<T> other) {//é“¾è¡¨åˆå¹¶&&å‡åºæ’åˆ—
 		Linked_merge<T> merged = new Linked_merge<>();
-		// Á½±í´ÓµÚÒ»¸öÔªËØ¿ªÊ¼ÒÀ´ÎÉ¨Ãè¡¢±È½Ï
+		// ä¸¤è¡¨ä»ç¬¬ä¸€ä¸ªå…ƒç´ å¼€å§‹ä¾æ¬¡æ‰«æã€æ¯”è¾ƒ
 		int i = 0, j = 0;
-		// ½«Á½±íÖĞ½ÏĞ¡µÄÊı²åÈëmerged±íÖĞ
+		// å°†ä¸¤è¡¨ä¸­è¾ƒå°çš„æ•°æ’å…¥mergedè¡¨ä¸­
 		while (i < this.size() && j < other.size()) {
 
 			if (this.get(i).hashCode() < other.get(j).hashCode()) {
@@ -107,13 +107,13 @@ public class Linked_merge<T extends Comparable<T>> {
 
 		}
 
-		// ÈôÊ£ÓàµÄÊÇthis±í£¬½«±íÖĞÊ£ÓàµÄÔªËØÈ«²¿²åÈëmerged±í
+		// è‹¥å‰©ä½™çš„æ˜¯thisè¡¨ï¼Œå°†è¡¨ä¸­å‰©ä½™çš„å…ƒç´ å…¨éƒ¨æ’å…¥mergedè¡¨
 		while (i < this.size()) {
 			merged.insert(this.get(i));
 			i++;
 		}
 
-		// ÈôÊ£ÓàµÄÊÇother±í£¬½«±íÖĞÊ£ÓàµÄÔªËØÈ«²¿²åÈëmerged±í
+		// è‹¥å‰©ä½™çš„æ˜¯otherè¡¨ï¼Œå°†è¡¨ä¸­å‰©ä½™çš„å…ƒç´ å…¨éƒ¨æ’å…¥mergedè¡¨
 		while (j < other.size()) {
 			merged.insert(other.get(j));
 			j++;
@@ -121,11 +121,11 @@ public class Linked_merge<T extends Comparable<T>> {
 
 		return merged;
 	}
-	public Linked_merge<T> mergeJ(Linked_merge<T> other) {//Á´±íºÏ²¢&&½µĞòÅÅÁĞ
+	public Linked_merge<T> mergeJ(Linked_merge<T> other) {//é“¾è¡¨åˆå¹¶&&é™åºæ’åˆ—
 		Linked_merge<T> merged = new Linked_merge<>();
-		// Á½±í´ÓµÚÒ»¸öÔªËØ¿ªÊ¼ÒÀ´ÎÉ¨Ãè¡¢±È½Ï
+		// ä¸¤è¡¨ä»ç¬¬ä¸€ä¸ªå…ƒç´ å¼€å§‹ä¾æ¬¡æ‰«æã€æ¯”è¾ƒ
 		int i = 0, j = 0;
-		// ½«Á½±íÖĞ½ÏĞ¡µÄÊı²åÈëmerged±íÖĞ
+		// å°†ä¸¤è¡¨ä¸­è¾ƒå°çš„æ•°æ’å…¥mergedè¡¨ä¸­
 		while (i < this.size() && j < other.size()) {
 
 			if (this.get(i).hashCode() <other.get(j).hashCode()) {
@@ -140,13 +140,13 @@ public class Linked_merge<T extends Comparable<T>> {
 
 		}
 
-		// ÈôÊ£ÓàµÄÊÇthis±í£¬½«±íÖĞÊ£ÓàµÄÔªËØÈ«²¿²åÈëmerged±í
+		// è‹¥å‰©ä½™çš„æ˜¯thisè¡¨ï¼Œå°†è¡¨ä¸­å‰©ä½™çš„å…ƒç´ å…¨éƒ¨æ’å…¥mergedè¡¨
 		while (i < this.size()) {
 			merged.insert(this.get(i));
 			i++;
 		}
 
-		// ÈôÊ£ÓàµÄÊÇother±í£¬½«±íÖĞÊ£ÓàµÄÔªËØÈ«²¿²åÈëmerged±í
+		// è‹¥å‰©ä½™çš„æ˜¯otherè¡¨ï¼Œå°†è¡¨ä¸­å‰©ä½™çš„å…ƒç´ å…¨éƒ¨æ’å…¥mergedè¡¨
 		while (j < other.size()) {
 			merged.insert(other.get(j));
 			j++;

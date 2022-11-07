@@ -1,10 +1,10 @@
 /**
  *
  */
-package f20220712¿ÎÌÃÊµ¼ù·ÖÖÎ²ßÂÔ;
+package f20220712è¯¾å ‚å®è·µåˆ†æ²»ç­–ç•¥;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T3 {
@@ -27,7 +27,7 @@ public class T3 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		String[] s = { "a", "b", "c", "d", "e", "f" };
 		System.out.println(found("g", s, 0, 5));
 	}

@@ -5,10 +5,10 @@ package unit_2_2_Assignment_rj0509;
 
 import java.util.Random;
 
-import gather_¼¯ºÏ.linked_Á´±í.Linked_merge;
+import gather_é›†åˆ.linked_é“¾è¡¨.Linked_merge;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T33 {
@@ -23,7 +23,7 @@ public class T33 {
 	public void getSllA() {
 		for (int i = 0; i < 10; i++) {
 			int n = rd.nextInt(100) + 2;
-			sllA.insert(n);//ÉıĞòÌí¼Ó
+			sllA.insert(n);//å‡åºæ·»åŠ 
 		}
 	}
 
@@ -31,16 +31,16 @@ public class T33 {
 
 		for (int i = 0; i < 10; i++) {
 			int n = rd.nextInt(100) + 2;
-			sllB.insert(n);//ÉıĞòÌí¼Ó
+			sllB.insert(n);//å‡åºæ·»åŠ 
 		}
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		T33 t = new T33();
 		t.getSllA();
 		t.getSllB();
-		Linked_merge<Integer> newLM=sllA.mergeJ(sllB);//Á´±íºÏ²¢&&½µĞòÅÅÁĞ
+		Linked_merge<Integer> newLM=sllA.mergeJ(sllB);//é“¾è¡¨åˆå¹¶&&é™åºæ’åˆ—
 		T33.sllA.printList();
 		System.out.println("");
 		T33.sllB.printList();

@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.Recently_×î½ü¶Ô;
+package ç»ƒä¹ .Recently_æœ€è¿‘å¯¹;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Closest001 {
@@ -13,14 +13,14 @@ public class Closest001 {
 	 * @param args
 	 */
 	public static float dist(Point p1, Point p2) {
-		// todo: ¼ÆËãÁ½µã¼ä¾àÀë
+		// todo: è®¡ç®—ä¸¤ç‚¹é—´è·ç¦»
 		double a = p1.x - p2.x;
 		double b = p1.y - p2.y;
 		return (float) Math.sqrt(a * a + b * b);
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Point p1 = new Point(1, 1);
 		Point p2 = new Point(4, 5);
 		float expected = 5;

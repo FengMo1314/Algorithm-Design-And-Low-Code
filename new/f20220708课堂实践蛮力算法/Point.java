@@ -1,10 +1,10 @@
 /**
  *
  */
-package f20220708课堂实践蛮力算法;
+package f20220708璇惧爞瀹炶返铔姏绠楁硶;
 
 /**
- * @author 柳和(本地)
+ * @author 鏌冲拰(鏈湴)
  *
  */
 public class Point {

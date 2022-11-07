@@ -3,10 +3,10 @@
  */
 package unit_4_1_Assignment_rj0522;
 
-import tree_Ê÷.BinaryTree_¶ş²æÊ÷.BinaryNode;
+import tree_æ ‘.BinaryTree_äºŒå‰æ ‘.BinaryNode;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T33 {
@@ -18,16 +18,16 @@ public class T33 {
 		  if (t== null) {
 	            return 0;
 	        }
-	        // ¼ÆËã×ó×ÓÊ÷µÄÉî¶È
+	        // è®¡ç®—å·¦å­æ ‘çš„æ·±åº¦
 	        int left = TreeDeep(t.lchild);
-	        // ¼ÆËãÓÒ×ÓÊ÷µÄÉî¶È
+	        // è®¡ç®—å³å­æ ‘çš„æ·±åº¦
 	        int right = TreeDeep(t.rchild);
-	        // Ê÷rootµÄÉî¶È=Â·¾¶×î³¤µÄ×ÓÊ÷Éî¶È + 1
+	        // æ ‘rootçš„æ·±åº¦=è·¯å¾„æœ€é•¿çš„å­æ ‘æ·±åº¦ + 1
 	        return left >= right ? (left + 1) : (right + 1);
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		new T33().TreeDeep(null);
 	}
 

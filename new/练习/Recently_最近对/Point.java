@@ -1,10 +1,10 @@
 /**
  *
  */
-package 练习.Recently_最近对;
+package 缁冧範.Recently_鏈�杩戝;
 
 /**
- * @author 柳和(本地)
+ * @author 鏌冲拰(鏈湴)
  *
  */
 public class Point {

@@ -1,20 +1,20 @@
 /**
  *
  */
-package Á·Ï°.Recently_×î½ü¶Ô;
+package ç»ƒä¹ .Recently_æœ€è¿‘å¯¹;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 class PointXComparator implements Comparator<Point> {
 
 	@Override
 	public int compare(Point pointA, Point pointB) {
-		// todo: ±È½ÏÁ½µãµÄ X ×ø±ê
+		// todo: æ¯”è¾ƒä¸¤ç‚¹çš„ X åæ ‡
 		return pointA.x - pointB.x;
 	}
 
@@ -24,7 +24,7 @@ class PointYComparator implements Comparator<Point> {
 
 	@Override
 	public int compare(Point pointA, Point pointB) {
-		// todo: ±È½ÏÁ½µãµÄ Y ×ø±ê
+		// todo: æ¯”è¾ƒä¸¤ç‚¹çš„ Y åæ ‡
 		return pointA.y - pointB.y;
 	}
 

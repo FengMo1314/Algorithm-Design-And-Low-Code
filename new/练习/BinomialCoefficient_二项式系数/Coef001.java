@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.BinomialCoefficient_¶şÏîÊ½ÏµÊı;
+package ç»ƒä¹ .BinomialCoefficient_äºŒé¡¹å¼ç³»æ•°;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Coef001 {
@@ -12,7 +12,7 @@ public class Coef001 {
 	/**
 	 * @param args
 	 */
-	// todo: ÓÃµİ¹éÇó k ÏîµÄÏµÊı
+	// todo: ç”¨é€’å½’æ±‚ k é¡¹çš„ç³»æ•°
 	private static int binomialCoefficient(int n, int k) {
 		if (n < 0 || k > n) {
 			return 0;
@@ -24,7 +24,7 @@ public class Coef001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(binomialCoefficient(2, 3) == 0);
 		System.out.println(binomialCoefficient(2, 0) == 1);
 		System.out.println(binomialCoefficient(2, 2) == 1);

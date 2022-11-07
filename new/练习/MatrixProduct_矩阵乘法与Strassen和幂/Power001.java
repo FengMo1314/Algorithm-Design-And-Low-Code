@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MatrixProduct_¾ØÕó³Ë·¨ÓëStrassenºÍÃİ;
+package ç»ƒä¹ .MatrixProduct_çŸ©é˜µä¹˜æ³•ä¸Strassenå’Œå¹‚;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Power001 {
@@ -15,14 +15,14 @@ public class Power001 {
 	public static int power(int a, int power) {
 		int output = 1;
 		for (int i = 1; i <= power; i++) {
-			// todo: ¼ÆËã a µÄÃİ
+			// todo: è®¡ç®— a çš„å¹‚
 			output = output * a;
 		}
 		return output;
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(power(2, 0) == 1);
 		System.out.println(power(2, 1) == 2);
 		System.out.println(power(2, 5) == 32);

@@ -1,14 +1,14 @@
 /**
  *
  */
-package ¿ÎÌÃÁ·Ï°;
+package è¯¾å ‚ç»ƒä¹ ;
 
 
-import random_Ëæ»úÊıÉú³ÉÆ÷.RandomGenerator;
-import stopWatch_¼ÆÊ±Æ÷.StopWatch;
+import random_éšæœºæ•°ç”Ÿæˆå™¨.RandomGenerator;
+import stopWatch_è®¡æ—¶å™¨.StopWatch;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Test1 {
@@ -18,7 +18,7 @@ public class Test1 {
 	 */
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		 StopWatch s=new StopWatch();
 		s.start();
 //		RandomGenerator rg=new RandomGenerator();

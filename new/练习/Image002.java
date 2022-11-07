@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Image002 {
@@ -13,18 +13,18 @@ public class Image002 {
 	 * @param args
 	 */
 	/**
-	 * ¼ÆËã×îÓÅ·Ö¶ÎÕ¼ÓÃµÄÎ»Êı
+	 * è®¡ç®—æœ€ä¼˜åˆ†æ®µå ç”¨çš„ä½æ•°
 	 *
-	 * @param p »Ò¶ÈÖµĞòÁĞ
-	 * @param n »Ò¶ÈÖµĞòÁĞµÄ³¤¶È
-	 * @return ×îÓÅ·Ö¶ÎÕ¼ÓÃµÄÎ»Êı
+	 * @param p ç°åº¦å€¼åºåˆ—
+	 * @param n ç°åº¦å€¼åºåˆ—çš„é•¿åº¦
+	 * @return æœ€ä¼˜åˆ†æ®µå ç”¨çš„ä½æ•°
 	 */
 	public static int compress(int[] p, int n) {
 		int Lmax = 256;
 		int header = 11;
 		int[] s = new int[n + 1];
 		int[] b = new int[n + 1];
-		// todo: ¼ÆËã×îÓÅ·Ö¶ÎÕ¼ÓÃµÄÎ»Êı
+		// todo: è®¡ç®—æœ€ä¼˜åˆ†æ®µå ç”¨çš„ä½æ•°
 		s[0] = 0;
 		for (int i = 1; i <= n; i++) {
 			b[i] = Image001.binaryLength(p[i - 1]);
@@ -34,7 +34,7 @@ public class Image002 {
 				if (bmax < b[i - j + 1]) {
 					bmax = b[i - j + 1];
 				}
-				if (s[i] > s[i - j] + j * bmax) {// ÕÒµ½¸üºÅ·Ö¶Î
+				if (s[i] > s[i - j] + j * bmax) {// æ‰¾åˆ°æ›´å·åˆ†æ®µ
 					s[i] = s[i - j] + j * bmax;
 				}
 			}
@@ -44,7 +44,7 @@ public class Image002 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[] p = { 6, 5, 7, 5, 245, 180, 28, 28, 19, 22, 25, 20 };
 		int n = p.length;
 		System.out.println(compress(p, n) == 91);

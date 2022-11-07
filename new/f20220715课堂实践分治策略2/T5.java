@@ -1,7 +1,7 @@
 /**
  *
  */
-package f20220715¿ÎÌÃÊµ¼ù·ÖÖÎ²ßÂÔ2;
+package f20220715è¯¾å ‚å®è·µåˆ†æ²»ç­–ç•¥2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 class Graph {
@@ -47,7 +47,7 @@ class Graph {
 		queue.add(vertex);
 
 		while (queue.size() != 0) {
-			// todo: ¹ã¶ÈÓÅÏÈ±éÀú£¬°´±éÀúË³Ğò´òÓ¡³ö¶¥µãĞòÁĞ
+			// todo: å¹¿åº¦ä¼˜å…ˆéå†ï¼ŒæŒ‰éå†é¡ºåºæ‰“å°å‡ºé¡¶ç‚¹åºåˆ—
 			String s = queue.poll();
 			for (String child : adjList.get(s)) {
 				if (!visited.contains(child)) {
@@ -56,7 +56,7 @@ class Graph {
 				}
 			}
 			for (String res : visited) {
-				System.err.print(res + "¡ª¡ª");
+				System.err.print(res + "â€”â€”");
 			}
 		}
 	}
@@ -69,7 +69,7 @@ public class T5 {
 	 */
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Graph g = new Graph();
 		g.BFS("A");
 	}

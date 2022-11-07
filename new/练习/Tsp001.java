@@ -1,13 +1,13 @@
 /**
  * 
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 import java.util.Arrays;
 import java.util.Stack;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Tsp001 {
@@ -16,23 +16,23 @@ public class Tsp001 {
 	 * @param args
 	 */
 	/**
-     * ×î¶Ì»ØÂ·
+     * æœ€çŸ­å›è·¯
      */
     public static int best = Integer.MAX_VALUE;
     /**
-     * ×î¶Ì»ØÂ··½°¸
+     * æœ€çŸ­å›è·¯æ–¹æ¡ˆ
      */
     public static Integer[] bestSolution;
 
     /**
-     * ÅĞ¶ÏÏÂÒ»¸ö¶¥µãÊÇ·ñ¿ÉÒÔ¼ÓÈëÂ·Ïß
-     * @param graph Í¼
-     * @param v ¶¥µã±»·ÃÎÊ¼ÇÂ¼
-     * @param curVertex µ±Ç°ËùÔÚ¶¥µã
-     * @param i ÏÂÒ»¸ö¶¥µã
-     * @return ÏÂÒ»¸ö¶¥µãÊÇ·ñ¿ÉÒÔ¼ÓÈëÂ·Ïß
+     * åˆ¤æ–­ä¸‹ä¸€ä¸ªé¡¶ç‚¹æ˜¯å¦å¯ä»¥åŠ å…¥è·¯çº¿
+     * @param graph å›¾
+     * @param v é¡¶ç‚¹è¢«è®¿é—®è®°å½•
+     * @param curVertex å½“å‰æ‰€åœ¨é¡¶ç‚¹
+     * @param i ä¸‹ä¸€ä¸ªé¡¶ç‚¹
+     * @return ä¸‹ä¸€ä¸ªé¡¶ç‚¹æ˜¯å¦å¯ä»¥åŠ å…¥è·¯çº¿
      */
-    // todo: ÅĞ¶ÏÏÂÒ»¸ö¶¥µãÊÇ·ñ¿ÉÒÔ¼ÓÈëÂ·Ïß
+    // todo: åˆ¤æ–­ä¸‹ä¸€ä¸ªé¡¶ç‚¹æ˜¯å¦å¯ä»¥åŠ å…¥è·¯çº¿
     public static boolean isValid(int[][] graph, int[] v, int curVertex, int i) {
         if(v[i]!=0) {
         	return false;
@@ -41,15 +41,15 @@ public class Tsp001 {
     }
 
     /**
-     * ¼ì²éÊÇ·ñÂú×ãºóĞø³¤¶ÈµÄÏÂ½ç
-     * @param graph Í¼
-     * @param v ¶¥µã±»·ÃÎÊ¼ÇÂ¼
-     * @param curVertex µ±Ç°ËùÔÚ¶¥µã
-     * @param n ¶¥µã¸öÊı
-     * @param curDist µ±Ç°Â·Ïß³¤¶È
-     * @return ÊÇ·ñÂú×ãºóĞø³¤¶ÈµÄÏÂ½ç
+     * æ£€æŸ¥æ˜¯å¦æ»¡è¶³åç»­é•¿åº¦çš„ä¸‹ç•Œ
+     * @param graph å›¾
+     * @param v é¡¶ç‚¹è¢«è®¿é—®è®°å½•
+     * @param curVertex å½“å‰æ‰€åœ¨é¡¶ç‚¹
+     * @param n é¡¶ç‚¹ä¸ªæ•°
+     * @param curDist å½“å‰è·¯çº¿é•¿åº¦
+     * @return æ˜¯å¦æ»¡è¶³åç»­é•¿åº¦çš„ä¸‹ç•Œ
      */
-    // todo: ¼ì²éÊÇ·ñÂú×ãºóĞø³¤¶ÈµÄÏÂ½ç
+    // todo: æ£€æŸ¥æ˜¯å¦æ»¡è¶³åç»­é•¿åº¦çš„ä¸‹ç•Œ
     public static boolean checkBranch(int[][] graph, int[] v, int curVertex, int n, int curDist) {
         if(n==curDist) {
         	return true;
@@ -67,16 +67,16 @@ public class Tsp001 {
     }
 
     /**
-     * ÀûÓÃ»ØËİ + ·ÖÖ§ÏŞ½ç²ßÂÔ£¬ÕÒµ½×î¶Ì»ØÂ·
-     * @param graph Í¼
-     * @param v ¶¥µã±»·ÃÎÊ¼ÇÂ¼
-     * @param curVertex µ±Ç°ËùÔÚ¶¥µã
-     * @param n ¶¥µã¸öÊı
-     * @param count µ±Ç°±»·ÃÎÊ¹ıµÄ¶¥µã¸öÊı
-     * @param curDist µ±Ç°Â·Ïß³¤¶È
-     * @param curSolution µ±Ç°Â·Ïß·½°¸
+     * åˆ©ç”¨å›æº¯ + åˆ†æ”¯é™ç•Œç­–ç•¥ï¼Œæ‰¾åˆ°æœ€çŸ­å›è·¯
+     * @param graph å›¾
+     * @param v é¡¶ç‚¹è¢«è®¿é—®è®°å½•
+     * @param curVertex å½“å‰æ‰€åœ¨é¡¶ç‚¹
+     * @param n é¡¶ç‚¹ä¸ªæ•°
+     * @param count å½“å‰è¢«è®¿é—®è¿‡çš„é¡¶ç‚¹ä¸ªæ•°
+     * @param curDist å½“å‰è·¯çº¿é•¿åº¦
+     * @param curSolution å½“å‰è·¯çº¿æ–¹æ¡ˆ
      */
-    // todo: ÀûÓÃ»ØËİ + ·ÖÖ§ÏŞ½ç²ßÂÔ£¬ÕÒµ½×î¶Ì»ØÂ·
+    // todo: åˆ©ç”¨å›æº¯ + åˆ†æ”¯é™ç•Œç­–ç•¥ï¼Œæ‰¾åˆ°æœ€çŸ­å›è·¯
     public static void tsp(int[][] graph, int[] v, int curVertex, int n, int count, int curDist, Stack<Integer> curSolution) {
 
         if (count == n && graph[curVertex][0] > 0) {
@@ -92,7 +92,7 @@ public class Tsp001 {
     }
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 
         int[][] graph = {
                 {0, 5, 9, 4},

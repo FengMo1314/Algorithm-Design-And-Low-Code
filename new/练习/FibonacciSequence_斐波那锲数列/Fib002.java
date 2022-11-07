@@ -1,13 +1,13 @@
 /**
  *
  */
-package Á·Ï°.FibonacciSequence_ì³²¨ÄÇïÆÊıÁĞ;
+package ç»ƒä¹ .FibonacciSequence_æ–æ³¢é‚£é”²æ•°åˆ—;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Fib002 {
@@ -22,20 +22,20 @@ public class Fib002 {
 			throw new IllegalArgumentException("n cannot be negative");
 		}
 
-		// todo: Ê¹ÓÃµİ¹éµÄ¶¯Ì¬¹æ»®£¬ÇóµÚ n ¸öì³²¨ÄÇÆõÊı
-		if (n == 1 || n == 2) { // ÌØÊâÇé¿ö£¬·Ö¿ªÌÖÂÛ
+		// todo: ä½¿ç”¨é€’å½’çš„åŠ¨æ€è§„åˆ’ï¼Œæ±‚ç¬¬ n ä¸ªæ–æ³¢é‚£å¥‘æ•°
+		if (n == 1 || n == 2) { // ç‰¹æ®Šæƒ…å†µï¼Œåˆ†å¼€è®¨è®º
 			return 1;
 		}
 		if (n > 2) {
 
-			cache.put(n, fib(n - 1) + fib(n - 2));// ´¢´æĞÂ¼üÖµ¶Ô£¬¹şÏ£±í±¾ÉíÌØĞÔÊ¡È¥¼ÆËãÔ­ÓĞ¼üµÄÖµ
+			cache.put(n, fib(n - 1) + fib(n - 2));// å‚¨å­˜æ–°é”®å€¼å¯¹ï¼Œå“ˆå¸Œè¡¨æœ¬èº«ç‰¹æ€§çœå»è®¡ç®—åŸæœ‰é”®çš„å€¼
 
 		}
-		return -1; // Èç¹ûÊäÈë´íÎóµÄn£¬Ò»ÂÉ·µ»Ø-1
+		return -1; // å¦‚æœè¾“å…¥é”™è¯¯çš„nï¼Œä¸€å¾‹è¿”å›-1
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(fib(1) == 1);
 		System.out.println(fib(2) == 1);
 		System.out.println(fib(20) == 6765);

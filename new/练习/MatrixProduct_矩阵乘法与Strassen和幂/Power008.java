@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.MatrixProduct_¾ØÕó³Ë·¨ÓëStrassenºÍÃİ;
+package ç»ƒä¹ .MatrixProduct_çŸ©é˜µä¹˜æ³•ä¸Strassenå’Œå¹‚;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Power008 {
@@ -16,7 +16,7 @@ public class Power008 {
 		int rows = m1.length;
 		int cols = m1[0].length;
 		int[][] result = new int[rows][cols];
-		// todo: Á½¸ö¾ØÕó¶ÔÓ¦Î»ÖÃµÄÔªËØµÄºÍ
+		// todo: ä¸¤ä¸ªçŸ©é˜µå¯¹åº”ä½ç½®çš„å…ƒç´ çš„å’Œ
 		for (int i = 0; i < result.length; i++) {
 			for (int j = 0; j < result.length; j++) {
 				result[i][j] = m1[i][j] + m2[i][j];
@@ -30,7 +30,7 @@ public class Power008 {
 		int rows = m1.length;
 		int cols = m1[0].length;
 		int[][] result = new int[rows][cols];
-		// todo: Á½¸ö¾ØÕó¶ÔÓ¦Î»ÖÃµÄÔªËØµÄ²î
+		// todo: ä¸¤ä¸ªçŸ©é˜µå¯¹åº”ä½ç½®çš„å…ƒç´ çš„å·®
 		for (int i = 0; i < result.length; i++) {
 			for (int j = 0; j < result.length; j++) {
 				result[i][j] = m1[i][j] - m2[i][j];
@@ -40,7 +40,7 @@ public class Power008 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] matrix1 = new int[][] { { 2, 3, -1 }, { 6, 1, -2 } };
 		int[][] matrix2 = new int[][] { { 4, -5, 1 }, { -3, 0, 2 } };
 		int[][] sum = matrixAdd(matrix1, matrix2);

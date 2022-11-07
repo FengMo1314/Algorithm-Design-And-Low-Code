@@ -1,20 +1,20 @@
 /**
  *
  */
-package f20220716¿ÎÌÃÊµ¼ù·ÖÖÎ²ßÂÔ3;
+package f20220716è¯¾å ‚å®è·µåˆ†æ²»ç­–ç•¥3;
 
 import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 class PointXComparator implements Comparator<Point> {
 
 	@Override
 	public int compare(Point pointA, Point pointB) {
-		// todo: ±È½ÏÁ½µãµÄ X ×ø±ê
+		// todo: æ¯”è¾ƒä¸¤ç‚¹çš„ X åæ ‡
 		return pointA.x - pointB.x;
 	}
 
@@ -24,7 +24,7 @@ class PointYComparator implements Comparator<Point> {
 
 	@Override
 	public int compare(Point pointA, Point pointB) {
-		// todo: ±È½ÏÁ½µãµÄ Y ×ø±ê
+		// todo: æ¯”è¾ƒä¸¤ç‚¹çš„ Y åæ ‡
 		return pointA.y - pointB.y;
 	}
 
@@ -50,9 +50,9 @@ public class T4 {
 		}
 
 		int mid = start + (end - start) / 2;
-//	        Point midPoint = new Point(pointsByX[mid].x, pointsByX[mid].y);//°´XÎª×¼µÄÖĞ¼äµã×ø±ê
+//	        Point midPoint = new Point(pointsByX[mid].x, pointsByX[mid].y);//æŒ‰Xä¸ºå‡†çš„ä¸­é—´ç‚¹åæ ‡
 
-		// todo: ·ÖÖÎ²ßÂÔÇó×óÓÒÁ½Æ½Ãæ¼°ÖĞ¼äµØ´øµÄ×î½ü¶Ô¾àÀë
+		// todo: åˆ†æ²»ç­–ç•¥æ±‚å·¦å³ä¸¤å¹³é¢åŠä¸­é—´åœ°å¸¦çš„æœ€è¿‘å¯¹è·ç¦»
 		float distLeft = smallestDistance(pointsByY, pointsByX, 0, mid);
 		float distRight = smallestDistance(pointsByY, pointsByX, mid, end);
 		float delta = Math.min(distLeft, distRight);
@@ -62,7 +62,7 @@ public class T4 {
 
 	public static float bruteForceSmallestDistance(Point[] points, int start, int end) {
 		float smallest = Float.MAX_VALUE;
-		// todo: ¼ÆËãÖ¸¶¨·¶Î§ÄÚµÄÃ¿Ò»¶ÔµãµÄ¾àÀë²¢·µ»Ø×îĞ¡Öµ
+		// todo: è®¡ç®—æŒ‡å®šèŒƒå›´å†…çš„æ¯ä¸€å¯¹ç‚¹çš„è·ç¦»å¹¶è¿”å›æœ€å°å€¼
 		for (int i = start; i <= end; i++) {
 			for (int j = i + 1; j <= end; j++) {
 				float temp = dist(points[i], points[j]);
@@ -75,14 +75,14 @@ public class T4 {
 	}
 
 	public static float dist(Point p1, Point p2) {
-		// todo: ¼ÆËãÁ½µã¼ä¾àÀë
+		// todo: è®¡ç®—ä¸¤ç‚¹é—´è·ç¦»
 		double a = p1.x - p2.x;
 		double b = p1.y - p2.y;
 		return (float) Math.sqrt(a * a + b * b);
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Point[] points = new Point[] { new Point(2, 3), new Point(12, 30), new Point(40, 50), new Point(5, 1),
 				new Point(6, 2), new Point(3, 5) };
 

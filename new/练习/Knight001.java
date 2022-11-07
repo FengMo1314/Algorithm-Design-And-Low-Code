@@ -1,12 +1,12 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 import java.util.Arrays;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Knight001 {
@@ -15,15 +15,15 @@ public class Knight001 {
 	 * @param args
 	 */
 	/**
-	 * ÅĞ¶ÏÊÇ·ñ¿ÉÒÔ·ÅÖÃÆïÊ¿
+	 * åˆ¤æ–­æ˜¯å¦å¯ä»¥æ”¾ç½®éª‘å£«
 	 *
-	 * @param x     ºá×ø±ê
-	 * @param y     ×İ×ø±ê
-	 * @param board ÆåÅÌ
-	 * @param n     ÆåÅÌ´óĞ¡
-	 * @return ÊÇ·ñ¿ÉÒÔ·ÅÖÃ
+	 * @param x     æ¨ªåæ ‡
+	 * @param y     çºµåæ ‡
+	 * @param board æ£‹ç›˜
+	 * @param n     æ£‹ç›˜å¤§å°
+	 * @return æ˜¯å¦å¯ä»¥æ”¾ç½®
 	 */
-	// todo: ÅĞ¶ÏÊÇ·ñ¿ÉÒÔÔÚ¸Ã×ø±êËùÊ¾µÄÎ»ÖÃ·ÅÖÃÆïÊ¿
+	// todo: åˆ¤æ–­æ˜¯å¦å¯ä»¥åœ¨è¯¥åæ ‡æ‰€ç¤ºçš„ä½ç½®æ”¾ç½®éª‘å£«
 	public static boolean isValid(int x, int y, int[][] board, int n) {
 		for (int i = 0; i < board.length; i++) {
 			for (int j = 0; j < board[i].length; j++) {
@@ -54,7 +54,7 @@ public class Knight001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] board = new int[8][8];
 		Arrays.stream(board).forEach(a -> Arrays.fill(a, -1));
 		board[0][0] = 0;

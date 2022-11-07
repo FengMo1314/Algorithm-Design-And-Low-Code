@@ -1,16 +1,16 @@
-package random_Ëæ»úÊıÉú³ÉÆ÷;
+package random_éšæœºæ•°ç”Ÿæˆå™¨;
 
 import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.IntStream;
 /*
- * Ëæ»úÊı×éÉú³É
+ * éšæœºæ•°ç»„ç”Ÿæˆ
  */
 public class RandomGenerator {
 
 	  public RandomGenerator() {
 		super();
-		// TODO ×Ô¶¯Éú³ÉµÄ¹¹Ôìº¯Êı´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ„é€ å‡½æ•°å­˜æ ¹
 	}
 
 	public static int[] uniformInts(int n) {

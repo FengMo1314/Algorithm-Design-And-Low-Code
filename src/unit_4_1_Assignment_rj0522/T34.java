@@ -5,10 +5,10 @@ package unit_4_1_Assignment_rj0522;
 
 import java.util.LinkedList;
 
-import tree_Ê÷.BinaryTree_¶ş²æÊ÷.BinaryNode;
+import tree_æ ‘.BinaryTree_äºŒå‰æ ‘.BinaryNode;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class T34 {
@@ -17,7 +17,7 @@ public class T34 {
 	 * @param args
 	 */
 	/*
-	 * ²ã´Î±éÀú¶ş²æÊ÷£¨·Çµİ¹é£©
+	 * å±‚æ¬¡éå†äºŒå‰æ ‘ï¼ˆéé€’å½’ï¼‰
 	 */
 
 	public void PrintBinaryTreeLayerUnrecur(BinaryNode<Integer> root) {
@@ -35,7 +35,7 @@ public class T34 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		new T34().PrintBinaryTreeLayerUnrecur(null);
 	}
 

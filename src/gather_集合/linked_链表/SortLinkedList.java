@@ -1,15 +1,15 @@
 /**
  *
  */
-package gather_¼¯ºÏ.linked_Á´±í;
+package gather_é›†åˆ.linked_é“¾è¡¨;
 
-import gather_¼¯ºÏ.node_½Úµã.Node;
+import gather_é›†åˆ.node_èŠ‚ç‚¹.Node;
 
 /**
- * @author ÁøºÍ(±¾µØ) ÓĞĞòµ¥Á´±í
+ * @author æŸ³å’Œ(æœ¬åœ°) æœ‰åºå•é“¾è¡¨
  */
 public class SortLinkedList<T extends Comparable<T>> {
-	public Node<T> head;// Í·Ö¸Õë
+	public Node<T> head;// å¤´æŒ‡é’ˆ
 
 	public SortLinkedList() {
 		super();
@@ -23,12 +23,12 @@ public class SortLinkedList<T extends Comparable<T>> {
 
 	public T get(int index) {
 		Node<T> p = this.head.next;
-		// ±éÀúµ¥Á´±í£¬Ñ°ÕÒa(i)
+		// éå†å•é“¾è¡¨ï¼Œå¯»æ‰¾a(i)
 		for (int i = 0; p != null && i < index; i++) {
 			p = p.next;
 		}
 
-		// ÈôpÖ¸Ïòa(i)£¬·µ»ØÆädataÖµ
+		// è‹¥pæŒ‡å‘a(i)ï¼Œè¿”å›å…¶dataå€¼
 		return (index >= 0 && p != null) ? p.data : null;
 	}
 
@@ -36,7 +36,7 @@ public class SortLinkedList<T extends Comparable<T>> {
 		throw new UnsupportedOperationException();
 	}
 
-	public int size() {// ¼¯ºÏ³¤¶È
+	public int size() {// é›†åˆé•¿åº¦
 		Node<T> p = this.head.next;
 		int n = 0;
 		while (p != null) {
@@ -51,19 +51,19 @@ public class SortLinkedList<T extends Comparable<T>> {
 		if (element == null) {
 			return -1;
 		}
-		// prev Ö¸ÏòpµÄÇ°Çı½áµã
+		// prev æŒ‡å‘pçš„å‰é©±ç»“ç‚¹
 		Node<T> prev =head, p = prev.next;
 		while (p != null && element.compareTo(p.data) > 0) {
 			prev = p;
 			p= p.next;
 			i++;
 		}
-		// ÔÚprevÖ®ºópÖ®Ç°£¬²åÈëÖµÎªelementµÄ½áµã
+		// åœ¨prevä¹‹åpä¹‹å‰ï¼Œæ’å…¥å€¼ä¸ºelementçš„ç»“ç‚¹
 		prev.next = new Node<>(element,p);
 		return i;
 	}
 
-	public T remove(int index) {// É¾³ıÖ¸¶¨ÏÂ±êµÄÊı¾İ
+	public T remove(int index) {// åˆ é™¤æŒ‡å®šä¸‹æ ‡çš„æ•°æ®
 		Node<T> p = this.head;
 		int i = 0;
 		while (p != null && i < index) {
@@ -85,11 +85,11 @@ public class SortLinkedList<T extends Comparable<T>> {
 		}
 	}
 
-	public boolean isEmpty() {// ÅĞ¶Ï±íÊÇ·ñÎª¿Õ
+	public boolean isEmpty() {// åˆ¤æ–­è¡¨æ˜¯å¦ä¸ºç©º
 		return this.head.next == null;
 	}
 
-	public void printList() {// ±éÀú´òÓ¡
+	public void printList() {// éå†æ‰“å°
 		Node<T> p = new Node<>();
 		p = head.next;
 		while (p != null) {

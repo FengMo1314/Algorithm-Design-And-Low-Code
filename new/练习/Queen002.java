@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Queen002 {
@@ -13,30 +13,30 @@ public class Queen002 {
 	 * @param args
 	 */
 	/**
-	 * ¼ÆËãÊÇ·ñ¿ÉÒÔ·ÅÖÃ n ¸ö»Êºó
+	 * è®¡ç®—æ˜¯å¦å¯ä»¥æ”¾ç½® n ä¸ªçš‡åŽ
 	 *
-	 * @param board ÆåÅÌ
-	 * @param col   µ±Ç°ÁÐ
-	 * @return ÊÇ·ñ¿ÉÒÔ·ÅÖÃ n ¸ö»Êºó
+	 * @param board æ£‹ç›˜
+	 * @param col   å½“å‰åˆ—
+	 * @return æ˜¯å¦å¯ä»¥æ”¾ç½® n ä¸ªçš‡åŽ
 	 */
-	// todo: ¼ÆËãÊÇ·ñ¿ÉÒÔ·ÅÖÃ n ¸ö»Êºó
+	// todo: è®¡ç®—æ˜¯å¦å¯ä»¥æ”¾ç½® n ä¸ªçš‡åŽ
 	public static boolean nQueen(int[][] board, int col) {
-		// todo: ´ï³É¿ÉÐÐ½âµÄÌõ¼þ£¬col³¬¹ýÆåÅÌ×î´óÁÐÊý£¬µÝ¹éÖÕÖ¹
+		// todo: è¾¾æˆå¯è¡Œè§£çš„æ¡ä»¶ï¼Œcolè¶…è¿‡æ£‹ç›˜æœ€å¤§åˆ—æ•°ï¼Œé€’å½’ç»ˆæ­¢
 		if (col >= board.length) {
 			return true;
 		}
 		for (int i = 0; i < board.length; i++) {
 
-			// todo: ÊÇ·ñÂú×ãÔ¼ÊøÌõ¼þ£¬»ÊºóÄÜ²»ÄÜ·ÅÖÃÔÚµ±Ç°Î»ÖÃ
+			// todo: æ˜¯å¦æ»¡è¶³çº¦æŸæ¡ä»¶ï¼Œçš‡åŽèƒ½ä¸èƒ½æ”¾ç½®åœ¨å½“å‰ä½ç½®
 			if (Queen001.check(board, i, col)) {
-				// todo: ±ê¼ÇÒÑ·ÅÖÃ»ÊºóµÄ¸ñ×Ó
+				// todo: æ ‡è®°å·²æ”¾ç½®çš‡åŽçš„æ ¼å­
 				board[i][col] = 1;
-				// todo: ËÑË÷ÏÂÒ»¸ö·ûºÏÌõ¼þµÄ¸ñ×Ó
-//                    nQueen(board,col+1);//Èç´ËÊéÐ´¡ª¡ª¿ÉÐÐ½âÈ±Ê§£¬ÎÞ·¨ÖÐ¶Ï
+				// todo: æœç´¢ä¸‹ä¸€ä¸ªç¬¦åˆæ¡ä»¶çš„æ ¼å­
+//                    nQueen(board,col+1);//å¦‚æ­¤ä¹¦å†™â€”â€”å¯è¡Œè§£ç¼ºå¤±ï¼Œæ— æ³•ä¸­æ–­
 				if (nQueen(board, col + 1)) {
 					return true;
 				}
-				// todo: »ØËÝ
+				// todo: å›žæº¯
 				board[i][col] = 0;
 			}
 		}
@@ -44,7 +44,7 @@ public class Queen002 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int queen = 4;
 		int[][] board = new int[queen][queen];
 		System.out.println(nQueen(board, 0));

@@ -1,12 +1,12 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 import java.util.Arrays;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Knight002 {
@@ -16,15 +16,15 @@ public class Knight002 {
 	 */
 
 	/**
-	 * ºáÏòĞĞ×ßµÄ²½ÊıÏŞÖÆ
+	 * æ¨ªå‘è¡Œèµ°çš„æ­¥æ•°é™åˆ¶
 	 */
 	static int[] xMove = { 2, 1, -1, -2, -2, -1, 1, 2 };
 	/**
-	 * ×İÏòĞĞ×ßµÄ²½ÊıÏŞÖÆ
+	 * çºµå‘è¡Œèµ°çš„æ­¥æ•°é™åˆ¶
 	 */
 	static int[] yMove = { 1, 2, 2, 1, -1, -2, -2, -1 };
 
-	// ´òÓ¡ÆåÅÌ
+	// æ‰“å°æ£‹ç›˜
 	public static void printSolution(int[][] board) {
 		int n = board.length;
 		for (int x = 0; x < n; x++) {
@@ -36,16 +36,16 @@ public class Knight002 {
 	}
 
 	/**
-	 * ¼ÆËãÆïÊ¿ÊÇ·ñ¿ÉÒÔ²»ÖØ¸´µØ×ßÍêÆåÅÌ£¬²¢·µ»ØĞĞ×ßÏßÂ·
+	 * è®¡ç®—éª‘å£«æ˜¯å¦å¯ä»¥ä¸é‡å¤åœ°èµ°å®Œæ£‹ç›˜ï¼Œå¹¶è¿”å›è¡Œèµ°çº¿è·¯
 	 *
-	 * @param curX  µ±Ç°Î»ÖÃ x ×ø±ê
-	 * @param curY  µ±Ç°Î»ÖÃ y ×ø±ê
-	 * @param steps ĞĞ×ß²½Êı
-	 * @param board ÆåÅÌ
-	 * @param n     ÆåÅÌ´óĞ¡
-	 * @return ÊÇ·ñ¿ÉÒÔ×ßÍê
+	 * @param curX  å½“å‰ä½ç½® x åæ ‡
+	 * @param curY  å½“å‰ä½ç½® y åæ ‡
+	 * @param steps è¡Œèµ°æ­¥æ•°
+	 * @param board æ£‹ç›˜
+	 * @param n     æ£‹ç›˜å¤§å°
+	 * @return æ˜¯å¦å¯ä»¥èµ°å®Œ
 	 */
-	// todo: ÊÇ·ñ¿ÉÒÔ²»ÖØ¸´µØ×ßÍêÆåÅÌ£¬²¢·µ»ØĞĞ×ßÏßÂ·
+	// todo: æ˜¯å¦å¯ä»¥ä¸é‡å¤åœ°èµ°å®Œæ£‹ç›˜ï¼Œå¹¶è¿”å›è¡Œèµ°çº¿è·¯
 	public static boolean knightTour(int curX, int curY, int steps, int[][] board, int n) {
 		if (steps == n * n) {
 			return true;
@@ -61,7 +61,7 @@ public class Knight002 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int[][] board = new int[8][8];
 		Arrays.stream(board).forEach(a -> Arrays.fill(a, -1));
 		board[0][0] = 0;

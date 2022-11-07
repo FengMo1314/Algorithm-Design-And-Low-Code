@@ -1,13 +1,13 @@
 /**
  *
  */
-package Á·Ï°;
+package ç»ƒä¹ ;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Queen003 {
@@ -16,23 +16,23 @@ public class Queen003 {
 	 * @param args
 	 */
 	/**
-	 * ·ÅÖÃ n ¸ö»ÊºóµÄËùÓĞ·½°¸
+	 * æ”¾ç½® n ä¸ªçš‡åçš„æ‰€æœ‰æ–¹æ¡ˆ
 	 */
 	public static List<int[]> solutions = new ArrayList<>();
 
 	/**
-	 * ·ÅÖÃ n ¸ö»Êºó£¬²¢µÃµ½ËùÓĞ¿ÉÄÜµÄ·ÅÖÃ·½°¸
+	 * æ”¾ç½® n ä¸ªçš‡åï¼Œå¹¶å¾—åˆ°æ‰€æœ‰å¯èƒ½çš„æ”¾ç½®æ–¹æ¡ˆ
 	 *
-	 * @param board ÆåÅÌ
-	 * @param col   µ±Ç°ÁĞ
+	 * @param board æ£‹ç›˜
+	 * @param col   å½“å‰åˆ—
 	 */
-	// todo: ·ÅÖÃ n ¸ö»Êºó£¬²¢µÃµ½ËùÓĞ¿ÉÄÜµÄ·ÅÖÃ·½°¸
+	// todo: æ”¾ç½® n ä¸ªçš‡åï¼Œå¹¶å¾—åˆ°æ‰€æœ‰å¯èƒ½çš„æ”¾ç½®æ–¹æ¡ˆ
 	public static void nQueen(int[][] board, int col, int[] solution) {
-		// todo: ´ï³É¿ÉĞĞ½âµÄÌõ¼ş£¬col³¬¹ıÆåÅÌ×î´óÁĞÊı£¬µİ¹éÖÕÖ¹
+		// todo: è¾¾æˆå¯è¡Œè§£çš„æ¡ä»¶ï¼Œcolè¶…è¿‡æ£‹ç›˜æœ€å¤§åˆ—æ•°ï¼Œé€’å½’ç»ˆæ­¢
 		if (col >= board.length) {
 			Queen000.printBoard(board, col);
 			System.out.println();
-			int[] sc = new int[solution.length];// ¸´ÖÆsolution
+			int[] sc = new int[solution.length];// å¤åˆ¶solution
 			for (int i = 0; i < solution.length; i++) {
 				sc[i] = solution[i];
 			}
@@ -40,14 +40,14 @@ public class Queen003 {
 			return;
 		}
 		for (int i = 0; i < board.length; i++) {
-			// todo: ÊÇ·ñÂú×ãÔ¼ÊøÌõ¼ş£¬»ÊºóÄÜ²»ÄÜ·ÅÖÃÔÚµ±Ç°Î»ÖÃ
+			// todo: æ˜¯å¦æ»¡è¶³çº¦æŸæ¡ä»¶ï¼Œçš‡åèƒ½ä¸èƒ½æ”¾ç½®åœ¨å½“å‰ä½ç½®
 			if (Queen001.check(board, i, col)) {
 				solution[i] = col;
-				// todo: ±ê¼ÇÒÑ·ÅÖÃ»ÊºóµÄ¸ñ×Ó
+				// todo: æ ‡è®°å·²æ”¾ç½®çš‡åçš„æ ¼å­
 				board[i][col] = 1;
-				// todo: ËÑË÷ÏÂÒ»¸ö·ûºÏÌõ¼şµÄ¸ñ×Ó
+				// todo: æœç´¢ä¸‹ä¸€ä¸ªç¬¦åˆæ¡ä»¶çš„æ ¼å­
 				nQueen(board, col + 1, solution);
-				// todo: »ØËİ
+				// todo: å›æº¯
 				board[i][col] = 0;
 			}
 
@@ -56,7 +56,7 @@ public class Queen003 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		int queen = 4;
 		int[][] board = new int[queen][queen];
 		nQueen(board, 0, new int[queen]);

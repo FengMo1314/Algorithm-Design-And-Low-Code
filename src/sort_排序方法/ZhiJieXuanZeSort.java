@@ -1,15 +1,15 @@
 /**
  *
  */
-package sort_ÅÅĞò·½·¨;
+package sort_æ’åºæ–¹æ³•;
 
 /**
- * @author ÁøºÍ(±¾µØ)
- *  Ñ¡ÔñÀàÅÅĞò
+ * @author æŸ³å’Œ(æœ¬åœ°)
+ *  é€‰æ‹©ç±»æ’åº
  */
 public class ZhiJieXuanZeSort {
 	/*
-	 * Ö±½ÓÑ¡ÔñÅÅĞò
+	 * ç›´æ¥é€‰æ‹©æ’åº
 	 */
 
 	public static void swap(int[] a,int i,int j) {
@@ -22,12 +22,12 @@ public class ZhiJieXuanZeSort {
 	}
 	public static void selectSort(int[] a) {
 		for(int i=0;i<a.length-1;i++) {
-			int minIndex=i;//¼ÇÂ¼×îĞ¡ÖµµÄË÷Òı
+			int minIndex=i;//è®°å½•æœ€å°å€¼çš„ç´¢å¼•
 			for(int j=i+1;j<a.length;j++) {
 				if(a[j]<a[minIndex]) {
 					minIndex=j;
 					/*
-					 * ÈôºóÃæµÄÔªËØÖµĞ¡ÓÚ×îĞ¡Öµ,½«j¸³Öµ¸øminIndex
+					 * è‹¥åé¢çš„å…ƒç´ å€¼å°äºæœ€å°å€¼,å°†jèµ‹å€¼ç»™minIndex
 					 */
 				}
 			}

@@ -1,43 +1,43 @@
-package gather_¼¯ºÏ.sequential_Ë³Ğò±í;
+package gather_é›†åˆ.sequential_é¡ºåºè¡¨;
 
 import java.util.Comparator;
 
 /**
- * Ë³Ğò±íÊµÏÖ
+ * é¡ºåºè¡¨å®ç°
  *
- * @param <T> Êı¾İÔªËØµÄÊı¾İÀàĞÍ
+ * @param <T> æ•°æ®å…ƒç´ çš„æ•°æ®ç±»å‹
  */
 public class Accomplish<T> implements Gathers<T> {
 	/**
-	 * ¶ÔÏóÊı×é ÓÃÓÚ´æ´¢Ë³Ğò±íÊı¾İÔªËØ
+	 * å¯¹è±¡æ•°ç»„ ç”¨äºå­˜å‚¨é¡ºåºè¡¨æ•°æ®å…ƒç´ 
 	 */
 	protected Object[] data;
 
 	/**
-	 * Ë³Ğò±íÊı¾İµÄÔªËØ¸öÊı
+	 * é¡ºåºè¡¨æ•°æ®çš„å…ƒç´ ä¸ªæ•°
 	 */
 	protected int n;
 
 	/**
-	 * ¹¹ÔìÖ¸¶¨ÈİÁ¿µÄ¿Õ±í
+	 * æ„é€ æŒ‡å®šå®¹é‡çš„ç©ºè¡¨
 	 *
-	 * length Ö¸¶¨ÈİÁ¿
+	 * length æŒ‡å®šå®¹é‡
 	 */
 	public Accomplish(int length) {
 		this.data = new Object[length];
-		// ¿Õ±í³¤¶ÈÎª0
+		// ç©ºè¡¨é•¿åº¦ä¸º0
 		this.n = 0;
 	}
 
 	/**
-	 * Ä¬ÈÏ¹¹Ôìº¯Êı£¬¹¹ÔìÒ»¸ö³¤¶ÈÎª10µÄÊı×é
+	 * é»˜è®¤æ„é€ å‡½æ•°ï¼Œæ„é€ ä¸€ä¸ªé•¿åº¦ä¸º10çš„æ•°ç»„
 	 */
 	public Accomplish() {
 		this(10);
 	}
 
 	/**
-	 * ÓÉÖ¸¶¨Êı×é¹¹ÔìË³Ğò±í
+	 * ç”±æŒ‡å®šæ•°ç»„æ„é€ é¡ºåºè¡¨
 	 */
 	public Accomplish(T[] elements) {
 		this(elements.length);
@@ -48,15 +48,15 @@ public class Accomplish<T> implements Gathers<T> {
 	}
 
 	/**
-	 * ·µ»ØÏÂ±êÎªindexµÄÔªËØ
+	 * è¿”å›ä¸‹æ ‡ä¸ºindexçš„å…ƒç´ 
 	 *
-	 * @param index ÏÂ±ê
-	 * @return ÔªËØ
+	 * @param index ä¸‹æ ‡
+	 * @return å…ƒç´ 
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public T get(int index) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		if (index >= 0 && index < this.n) {
 			return (T) this.data[index];
 		} else {
@@ -65,14 +65,14 @@ public class Accomplish<T> implements Gathers<T> {
 	}
 
 	/**
-	 * Ìæ»»ÁĞ±íÖĞÖ¸¶¨Î»ÖÃµÄÔªËØ
+	 * æ›¿æ¢åˆ—è¡¨ä¸­æŒ‡å®šä½ç½®çš„å…ƒç´ 
 	 *
-	 * @param index   Ö¸¶¨Î»ÖÃÏÂ±ê
-	 * @param element Ìæ»»ÓÃµÄÔªËØ
+	 * @param index   æŒ‡å®šä½ç½®ä¸‹æ ‡
+	 * @param element æ›¿æ¢ç”¨çš„å…ƒç´ 
 	 */
 	@Override
 	public void set(int index, T element) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		if (element == null) {
 			throw new NullPointerException("t == null");
 		}
@@ -85,15 +85,15 @@ public class Accomplish<T> implements Gathers<T> {
 	}
 
 	/**
-	 * ÔÚÏßĞÔ±íµÄÖ¸¶¨Î»ÖÃ´¦²åÈëÔªËØ
+	 * åœ¨çº¿æ€§è¡¨çš„æŒ‡å®šä½ç½®å¤„æ’å…¥å…ƒç´ 
 	 *
-	 * @param index   Ö¸¶¨Î»ÖÃÏÂ±ê
-	 * @param element ´ı²åÈëµÄÔªËØ
-	 * @return ²åÈëºóÔªËØµÄĞòºÅ
+	 * @param index   æŒ‡å®šä½ç½®ä¸‹æ ‡
+	 * @param element å¾…æ’å…¥çš„å…ƒç´ 
+	 * @return æ’å…¥åå…ƒç´ çš„åºå·
 	 */
 	@Override
 	public int insert(int index, T element) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		if (element == null) {
 			throw new NullPointerException("t == null");
 		}
@@ -118,27 +118,27 @@ public class Accomplish<T> implements Gathers<T> {
 	}
 
 	/**
-	 * ÔÚÏßĞÔ±íµÄ×îºó²åÈëÔªËØ
+	 * åœ¨çº¿æ€§è¡¨çš„æœ€åæ’å…¥å…ƒç´ 
 	 *
-	 * @param element ´ı²åÈëµÄÔªËØ
-	 * @return ²åÈëºóÔªËØµÄĞòºÅ
+	 * @param element å¾…æ’å…¥çš„å…ƒç´ 
+	 * @return æ’å…¥åå…ƒç´ çš„åºå·
 	 */
 	@Override
 	public int insert(T element) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return this.insert(this.n, element);
 	}
 
 	/**
-	 * É¾³ıÖ¸¶¨Î»ÖÃµÄÔªËØ
+	 * åˆ é™¤æŒ‡å®šä½ç½®çš„å…ƒç´ 
 	 *
-	 * @param index Ö¸¶¨Î»ÖÃÏÂ±ê
-	 * @return ±»É¾³ıµÄÔªËØ
+	 * @param index æŒ‡å®šä½ç½®ä¸‹æ ‡
+	 * @return è¢«åˆ é™¤çš„å…ƒç´ 
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public T remove(int index) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		if (this.n == 0) {
 			try {
 				throw new Exception("Cannot remove from empty list");
@@ -162,14 +162,14 @@ public class Accomplish<T> implements Gathers<T> {
 	}
 
 	/**
-	 * ÔÚÏßĞÔ±íÖĞ²éÕÒÊ×´Î³öÏÖµÄÓë±»²éÔªËØÏàÍ¬µÄÔªËØµÄÎ»ÖÃ
+	 * åœ¨çº¿æ€§è¡¨ä¸­æŸ¥æ‰¾é¦–æ¬¡å‡ºç°çš„ä¸è¢«æŸ¥å…ƒç´ ç›¸åŒçš„å…ƒç´ çš„ä½ç½®
 	 *
-	 * @param element ±»²éÔªËØ
-	 * @return Èç¹û²éµ½£¬·µ»ØÔªËØÎ»ÖÃ£¬·ñÔò·µ»Ø -1
+	 * @param element è¢«æŸ¥å…ƒç´ 
+	 * @return å¦‚æœæŸ¥åˆ°ï¼Œè¿”å›å…ƒç´ ä½ç½®ï¼Œå¦åˆ™è¿”å› -1
 	 */
 	@Override
 	public int indexOf(T element) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		for (int i = 0; i < this.n; i++) {
 			if (element.equals(this.data[i])) {
 				return i;
@@ -179,45 +179,45 @@ public class Accomplish<T> implements Gathers<T> {
 	}
 
 	/**
-	 * ÅĞ¶ÏÏßĞÔ±íÖĞÊÇ·ñ°üº¬Ö¸¶¨ÔªËØ
+	 * åˆ¤æ–­çº¿æ€§è¡¨ä¸­æ˜¯å¦åŒ…å«æŒ‡å®šå…ƒç´ 
 	 *
-	 * @param element Ö¸¶¨ÔªËØ
-	 * @return Èç¹û°üº¬·µ»Ø true£¬·ñÔò false
+	 * @param element æŒ‡å®šå…ƒç´ 
+	 * @return å¦‚æœåŒ…å«è¿”å› trueï¼Œå¦åˆ™ false
 	 */
 	@Override
 	public boolean contains(T element) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return indexOf(element) != -1;
 	}
 
 	/**
-	 * ·µ»ØÏßĞÔ±íµÄ³¤¶È
+	 * è¿”å›çº¿æ€§è¡¨çš„é•¿åº¦
 	 *
-	 * @return ÏßĞÔ±íµÄ³¤¶È
+	 * @return çº¿æ€§è¡¨çš„é•¿åº¦
 	 */
 	@Override
 	public int size() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return this.n;
 	}
 
 	/**
-	 * ·µ»ØÏßĞÔ±íµÄÕ¼ÓÃ¿Õ¼ä
+	 * è¿”å›çº¿æ€§è¡¨çš„å ç”¨ç©ºé—´
 	 *
-	 * @return Õ¼ÓÃ¿Õ¼ä
+	 * @return å ç”¨ç©ºé—´
 	 */
 	@Override
 	public int space() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return this.data == null ? 0 : this.data.length;
 	}
 
 	/**
-	 * Çå¿ÕÏßĞÔ±í
+	 * æ¸…ç©ºçº¿æ€§è¡¨
 	 */
 	@Override
 	public void clear() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		for (int i = 0; i < this.n; i++) {
 			this.data[i] = null;
 		}
@@ -226,36 +226,36 @@ public class Accomplish<T> implements Gathers<T> {
 	}
 
 	/**
-	 * ÅĞ¶ÏÏßĞÔ±íÊÇ·ñÎª¿Õ
+	 * åˆ¤æ–­çº¿æ€§è¡¨æ˜¯å¦ä¸ºç©º
 	 *
-	 * @return Èç¹û¿Õ£¬·µ»Ø true£¬ ·ñÔò false
+	 * @return å¦‚æœç©ºï¼Œè¿”å› trueï¼Œ å¦åˆ™ false
 	 */
 	@Override
 	public boolean isEmpty() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		return this.n == 0;
 	}
 
 	/**
-	 * ±éÀúÏßĞÔ±íËùÓĞÔªËØ
+	 * éå†çº¿æ€§è¡¨æ‰€æœ‰å…ƒç´ 
 	 */
 	@Override
 	public void printList() {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		for (int i = 0; i < this.n; i++) {
 			System.out.print(this.data[i] + " ");
 		}
 	}
 
 	/**
-	 * ÅÅĞò£¬½ÓÊÜcomparator
+	 * æ’åºï¼Œæ¥å—comparator
 	 *
 	 * @param c comparator
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void sort(Comparator<T> c) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		for (int i = 0; i < n - 1; i++) {
 			for (int j = 0; j < n - 1 - i; j++) {
 				if (c.compare((T) data[j], (T) data[j + 1]) > 0) {

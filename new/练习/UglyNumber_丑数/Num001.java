@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.UglyNumber_³óÊı;
+package ç»ƒä¹ .UglyNumber_ä¸‘æ•°;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Num001 {
@@ -12,7 +12,7 @@ public class Num001 {
 	/**
 	 * @param args
 	 */
-	// todo: ¼ì²âÒ»¸öÊıÊÇ·ñ·ûºÏ³óÊıµÄ¹æÔò
+	// todo: æ£€æµ‹ä¸€ä¸ªæ•°æ˜¯å¦ç¬¦åˆä¸‘æ•°çš„è§„åˆ™
 	public static boolean isUglyNum(int num) {
 		if (num == 2 || num == 3 || num == 5) {
 			return true;
@@ -33,7 +33,7 @@ public class Num001 {
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(isUglyNum(1));
 		System.out.println(isUglyNum(2));
 		System.out.println(isUglyNum(8));

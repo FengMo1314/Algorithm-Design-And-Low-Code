@@ -1,10 +1,10 @@
 /**
  *
  */
-package Á·Ï°.Catalan_¿¨ËşÀ¼Êı;
+package ç»ƒä¹ .Catalan_å¡å¡”å…°æ•°;
 
 /**
- * @author ÁøºÍ(±¾µØ)
+ * @author æŸ³å’Œ(æœ¬åœ°)
  *
  */
 public class Cata001 {
@@ -17,14 +17,14 @@ public class Cata001 {
 			return 1;
 		}
 
-		// todo: Ê¹ÓÃ¼òµ¥µİ¹é£¬ÇóµÚ n ¸ö¿¨ËşÀ¼Êı
+		// todo: ä½¿ç”¨ç®€å•é€’å½’ï¼Œæ±‚ç¬¬ n ä¸ªå¡å¡”å…°æ•°
 
 		return catalan(n - 1) * 2 * (2 * n - 1) / (n + 1);
 
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		System.out.println(catalan(0) == 1);
 		System.out.println(catalan(1) == 1);
 		System.out.println(catalan(6) == 132);
